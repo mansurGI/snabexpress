@@ -3,16 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <title>Snab Express</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
     <meta name="description" content="Main page">
 
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="shortcut icon" type="image/png" href="">
+    <link rel="shortcut icon" type="image/png" href=""> <! -- добавить FavIcon -->
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
+<header class="body-header">
+    <div class="body-header__top header-top">
+        <div class="container">
+            <div class="header-top__row">
+                <div class="header-top__column column column_first">
+                    <div class="column__logo"><a href=""><img src="img/top%20line/logo.svg" alt="Snab Express"></a></div>
+                    <div class="column__about"><p class="light">Поставка оборудования,  запасных частей и комплектующих</p></div>
+                </div>
+                <div class="header-top__column column column_second">
+                    <div class="column__tel">
+                        <a href="tel:+79263178857">+7 926 317 88 57</a>
+                        <a href="tel:+4978163014120">+49 781 630 141 20</a>
+                    </div>
+                    <div class="column__button">
+                        <a href="" class="button button_transparent">Заказать звонок</a>
+                    </div>
+                </div>
+                <div class="header-top__column column column_third"><div class="burger__body"><span class="burger"></span></div></div>
+            </div>
+        </div>
+    </div>
+    <div class="body-header__bottom header-bottom">
+        <div class="container">
+            <nav class="header-bottom__row">
+                <ul class="menu__list">
+                    <li>
+                        <a href="" class="menu__link">КАТАЛОГ ПРОДУКЦИИ</a> <! -- добавить многоуровневый список -->
+                    </li>
+                    <li><a href="" class="menu__link">КАТАЛОГ ПРОИЗВОДИТЕЛЕЙ</a></li>
+                    <li><a href="" class="menu__link">О КОМПАНИИ</a></li>
+                    <li><a href="" class="menu__link">ВОПРОС / ОТВЕТ</a></li>
+                    <li><a href="" class="menu__link">ОПЛАТА И ДОСТАВКА</a></li>
+                    <li><a href="" class="menu__link">НОВОСТИ</a></li>
+                    <li><a href="" class="menu__link">КОНТАКТЫ</a></li>
+                    <li>
+                        <ul class="column__tel column__tel_mob">
+                            <li><a href="tel:+79263178857">+7 926 317 88 57</a></li>
+                            <li><a href="tel:+4978163014120">+49 781 630 141 20</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="content">
+    <section class="slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide__bg"><img src="img/slider/1.jpg" alt=""></div>
+                    <div class="container">
+                        <div class="slide__info slide-info">
+                            <div class="slide-info__title"><h1>Проектирование и монтаж систем автоматизации</h1></div>
+                            <div class="slide-info__subtitle"><p>При автоматизации на производстве значительно повышается производительность труда</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__bg"><img src="img/slider/1.jpg" alt=""></div>
+                    <div class="container">
+                        <div class="slide__info slide-info">
+                            <div class="slide-info__title"><h1>Проектирование и монтаж систем автоматизации</h1></div>
+                            <div class="slide-info__subtitle"><p>При автоматизации на производстве значительно повышается производительность труда</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__bg"><img src="img/slider/1.jpg" alt=""></div>
+                    <div class="container">
+                        <div class="slide__info slide-info">
+                            <div class="slide-info__title"><h1>Проектирование и монтаж систем автоматизации</h1></div>
+                            <div class="slide-info__subtitle"><p>При автоматизации на производстве значительно повышается производительность труда</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide__bg"><img src="img/slider/1.jpg" alt=""></div>
+                    <div class="container">
+                        <div class="slide__info slide-info">
+                            <div class="slide-info__title"><h1>Проектирование и монтаж систем автоматизации</h1></div>
+                            <div class="slide-info__subtitle"><p>При автоматизации на производстве значительно повышается производительность труда</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__row">
+                <div class="catalog__item item">
+                    <div class="item__body">
+                        <div class="item__bg item__bg_red"></div>
+                        <div class="item__info info">
+                            <div class="info__title"><h2>Каталог</h2></div>
+                            <div class="info__button"><a href="" class="button button_white">Весь каталог</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__item item">
+                    <div class="item__body">
+                        <a href="">
+                            <div class="item__bg"><img src="img/catalog/1.jpg" alt=""></div>
+                            <div class="item__title"><h5>Автоматизация</h5></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="catalog__item item">
+                    <div class="item__body">
+                        <a href="">
+                            <div class="item__bg"><img src="img/catalog/2.jpg" alt=""></div>
+                            <div class="item__title"><h5>Упаковка</h5></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="catalog__item item">
+                    <div class="item__body">
+                        <a href="">
+                            <div class="item__bg"><img src="img/catalog/3.jpg" alt=""></div>
+                            <div class="item__title"><h5>Электродвигатель</h5></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="catalog__item item">
+                    <div class="item__body">
+                        <a href="">
+                            <div class="item__bg"><img src="img/catalog/4.jpg" alt=""></div>
+                            <div class="item__title"><h5>Предохранители</h5></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="catalog__item item">
+                    <div class="item__body">
+                        <a href="">
+                            <div class="item__bg"><img src="img/catalog/5.jpg" alt=""></div>
+                            <div class="item__title"><h5>Мотор-редуктор</h5></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="catalog__item item">
+                    <div class="item__body">
+                        <a href="">
+                            <div class="item__bg"><img src="img/catalog/6.jpg" alt=""></div>
+                            <div class="item__title"><h5>Гидравлика</h5></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="catalog__item item">
+                    <div class="item__body">
+                        <a href="">
+                            <div class="item__bg"><img src="img/catalog/7.jpg" alt=""></div>
+                            <div class="item__title"><h5>Паровые агрегаты</h5></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__info">
+                <div class="about__title"><h2>О компании</h2></div>
+                <div class="about__text">
+                    <p>Основными направлениями деятельности нашей организации является поставка электрооборудования, запасных частей, комплектующих от зарубежных производителей и решение технических задач. </p>
+                    <p>Предлагаем товары со складов в Москве, Санкт-Петербурге, а также доставим товар до конечного потребителя. Работаем на условиях DAP / DDP Россия, FCA/ EXW Германия</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <div class="news-top">
+                <div class="news-top__title"><h2>Новости</h2></div>
+                <div class="news-top__button"><a href="" class="button button_transparent">Все новости</a></div>
+            </div>
+            <div class="news-bottom">
+                <div class="news-bottom__column column">
+                    <div class="column__body">
+                        <a href="">
+                            <div class="column__img"><img src="img/news/1.jpg" alt=""></div>
+                            <div class="column__info info">
+                                <div class="info__date"><span>12 Апреля 2020</span></div>
+                                <div class="info__text"><p class="light">Распылительное оборудование от компании AchesonРаспылительное оборудование от компании AchesonРаспылительное оборудование от компании Acheson</p></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-bottom__column column">
+                    <div class="column__body">
+                        <a href="">
+                            <div class="column__img"><img src="img/news/2.jpg" alt=""></div>
+                            <div class="column__info info">
+                                <div class="info__date"><span>31 Декабря 2021</span></div>
+                                <div class="info__text"><p class="light">Жидкостные преобразователи с одним поплавком для...</p></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="news-bottom__column column">
+                    <div class="column__body">
+                        <a href="">
+                            <div class="column__img"><img src="img/news/3.jpg" alt=""></div>
+                            <div class="column__info info">
+                                <div class="info__date"><span>25 Июня 2018</span></div>
+                                <div class="info__text"><p class="light">Новое сварочное оборудование от компании Frigat</p></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="body-footer">123</footer>
+
 <script src="js/swiper.js"></script>
 <script src="js/script.js"></script>
 </body>
