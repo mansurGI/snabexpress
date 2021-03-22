@@ -256,7 +256,7 @@ input:focus, button:focus {
     content: '';
 }
 .input-checkbox:after {
-    background: url("../icon/Vector.svg") no-repeat center;
+    background: url("../image/icons/check.svg") no-repeat center;
     background-size: 90%, contain;
     transform: translateY(-80%);
     top: 0;
