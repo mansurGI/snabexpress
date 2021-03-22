@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>SNABEXPRESS - BASE</title>
+
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/base.css">
+</head>
+<body>
+<div class="container">
+    <!-- TYPOGRAPHIC -->
+    <h1 class="h1">HEADER #1</h1>
+    <h2 class="h2">HEADER #2</h2>
+    <h3 class="h3">HEADER #3</h3>
+    <h4 class="h4">HEADER #4</h4>
+    <h5 class="h5">HEADER #5</h5>
+    <h6 class="h6">HEADER #6</h6>
+    <div class="nav">NAVIGATION</div>
+    <div class="nav-light">NAVIGATION LIGHT</div>
+    <p class="text-1">TEXT #1</p>
+    <p class="text-1-light">TEXT #1 LIGHT</p>
+    <p class="text-2">TEXT #2</p>
+    <p class="text-2-light">TEXT #2 LIGHT</p>
+    <p class="text-input">TEXT INPUT</p>
+    <p class="text-help-block">TEXT HELP BLOCK</p>
+    <a href="#">ССЫЛКА</a>
+
+    <p class="text-1 uppercase">uppercase</p>
+    <p class="text-1 underline">UNDERLINE</p>
+    <div class="text-center" style="width: 100%;"><p class="text-1">TEXT-CENTER</p></div>
+    <p class="text-1 pointer">POINTER</p>
+    <!-- TYPOGRAPHIC -->
+
+    <div class="my-5"></div>
+
+    <!-- COLORS -->
+    <div class="d-flex justify-content-between">
+        <div class="bg-black" style="width: 100px; height: 100px; border: 1px solid purple;">BG-BLACK</div>
+        <div class="bg-gray" style="width: 100px; height: 100px; border: 1px solid purple;">BG-GRAY</div>
+        <div class="bg-red" style="width: 100px; height: 100px; border: 1px solid purple;">BG-RED</div>
+        <div class="bg-red-light" style="width: 100px; height: 100px; border: 1px solid purple;">BG-RED-LIGHT</div>
+        <div class="bg-white" style="width: 100px; height: 100px; border: 1px solid purple;">BG-WHITE</div>
+        <div class="bg-white-light" style="width: 100px; height: 100px; border: 1px solid purple;">BG-WHITE-LIGHT</div>
+    </div>
+    <div class="my-3"></div>
+    <div class="d-flex justify-content-between">
+        <p class="text-1 text-black">TEXT-BLACK</p>
+        <p class="text-1 text-gray">TEXT-GRAY</p>
+        <p class="text-1 text-red">TEXT-RED</p>
+        <p class="text-1 text-red-light">TEXT-RED-LIGHT</p>
+        <p class="text-1 text-white">TEXT-WHITE</p>
+        <p class="text-1 text-white-light">TEXT-WHITE-LIGHT</p>
+        <p class="text-1 text-error">TEXT-ERROR</p>
+        <p class="text-1 text-success">TEXT-SUCCESS</p>
+    </div>
+    <!-- COLORS -->
+
+    <div class="my-5"></div>
+
+    <!-- UI COMPONENTS -->
+    <label class="input-text_label" for="input">Ваш телефон <span class="text-red">*</span></label>
+    <input class="input-text" type="text" placeholder="+7 (___) ___ __-__" id="input">
+    <span class="input-text_help-block">Только РФ номера</span>
+
+    <div class="my-3"></div>
+
+    <label class="input-text_label" for="input-success">Ваш телефон <span class="text-red">*</span></label>
+    <input class="input-text input-text_success" type="text" placeholder="+7 (___) ___ __-__" id="input-success" value="+7 (999) 228 65-78">
+    <span class="input-text_help-block input-text_help-block_success">Все верно!</span>
+
+    <div class="my-3"></div>
+
+    <label class="input-text_label" for="input-error">Ваш телефон <span class="text-red">*</span></label>
+    <input class="input-text input-text_error" type="text" placeholder="+7 (___) ___ __-__" id="input-error" value="+7 (999) 177 ЖО-К7">
+    <span class="input-text_help-block input-text_help-block_error">Ошибка маски! Только цифры!</span>
+
+    <div class="my-3"></div>
+
+    <input class="input-checkbox" type="checkbox" value="true" id="checkbox"><label class="input-checkbox_label" for="checkbox">Даю согласие на cookie</label>
+    <span class="input-checkbox_help-block">Ссылка на согласие в конце страницы</span>
+
+    <div class="my-3"></div>
+
+    <input class="input-checkbox input-checkbox_success" type="checkbox" value="true" id="checkbox-error"><label class="input-checkbox_label" for="checkbox-error">Даю согласие на cookie</label>
+    <span class="input-checkbox_help-block input-checkbox_help-block_success">Ссылка на согласие в конце страницы</span>
+
+    <div class="my-3"></div>
+
+    <input class="input-checkbox input-checkbox_error" type="checkbox" value="true" id="checkbox-success"><label class="input-checkbox_label" for="checkbox-success">Даю согласие на cookie</label>
+    <span class="input-checkbox_help-block input-checkbox_help-block_error">Ссылка на согласие в конце страницы</span>
+
+    <div class="my-3"></div>
+
+    <button class="button">ЗАКАЗАТЬ ЗВОНОК</button>
+    <button class="button-light">ЗАКАЗАТЬ ЗВОНОК</button>
+    <button class="button-large">ЗАКАЗАТЬ ЗВОНОК</button>
+    <button class="button-large-light">ЗАКАЗАТЬ ЗВОНОК</button>
+    <!-- UI COMPONENTS -->
+
+    <!-- SECTIONS -->
+    <section>ALL SECTIONS HAVE PADDING: 60PX 0;</section>
+    <FOOTER>FOOTER ALWAYS #2E2E2F</FOOTER>
+    <!-- SECTIONS -->
+</div>
+
+
+<script src="script/base.js"></script>
+</body>
+</html>
