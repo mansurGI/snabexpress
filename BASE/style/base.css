@@ -1,37 +1,37 @@
-.h1, .h2, .h3, .h4, .h5, .h6 {
+/* TYPOGRAPHIC */
+h1 .h1, h2 .h2, h3 .h3, h4 .h4, h5 .h5, h6 .h6 {
     font-family: 'Gotham Pro', Arial, Helvetica, sans-serif !important;
     font-style: normal;
     font-weight: normal;
-    color: #000;
-}
-
-.h1 {
-    font-size: 36px;
-    line-height: 34px;
     color: #1F1F1F;
 }
 
-.h2 {
+h1 .h1 {
+    font-size: 36px;
+    line-height: 34px;
+}
+
+h2 .h2 {
     font-size: 26px;
     line-height: 25px;
 }
 
-.h3 {
+h3 .h3 {
     font-size: 22px;
     line-height: 21px;
 }
 
-.h4 {
+h4 .h4 {
     font-size: 18px;
     line-height: 17px;
 }
 
-.h5 {
+h5 .h5 {
     font-size: 16px;
     line-height: 15px;
 }
 
-.h6 {
+h6 .h6 {
     font-size: 12px;
     line-height: 11px;
 }
@@ -82,43 +82,6 @@
     line-height: 17px;
 }
 
-@media (max-width: 576px) {
-    .h1 {
-        font-size: 24px;
-        line-height: 23px;
-    }
-
-    .h2 {
-        font-size: 18px;
-        line-height: 17px;
-    }
-
-    .h3 {
-        font-size: 14px;
-        line-height: 13px;
-    }
-
-    .text-1 {
-        font-size: 12px;
-        line-height: 15px;
-    }
-
-    .text-1-light {
-        font-size: 12px;
-        line-height: 15px;
-    }
-
-    .text-2 {
-        font-size: 10px;
-        line-height: 12px;
-    }
-
-    .text-2-light {
-        font-size: 10px;
-        line-height: 12px;
-    }
-}
-
 .text-input {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -144,14 +107,17 @@ a {
     font-size: 12px;
     line-height: 15px;
     text-decoration-line: underline;
-    color: #801818;
+    color: #944646;
     cursor: pointer;
 }
 
 a:hover, a:active, a:focus {
-    color: #944646;
+    color: #801818;
 }
+/* TYPOGRAPHIC */
 
+
+/* ADDITIONAL CLASSES */
 .uppercase {
     text-transform: uppercase;
 }
@@ -167,7 +133,10 @@ a:hover, a:active, a:focus {
 .pointer {
     cursor: pointer;
 }
+/* ADDITIONAL CLASSES */
 
+
+/* COLOR */
 .bg-black {
     background-color: #1F1F1F;
 }
@@ -185,7 +154,7 @@ a:hover, a:active, a:focus {
 }
 
 .bg-white {
-    background-color: #fff;
+    background-color: #FFFFFF;
 }
 
 .bg-white-light {
@@ -209,7 +178,7 @@ a:hover, a:active, a:focus {
 }
 
 .text-white {
-    color: #fff;
+    color: #FFFFFF;
 }
 
 .text-white-light {
@@ -223,7 +192,10 @@ a:hover, a:active, a:focus {
 .text-success {
     color: #A1DC47;
 }
+/* COLOR */
 
+
+/* UI COMPONENTS */
 input:focus, button:focus {
     outline: none;
 }
@@ -422,11 +394,58 @@ button {
     color: #fff;
     border: 1.5px solid #801818;
 }
+/* UI COMPONENTS */
 
+
+/* SECTIONS */
 section {
     padding: 60px 0;
 }
+/* SECTIONS */
 
+
+/* FOOTER */
 footer {
     background-color: #2E2E2F;
+}
+/* FOOTER */
+
+
+/* BREAKPOINTS */
+/* XS BREAKPOINT */
+@media (max-width: 576px) {
+    .h1 {
+        font-size: 24px;
+        line-height: 23px;
+    }
+
+    .h2 {
+        font-size: 18px;
+        line-height: 17px;
+    }
+
+    .h3 {
+        font-size: 14px;
+        line-height: 13px;
+    }
+
+    .text-1 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .text-1-light {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .text-2 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .text-2-light {
+        font-size: 10px;
+        line-height: 12px;
+    }
 }
