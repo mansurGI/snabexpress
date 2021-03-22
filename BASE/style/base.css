@@ -190,7 +190,7 @@ input:focus, button:focus {
 .input-text_label {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     color: #1F1F1F;
 }
@@ -204,7 +204,7 @@ input:focus, button:focus {
 
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 12px;
     color: #1F1F1F;
 }
@@ -229,11 +229,11 @@ input:focus, button:focus {
     color: #B2B4B6;
 }
 
-.input-text_help-block.input-text_help-block_success {
+.input-text_help-block .input-text_help-block_success {
     color: #A1DC47;
 }
 
-.input-text_help-block.input-text_help-block_error {
+.input-text_help-block .input-text_help-block_error {
     color: #F03E3E;
 }
 
@@ -272,7 +272,7 @@ input:focus, button:focus {
     opacity: 0;
 }
 
-.input-checkbox:checked.input-checkbox:after {
+.input-checkbox:checked .input-checkbox:after {
     opacity: 1;
 }
 
@@ -280,7 +280,7 @@ input:focus, button:focus {
     margin-left: 25px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 12px;
     color: #1F1F1F;
 }
@@ -288,17 +288,17 @@ input:focus, button:focus {
 .input-checkbox_help-block {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 12px;
     text-decoration-line: underline;
     color: #801818;
 }
 
-.input-checkbox_success.input-checkbox:before {
+.input-checkbox_success .input-checkbox:before {
     border: 1px solid #A1DC47;
 }
 
-.input-checkbox_error.input-checkbox:before {
+.input-checkbox_error .input-checkbox:before {
     border: 1px solid #F03E3E;
 }
 
@@ -312,7 +312,7 @@ button {
     border-radius: 3px;
     background-color: transparent;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 12px;
     display: flex;
     align-items: center;
@@ -345,7 +345,7 @@ button {
 .button-large, .button-large-light {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     box-sizing: border-box;
     padding: 6.5px 63.5px;
