@@ -141,7 +141,7 @@ a:hover, a:active, a:focus {
 }
 
 .bg-white {
-    background-color: #FFFFFF;
+    background-color: #FFFFFFFFF;
 }
 
 .bg-white-light {
@@ -165,7 +165,7 @@ a:hover, a:active, a:focus {
 }
 
 .text-white {
-    color: #FFFFFF;
+    color: #FFFFFFFFF;
 }
 
 .text-white-light {
@@ -196,7 +196,7 @@ input:focus, button:focus {
 }
 
 .input-text {
-    background-color: #fff;
+    background-color: #FFFFFF;
     border-radius: unset;
     border: 1px solid #B2B4B6;
     box-sizing: border-box;
@@ -308,6 +308,7 @@ button {
 
 .button, .button-light {
     margin: 0;
+    padding: 12.5px 10.5px 10.5px 10.5px;
     box-sizing: border-box;
     border-radius: 3px;
     background-color: transparent;
@@ -323,22 +324,20 @@ button {
 .button {
     border: 1.5px solid #801818;
     color: #801818;
-    padding: 12.5px 10.5px 10.5px 10.5px;
 }
 
 .button:hover {
     background-color: #801818;
-    color: #fff;
+    color: #FFFFFF;
 }
 
 .button-light {
-    border: 1.5px solid #fff;
-    color: #fff;
-    padding: 12.5px 10.5px 10.5px 10.5px;
+    border: 1.5px solid #FFFFFF;
+    color: #FFFFFF;
 }
 
 .button-light:hover {
-    background-color: #fff;
+    background-color: #FFFFFF;
     color: #801818;
 }
 
@@ -354,24 +353,24 @@ button {
 
 .button-large {
     background: #801818;
-    color: #fff;
+    color: #FFFFFF;
     border: 1.5px solid #801818;
 }
 
 .button-large:hover {
-    background-color: #fff;
+    background-color: #FFFFFF;
     color: #801818;
 }
 
 .button-large-light {
-    background: #fff;
+    background: #FFFFFF;
     color: #801818;
-    border: 1.5px solid #fff;
+    border: 1.5px solid #FFFFFF;
 }
 
 .button-large-light:hover {
     background-color: #801818;
-    color: #fff;
+    color: #FFFFFF;
     border: 1.5px solid #801818;
 }
 /* UI COMPONENTS */
