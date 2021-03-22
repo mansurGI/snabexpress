@@ -229,11 +229,11 @@ input:focus, button:focus {
     color: #B2B4B6;
 }
 
-.input-text_help-block .input-text_help-block_success {
+.input-text_help-block_success {
     color: #A1DC47;
 }
 
-.input-text_help-block .input-text_help-block_error {
+.input-text_help-block_error {
     color: #F03E3E;
 }
 
