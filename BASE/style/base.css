@@ -69,7 +69,36 @@
     font-size: 14px;
     line-height: 17px;
 }
-
+@media (max-width: 576px) {
+    .h1 {
+        font-size: 24px;
+        line-height: 23px;
+    }
+    .h2 {
+        font-size: 18px;
+        line-height: 17px;
+    }
+    .h3 {
+        font-size: 14px;
+        line-height: 13px;
+    }
+    .text-1 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .text-1-light {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .text-2 {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .text-2-light {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
 .text-input {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -95,6 +124,7 @@ a {
     line-height: 15px;
     text-decoration-line: underline;
     color: #801818;
+    cursor: pointer;
 }
 a:hover, a:active, a:focus {
     color: #944646;
@@ -109,6 +139,9 @@ a:hover, a:active, a:focus {
 }
 .text-center {
     text-align: center;
+}
+.pointer {
+    cursor: pointer;
 }
 
 .bg-black {
@@ -263,6 +296,7 @@ input:focus, button:focus {
 .input-checkbox_error.input-checkbox:before {
     border: 1px solid #F03E3E;
 }
+
 button {
     cursor: pointer;
 }
