@@ -411,17 +411,25 @@ footer {
 
 
 /* BREAKPOINTS */
+/* SM BREAKPOINT */
+@media (max-width: 768px) {
+    h5, .h5 {
+        font-size: 12px;
+    }
+}
+
+
 /* XS BREAKPOINT */
 @media (max-width: 576px) {
-    .h1 {
+    h1, .h1 {
         font-size: 24px;
     }
 
-    .h2 {
+    h2, .h2 {
         font-size: 18px;
     }
 
-    .h3 {
+    h3, .h3 {
         font-size: 14px;
     }
 
