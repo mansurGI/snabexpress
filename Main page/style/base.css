@@ -120,6 +120,9 @@ a:hover, a:active, a:focus {
 .pointer {
     cursor: pointer;
 }
+.relative {
+    position: relative;
+}
 /* ADDITIONAL CLASSES */
 
 
