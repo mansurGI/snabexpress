@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/swiper.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -300,9 +301,51 @@
 </header>
 
 
-<section class="slider">
-
+<section class="slider relative">
+    <div class="swiper-container first-slider relative">
+        <div class="swiper-wrapper relative">
+            <div class="swiper-slide">
+                <div class="slide__bg"><img src="image/slider/1.jpg" alt=""></div>
+                <div class="container">
+                    <div class="slide__info slide-info">
+                        <div class="slide-info__title"><h1>Проектирование и монтаж систем автоматизации</h1></div>
+                        <div class="slide-info__subtitle"><p class="text-1">При автоматизации на производстве значительно повышается производительность труда</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide__bg"><img src="image/slider/1.jpg" alt=""></div>
+                <div class="container">
+                    <div class="slide__info slide-info">
+                        <div class="slide-info__title"><h1>Проектирование и монтаж систем автоматизации</h1></div>
+                        <div class="slide-info__subtitle"><p class="text-1">При автоматизации на производстве значительно повышается производительность труда</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide__bg"><img src="image/slider/1.jpg" alt=""></div>
+                <div class="container">
+                    <div class="slide__info slide-info">
+                        <div class="slide-info__title"><h1>Проектирование и монтаж систем автоматизации</h1></div>
+                        <div class="slide-info__subtitle"><p class="text-1">При автоматизации на производстве значительно повышается производительность труда</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide__bg"><img src="image/slider/1.jpg" alt=""></div>
+                <div class="container">
+                    <div class="slide__info slide-info">
+                        <div class="slide-info__title"><h1>Проектирование и монтаж систем автоматизации</h1></div>
+                        <div class="slide-info__subtitle"><p class="text-1">При автоматизации на производстве значительно повышается производительность труда</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
 </section>
+
+
 <section class="catalog">
     <div class="container">
         <div class="catalog__row row">
@@ -611,7 +654,103 @@
 
 
 <section class="reviews">
-
+    <div class="container">
+        <div class="reviews-top d-flex flex-wrap justify-content-between align-items-center">
+            <div class="reviews-top__title"><h2>Отзывы клиентов</h2></div>
+            <div class="reviews-top__button d-none d-sm-flex">
+                <button class="button uppercase">Все отзывы</button>
+                <span class="prev-btn slider-btn d-flex justify-content-center align-items-center pointer">
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.237482 8.02383L8.14551 0.236637C8.46102 -0.0788788 8.97122 -0.0788788 9.28673 0.236637L9.76336 0.713267C10.0789 1.02878 10.0789 1.53898 9.76336 1.85449L2.89587 8.59444L9.75665 15.3344C10.0722 15.6499 10.0722 16.1601 9.75665 16.4756L9.28002 16.9522C8.96451 17.2678 8.45431 17.2678 8.13879 16.9522L0.230769 9.16505C-0.078033 8.84954 -0.0780329 8.33934 0.237482 8.02383Z" fill="#801818"/>
+                        </svg>
+                    </span>
+                <span class="next-btn slider-btn d-flex justify-content-center align-items-center pointer">
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.76252 8.02383L1.85449 0.236637C1.53898 -0.0788788 1.02878 -0.0788788 0.713266 0.236637L0.236636 0.713267C-0.0788793 1.02878 -0.0788793 1.53898 0.236636 1.85449L7.10413 8.59444L0.243349 15.3344C-0.0721664 15.6499 -0.0721664 16.1601 0.243349 16.4756L0.719978 16.9522C1.03549 17.2678 1.54569 17.2678 1.86121 16.9522L9.76923 9.16505C10.078 8.84954 10.078 8.33934 9.76252 8.02383Z" fill="#801818"/>
+                        </svg>
+                    </span>
+            </div>
+        </div>
+        <div class="reviews-bottom">
+            <div class="second-swiper relative">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-item">
+                            <div class="review-item-top">
+                                <div class="review-item-top__text text-1">
+                                    <p>Мы поручили компании Snabexpress разработать для нас систему, которая бы собирала показатели с тензодатчиков в автоматическом режиме. Мы хотели заменить ручной труд программным и сократить наши издержки. Итог нас очень порадовал – мы стали тратить на 30% меньше</p>
+                                </div>
+                                <div class="review-item-top__link"><button class="button uppercase">Отзыв полностью</button></div>
+                            </div>
+                            <div class="review-item-bottom">
+                                <div class="review-item-bottom__name">
+                                    Александр Игнатенко
+                                </div>
+                                <div class="review-item-bottom__post">
+                                    ГЕНЕРАЛЬНЫЙ ДИРЕКТОР ООО «ДЕТРОГАЗ»
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-item">
+                            <div class="review-item-top">
+                                <div class="review-item-top__text text-1">
+                                    <p>Мы поручили компании Snabexpress разработать для нас систему, которая бы собирала показатели с тензодатчиков в автоматическом режиме. Мы хотели заменить ручной труд программным и сократить наши издержки. Итог нас очень порадовал – мы стали тратить на 30% меньше</p>
+                                </div>
+                                <div class="review-item-top__link"><button class="button uppercase">Отзыв полностью</button></div>
+                            </div>
+                            <div class="review-item-bottom">
+                                <div class="review-item-bottom__name">
+                                    Александр Игнатенко
+                                </div>
+                                <div class="review-item-bottom__post">
+                                    ГЕНЕРАЛЬНЫЙ ДИРЕКТОР ООО «ДЕТРОГАЗ»
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-item">
+                            <div class="review-item-top">
+                                <div class="review-item-top__text text-1">
+                                    <p>Мы поручили компании Snabexpress разработать для нас систему, которая бы собирала показатели с тензодатчиков в автоматическом режиме. Мы хотели заменить ручной труд программным и сократить наши издержки. Итог нас очень порадовал – мы стали тратить на 30% меньше</p>
+                                </div>
+                                <div class="review-item-top__link"><button class="button uppercase">Отзыв полностью</button></div>
+                            </div>
+                            <div class="review-item-bottom">
+                                <div class="review-item-bottom__name">
+                                    Александр Игнатенко
+                                </div>
+                                <div class="review-item-bottom__post">
+                                    ГЕНЕРАЛЬНЫЙ ДИРЕКТОР ООО «ДЕТРОГАЗ»
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-item">
+                            <div class="review-item-top">
+                                <div class="review-item-top__text text-1">
+                                    <p>Мы поручили компании Snabexpress разработать для нас систему, которая бы собирала показатели с тензодатчиков в автоматическом режиме. Мы хотели заменить ручной труд программным и сократить наши издержки. Итог нас очень порадовал – мы стали тратить на 30% меньше</p>
+                                </div>
+                                <div class="review-item-top__link"><button class="button uppercase">Отзыв полностью</button></div>
+                            </div>
+                            <div class="review-item-bottom">
+                                <div class="review-item-bottom__name">
+                                    Александр Игнатенко
+                                </div>
+                                <div class="review-item-bottom__post">
+                                    ГЕНЕРАЛЬНЫЙ ДИРЕКТОР ООО «ДЕТРОГАЗ»
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination_second"></div>
+            </div>
+        </div>
+    </div>
 </section>
 
 

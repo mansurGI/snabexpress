@@ -22,4 +22,37 @@ function burger (burgerClass, mobileListClass) {
         bodyLock.classList.toggle('lock');
     }
 }
-burger('.burger__body', '.header__bottom')
+burger('.burger__body', '.header__bottom');
+
+
+// First slider
+let swiper = new Swiper('.first-slider', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
+// Second slider
+let secondSwiper = new Swiper('.second-swiper', {
+    navigation: {
+        nextEl: '.next-btn',
+        prevEl: '.prev-btn',
+    },
+    pagination: {
+        el: '.swiper-pagination_second',
+        clickable: true,
+    },
+    slidesPerView: '2',
+    spaceBetween: 20,
+    breakpoints: {
+        200: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        1200: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+    }
+});
