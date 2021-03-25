@@ -472,6 +472,10 @@ ul li {
     color: #fff;
 }
 
+.mob__link_more.active svg path {
+    fill: #fff;
+}
+
 .mob__link svg {
     width: 10px;
     height: 7px;
@@ -481,10 +485,6 @@ ul li {
 
 .mob__link svg path {
     fill: #1F1F1F;
-}
-
-.mob__list span:hover svg path, .mob__list span:focus svg path {
-    fill: #fff;
 }
 
 .mob__list {
@@ -1504,7 +1504,7 @@ footer {
 
     /* SLIDER */
     .slider {
-        margin-top: 83px;
+        margin-top: 80px;
     }
     .swiper-container {
         height: 300px;
