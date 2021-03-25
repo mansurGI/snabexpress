@@ -612,6 +612,13 @@ body {
 /* PAGE TEXT */
 .page-text .text-1 {
     line-height: 26px;
+    margin-bottom: 30px;
+}
+.page-text .h2 {
+    margin-bottom: 30px;
+}
+.page-text .text-1:last-child {
+    margin-bottom: 0;
 }
 /* PAGE TEXT */
 
@@ -894,6 +901,15 @@ footer {
     }
 
     /* SECTIONS */
+
+    /* PAGE TEXT */
+    .page-text .text-1 {
+        margin-bottom: 20px;
+    }
+    .page-text .h2 {
+        margin-bottom: 20px;
+    }
+    /* PAGE TEXT */
     /* HEADER */
     .header__pc {
         display: none;
@@ -956,6 +972,16 @@ footer {
         padding: 20px 0;
     }
     /* SECTIONS */
+
+    /* PAGE TEXT */
+    .page-text .text-1 {
+        margin-bottom: 10px;
+    }
+    .page-text .h2 {
+        margin-bottom: 15px;
+    }
+    /* PAGE TEXT */
+
     /* HEADER */
     .header-top__logo {
         width: 150px;
