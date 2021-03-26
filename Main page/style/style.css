@@ -906,7 +906,6 @@ ul li {
 .brands__button {
     margin-top: 20px;
 }
-
 /* SECTIONS BRAND CATALOG*/
 
 
@@ -1057,7 +1056,6 @@ ul li {
     color: #fff;
     width: 476px;
 }
-
 /* FORM BUTTON */
 
 
@@ -1276,7 +1274,6 @@ footer {
 .mail__list li:last-child {
     margin-bottom: 0;
 }
-
 /* FOOTER */
 
 
@@ -1545,6 +1542,7 @@ footer {
     footer {
         padding: 40px 0;
     }
+
     .body-footer__tel {
         margin-bottom: 70px;
     }
