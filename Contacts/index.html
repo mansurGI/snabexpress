@@ -226,8 +226,6 @@
         </div>
     </div>
 </header>
-
-
 <header class="header__mob">
     <div class="header__top header-top relative">
         <div class="container d-flex justify-content-between">
@@ -299,6 +297,7 @@
     </div>
 </header>
 
+
 <main class="content">
     <section class="page-top">
         <div class="container">
@@ -309,26 +308,20 @@
             <p class="page-title">Контакты</p>
         </div>
     </section>
+
     <section class="page-text">
         <div class="container">
             <div class="row">
-                <div class="col-xxl-5 col-xl-4 col-lg-5 col-12 page-text__block">
-                    <p class="text-2">
-                        Наша компания, занимается поставкой электрооборудования, запасных частей и комплектующих от зарубежных производителей и решением технических задач.
-                    </p>
-                    <p class="text-2">
-                        Предлагаем товар со склада в г. Москве и г. Санкт-Петербурге, а также доставим товар до конечного потребителя.
-                    </p>
-                    <p class="text-2">
-                        Вопросы по таможенному оформлению и транспортным расходам возьмем на себя.
-                    </p>
+                <div class="col-12 col-xxl-5 col-xl-4 col-lg-5 page-text__block">
+                    <p class="text-2">Наша компания, занимается поставкой электрооборудования, запасных частей и комплектующих от зарубежных производителей и решением технических задач. <br>Предлагаем товар со склада в г. Москве и г. Санкт-Петербурге, а также доставим товар до конечного потребителя.<br>Вопросы по таможенному оформлению и транспортным расходам возьмем на себя.</p>
                 </div>
-                <div class="col-xxl-7 col-xl-8 col-lg-7 col-12 row">
+                <div class="col-12 col-xxl-7 col-xl-8 col-lg-7 row">
                     <div class="col__contacts col-12 col-md-6" style="margin-bottom: 30px;">
                         <div class="col-body d-flex">
                             <div class="col-body__icon d-none d-md-flex"><img src="image/icons/mail.svg" alt=""></div>
                             <div class="col-body__info d-flex flex-column">
                                 <p class="h5">Email</p>
+                                <!-- TODO: Нет отступов между ссылками по всей секции (10px должен быть). Надо обсудить что делаем с марджинами и потом что-то исправить -->
                                 <a href="mailto:info@snabexpress.ru" class="text-2">info@snabexpress.ru</a>
                                 <a href="mailto:sales@snabexpress.ru" class="text-2">sales@snabexpress.ru</a>
                             </div>
@@ -376,10 +369,13 @@
             </div>
         </div>
     </section>
-    <section class="map anim anim-no-hide">
+
+    <section class="map">
         <div id="map"></div>
     </section>
 </main>
+
+
 <footer class="body-footer">
     <div class="container">
         <div class="row">
@@ -499,6 +495,8 @@
         </div>
     </div>
 </footer>
+
+
 <script src="script/map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA66jPv0CXJfEg1N9ubhO5KJLgD4wMwwyc&callback=initMap&libraries=&v=weekly"
         async></script>
