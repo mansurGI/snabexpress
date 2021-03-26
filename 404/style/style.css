@@ -606,6 +606,7 @@ body {
 .page-top {
     background-color: #F7F7F8;
 }
+
 /* PAGE TOP */
 
 
@@ -615,27 +616,33 @@ body {
     margin-bottom: 50px;
     color: #B2B4B6;
 }
+
 .page-text .h1 {
     margin-bottom: 15px;
 }
+
 .page-text .text-1:last-child {
     margin-bottom: 0;
 }
+
 .page-text .button {
     background-color: #801818;
     color: #fff;
 }
+
 .page-text .button:hover {
     background-color: transparent;
     color: #801818;
 }
+
 .error-404 {
     font-family: 'Gotham Pro', Arial, Helvetica, sans-serif !important;
     font-weight: 500;
     font-size: 288px;
     line-height: 276px;
-    color: #000000;
+    color: #1F1F1F;
 }
+
 /* PAGE TEXT */
 
 /* FOOTER */
@@ -876,6 +883,8 @@ footer {
     }
 
     /* HEADER */
+
+
     /* FOOTER */
     .mail__list a {
         font-size: 10px;
@@ -891,6 +900,8 @@ footer {
     }
 
     /* FOOTER */
+
+
     .error-404 {
         font-size: 260px;
         line-height: 250px;
@@ -903,7 +914,10 @@ footer {
     .top-line__text {
         width: 237px;
     }
+
     /* HEADER */
+
+
     .error-404 {
         font-size: 220px;
         line-height: 210px;
@@ -915,24 +929,31 @@ footer {
     body.lock {
         overflow: hidden;
     }
+
     .content {
         margin-top: 80px;
     }
+
+
     /* SECTIONS */
     section {
         padding: 30px 0;
     }
 
     /* SECTIONS */
-
     /* PAGE TEXT */
     .page-text .text-1 {
         margin-bottom: 20px;
     }
+
     .page-text .h1 {
         margin-bottom: 10px;
     }
+
     /* PAGE TEXT */
+    /* SECTIONS */
+
+
     /* HEADER */
     .header__pc {
         display: none;
@@ -955,6 +976,8 @@ footer {
     }
 
     /* HEADER */
+
+
     /* FOOTER */
     .body-footer-info {
         margin-bottom: 0;
@@ -973,6 +996,8 @@ footer {
     }
 
     /* FOOTER */
+
+
     .error-404 {
         font-size: 160px;
         line-height: 150px;
@@ -986,7 +1011,6 @@ footer {
     .header__mob {
         height: 60px;
     }
-
     /* HEADER */
 }
 
@@ -995,20 +1019,24 @@ footer {
     .content {
         margin-top: 60px;
     }
+
     /* SECTIONS */
     section {
         padding: 20px 0;
     }
     /* SECTIONS */
 
+
     /* PAGE TEXT */
     .page-text .text-1 {
         margin-bottom: 10px;
     }
+
     .page-text .h1 {
         margin-bottom: 10px;
     }
     /* PAGE TEXT */
+
 
     /* HEADER */
     .header-top__logo {
@@ -1042,8 +1070,9 @@ footer {
     .menu-scroll__search button {
         margin-right: 0;
     }
-
     /* HEADER */
+
+
     /* FOOTER */
     .body-footer__tel {
         margin-bottom: 20px;
@@ -1060,8 +1089,9 @@ footer {
     .body-footer__mail {
         margin-bottom: 20px;
     }
-
     /* FOOTER */
+
+
     .error-404 {
         font-size: 120px;
         line-height: 110px;

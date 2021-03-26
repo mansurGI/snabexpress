@@ -68,6 +68,7 @@ h6, .h6 {
     margin-right: 15px;
     position: relative;
 }
+
 .page-path a:after {
     position: absolute;
     content: '';
@@ -77,9 +78,11 @@ h6, .h6 {
     top: 50%;
     right: 0;
 }
+
 .page-path a:last-child:after {
     display: none;
 }
+
 .page-path a:hover {
     color: #B2B4B6;
     text-decoration: underline;
@@ -140,6 +143,7 @@ a {
 a:hover, a:active, a:focus {
     color: #801818;
 }
+
 /* TYPOGRAPHIC */
 
 
@@ -159,9 +163,11 @@ a:hover, a:active, a:focus {
 .pointer {
     cursor: pointer;
 }
+
 .relative {
     position: relative;
 }
+
 /* ADDITIONAL CLASSES */
 
 
@@ -221,6 +227,7 @@ a:hover, a:active, a:focus {
 .text-success {
     color: #A1DC47;
 }
+
 /* COLOR */
 
 
@@ -435,6 +442,7 @@ button {
     color: #FFFFFF;
     border: 1.5px solid #801818;
 }
+
 /* UI COMPONENTS */
 
 
@@ -442,6 +450,7 @@ button {
 section {
     padding: 60px 0;
 }
+
 /* SECTIONS */
 
 
@@ -449,6 +458,7 @@ section {
 footer {
     background-color: #2E2E2F;
 }
+
 /* FOOTER */
 
 
@@ -458,6 +468,7 @@ footer {
     h5, .h5 {
         font-size: 12px;
     }
+
     .page-title {
         font-size: 28px;
         line-height: 24px;

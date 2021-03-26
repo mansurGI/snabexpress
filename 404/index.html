@@ -20,16 +20,15 @@
 </head>
 <body>
 
+<!-- TODO: Все содержимое хедера надо позиционировать по сетке. В фигме, на странице меню, включи сетку у фреймов. -->
 <header class="header__pc relative">
     <div class="top-line relative">
         <div class="container">
             <div class="d-flex justify-content-between">
                 <div class="top-line__logo d-inline-flex align-items-center relative">
-                    <a href="" class="relative"> <img src="image/logo.png" alt="" class="relative"></a>
+                    <a href="" class="relative"><img src="image/logo.png" alt="" class="relative"></a>
                 </div>
-                <small class="top-line__text text-2 d-inline-flex align-items-center">
-                    Поставка оборудования, запасных частей и комплектующих
-                </small>
+                <small class="top-line__text text-2 d-inline-flex align-items-center">Поставка оборудования, запасных частей и комплектующих</small>
                 <div class="top-line__numbers d-inline-flex justify-content-end align-items-center">
                     <div class="numbers__container d-flex flex-column justify-content-center">
                         <a href="tel:+79263178857" class="top-line__number">+7 926 317 88 57</a>
@@ -226,8 +225,6 @@
         </div>
     </div>
 </header>
-
-
 <header class="header__mob">
     <div class="header__top header-top relative">
         <div class="container d-flex justify-content-between">
@@ -299,10 +296,11 @@
     </div>
 </header>
 
+
 <main class="content">
     <section class="page-top">
         <div class="container">
-            <div class="page-path d-flex flex-row flex-wrap">
+            <div class="page-path d-flex flex-row">
                 <a href="../Main%20page/" class="underline">Главная</a>
                 <a href="">Ошибка 404</a>
             </div>
@@ -310,18 +308,23 @@
         </div>
     </section>
     <section class="page-text">
-        <div class="container d-flex flex-wrap">
-            <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start">
-                <p class="error-404">404</p>
-            </div>
-            <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
-                <p class="h1 text-center">Страница не найдена</p>
-                <p class="text-1 text-center">Неправильно набран адрес или такой страницы больше не существует</p>
-                <button class="button uppercase text-center">Перейти на главную</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start">
+                    <div class="error-404">404</div>
+                </div>
+                <div class="w-100 d-lg-none"></div>
+                <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
+                    <h1>Страница не найдена</h1>
+                    <p class="text-1">Неправильно набран адрес или такой страницы больше не существует</p>
+                    <button class="button uppercase">Перейти на главную</button>
+                </div>
             </div>
         </div>
     </section>
 </main>
+
+<!-- TODO: Убрать svg, заменив на img -->
 <footer class="body-footer">
     <div class="container">
         <div class="row">
@@ -441,6 +444,8 @@
         </div>
     </div>
 </footer>
+
+
 <script src="script/base.js"></script>
 <script src="script/script.js"></script>
 </body>
