@@ -9,14 +9,13 @@
 
     <title>SNABEXPRESS - ОШИБКА 404</title>
 
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../style/fonts.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="style/base.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
 
@@ -27,7 +26,7 @@
         <div class="container">
             <div class="d-flex justify-content-between">
                 <div class="top-line__logo d-inline-flex align-items-center relative">
-                    <a href="" class="relative"><img src="image/logo.png" alt="" class="relative"></a>
+                    <a href="" class="relative"><img src="../image/logo.png" alt="" class="relative"></a>
                 </div>
                 <!-- TODO: .text-white-light нужен (соотвественно везде где есть хедер) -->
                 <small class="top-line__text text-2 d-inline-flex align-items-center">Поставка оборудования, запасных частей и комплектующих</small>
@@ -161,7 +160,7 @@
     </div>
     <div class="menu-scroll">
         <div class="container d-flex justify-content-between">
-            <div class="menu-scroll__logo relative"><a href="" class="relative"><img src="image/logo.png" alt=""></a></div>
+            <div class="menu-scroll__logo relative"><a href="" class="relative"><img src="../image/logo.png" alt=""></a></div>
             <nav class="menu-scroll__nav">
                 <ul class="menu-scroll__list uppercase menu__list">
                     <li>
@@ -231,7 +230,7 @@
     <div class="header__top header-top relative">
         <div class="container d-flex justify-content-between">
             <div class="header-top__logo d-inline-flex align-items-center relative">
-                <a href="" class="relative"> <img src="image/logo.png" alt=""></a>
+                <a href="" class="relative"> <img src="../image/logo.png" alt=""></a>
             </div>
             <div class="header-top__icons d-flex align-items-center">
                 <div class="header-top__icon">
@@ -299,11 +298,11 @@
 </header>
 
 
-<main class="content">
+<main class="content page-404">
     <section class="page-top">
         <div class="container">
             <div class="page-path d-flex flex-row">
-                <a href="../Main%20page/" class="underline">Главная</a>
+                <a href="../" class="underline">Главная</a>
                 <a href="">Ошибка 404</a>
             </div>
             <p class="page-title">Ошибка 404</p>
@@ -318,8 +317,8 @@
                 </div>
                 <div class="w-100 d-lg-none"></div>
                 <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
-                    <h1>Страница не найдена</h1>
-                    <p class="text-1">Неправильно набран адрес или такой страницы больше не существует</p>
+                    <h1 class="text-center">Страница не найдена</h1>
+                    <p class="text-1 text-center">Неправильно набран адрес или такой страницы больше не существует</p>
                     <button class="button uppercase">Перейти на главную</button>
                 </div>
             </div>
@@ -450,7 +449,6 @@
 </footer>
 
 
-<script src="script/base.js"></script>
-<script src="script/script.js"></script>
+<script src="../script/script.js"></script>
 </body>
 </html>
