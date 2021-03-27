@@ -1832,6 +1832,53 @@ body {
 }
 /* PAGE PRIVACY */
 
+/* PAGE FAQ */
+.page-faq details summary::-webkit-details-marker {
+    display: none
+}
+.page-faq details {
+    position: relative;
+    padding-bottom: 20px;
+}
+.page-faq summary {
+    border-bottom: 1px solid #B2B4B6;
+    cursor: pointer;
+    list-style: none;
+}
+.page-faq details svg path {
+    fill: #1F1F1F;
+}
+.page-faq details summary:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 0;
+    background: url("../image/icons/arrow-2 black.svg");
+    width: 15px;
+    height: 10px;
+}
+.page-faq details[open] {
+    border-bottom: 1px solid #B2B4B6;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+}
+.page-faq details[open] summary:before {
+    transform: rotate(180deg);
+}
+.page-faq details[open] summary {
+    margin-bottom: 18px;
+    border-bottom: none;
+}
+.page-faq h2 {
+    margin: 30px 0;
+}
+.page-faq h2:first-child {
+    margin: 0 0 30px 0;
+}
+.page-faq .text-1 {
+    line-height: 20px;
+}
+/* PAGE FAQ */
 
 
 /* BREAKPOINTS */
@@ -2009,6 +2056,27 @@ body {
         padding: 40px 30px;
     }
     /* PAGE DELIVERY */
+    /* PAGE FAQ */
+    .page-faq  summary {
+        padding-bottom: 10px;
+    }
+    .page-faq  summary span {
+        width: 90%;
+        display: block;
+    }
+    .page-faq details[open] summary {
+        margin-bottom: 10px;
+    }
+    .page-faq details[open] {
+        padding-bottom: 24px;
+    }
+    .page-faq details summary:before {
+        top: 0;
+    }
+    .page-faq details {
+        padding-bottom: 10px;
+    }
+    /* PAGE FAQ */
 }
 
 
@@ -2529,4 +2597,15 @@ body {
         margin-bottom: 15px;
     }
     /* PAGE PRIVACY */
+
+    /* PAGE FAQ */
+    .page-faq details[open] {
+        padding-bottom: 34px;
+    }
+    .page-faq .h4 {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    /* PAGE FAQ */
 }
