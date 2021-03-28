@@ -194,7 +194,7 @@ input:focus, button:focus {
     outline: none;
 }
 
-.input-text_label {
+.input-text_label, .textarea_label {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -203,25 +203,22 @@ input:focus, button:focus {
 }
 
 .input-text {
-    background-color: #FFFFFF;
-
-    border-radius: unset;
+    max-width: 270px;
+}
+.textarea, .input-text {
     border: 1px solid #B2B4B6;
     box-sizing: border-box;
-
+    background: #fff;
+    border-radius: unset;
     padding: 7px 10px;
     margin: 5px 0;
-
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     color: #1F1F1F;
-
-    max-width: 270px;
 }
-
-.input-text::placeholder {
+.input-text::placeholder, .textarea::placeholder {
     color: #B2B4B6;
 }
 
@@ -250,15 +247,15 @@ input:focus, button:focus {
 }
 
 .input-checkbox {
-    width: 0;
-    height: 0;
     position: relative;
+    width: 15px;
+    height: 0;
     padding: 0;
     margin: 0;
 }
 
 .input-checkbox:before {
-    transform: translateY(-80%);
+    transform: translateY(-60%);
     top: 0;
     left: 0;
     position: absolute;
@@ -278,16 +275,13 @@ input:focus, button:focus {
     position: absolute;
     width: 15px;
     height: 15px;
-    border: 1px solid #1F1F1F;
     box-sizing: border-box;
     content: '';
     opacity: 0;
 }
-
-.input-checkbox:checked .input-checkbox:after {
+.input-checkbox:checked.input-checkbox:after {
     opacity: 1;
 }
-
 .input-checkbox_label {
     margin-left: 10px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -306,21 +300,9 @@ input:focus, button:focus {
 
     margin-top: 5px;
 }
-
-.input-checkbox_help-block_success {
-    color: #A1DC47;
-}
-
-.input-checkbox_success, .input-checkbox:before {
-    border: 1px solid #A1DC47;
-}
-
-.input-checkbox_help-block_error {
-    color: #F03E3E;
-}
-
-.input-checkbox_error, .input-checkbox:before {
-    border: 1px solid #F03E3E;
+.textarea {
+    resize: vertical;
+    min-height: 115px;
 }
 
 button {
@@ -1880,6 +1862,130 @@ body {
 }
 /* PAGE FAQ */
 
+/* PAGE BRANDS */
+.page-brands .brands-scroll_item {
+    font-family: 'Gotham Pro', Arial, Helvetica, sans-serif !important;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 25px;
+    color: #1F1F1F;
+    background-color: transparent;
+    padding: 0 4px;
+    margin: 0 4px;
+}
+.page-brands .brands-scroll_item:last-child {
+    margin: 0 0 0 4px ;
+}
+.page-brands .brands-scroll_item:first-child {
+    margin: 0 4px 0 0;
+}
+.page-brands .brands-search {
+    margin-top: 30px;
+}
+.page-brands .brands-search .input-text {
+    max-width: 650px;
+    width: 650px;
+    border: 1px solid #801818;
+    margin: 0 0 10px 0;
+    padding: 10px;
+}
+.page-brands .brands-search button {
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.brands-list-group {
+    margin-top: 50px;
+}
+.brands-list-group__name {
+    font-family: 'Gotham Pro', Arial, Helvetica, sans-serif !important;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 25px;
+    color: #1F1F1F;
+    max-width: 835px;
+}
+.brands-list-group__name:after {
+    content: '';
+    background-color: #B2B4B6;
+    height: 1px;
+    margin-left: 15px;
+    top: 0;
+    width: 100%;
+    transform: translateY(10px);
+}
+.brands-list-group__items {
+    margin-top: 40px;
+}
+.brand__body {
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.brand__img {
+    background-color: #fff;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+    width: 165px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand__img img {
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+.brand__name {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1F1F1F;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+.brand.hide, .brands-list.hide {
+    display: none;
+}
+.brands-form {
+    overflow: hidden;
+}
+.brands-form legend {
+    font-size: 32px;
+    line-height: 31px;
+    margin-bottom: 5px;
+}
+.page-brands .text-1-light {
+    font-size: 16px;
+    line-height: 20px;
+    color: #B2B4B6;
+    margin-bottom: 25px;
+}
+.page-brands .brands-form .input-group {
+    margin-bottom: 15px;
+}
+.page-brands .brands-form .input-text_label {
+    margin-bottom: 7px;
+}
+.page-brands .brands-form .input-text {
+    padding: 6px 10px;
+    margin: 0 10px 0 0 ;
+    width: 50%;
+    max-width: 50%;
+}
+
+.page-brands .brands-form .button-large {
+    padding: 6px 10px;
+    width: 50%;
+    max-width: 50%;
+    margin-left: 10px;
+}
+/* PAGE BRANDS */
 
 /* BREAKPOINTS */
 /* XL BREAKPOINT */
@@ -2365,6 +2471,13 @@ body {
         width: 500px;
     }
     /* PAGE DELIVERY */
+
+    /* PAGE BRANDS */
+    .page-brands .brands-search .input-text {
+        width: 86vw;
+        max-width: 86vw;
+    }
+    /* PAGE BRANDS */
 }
 
 
@@ -2608,4 +2721,15 @@ body {
         line-height: 15px;
     }
     /* PAGE FAQ */
+
+    /* PAGE BRANDS */
+    .brand__img {
+        width: 130px;
+        height: 80px;
+    }
+    .page-brands .brands-form .button-large {
+        display: block;
+        flex: 1 1 100%;
+    }
+    /* PAGE BRANDS */
 }

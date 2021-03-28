@@ -10,7 +10,7 @@ window.addEventListener('scroll', function () {
 
 
 // Burger
-function burger (burgerClass, mobileListClass) {
+function burger(burgerClass, mobileListClass) {
     let bodyLock = document.querySelector('body'),
         burgerBody = document.querySelector(burgerClass),
         mobileList = document.querySelector(mobileListClass);
@@ -22,7 +22,48 @@ function burger (burgerClass, mobileListClass) {
         bodyLock.classList.toggle('lock');
     }
 }
+
 burger('.burger__body', '.header__bottom');
+
+// Input filter
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('search-form');
+    let filterItem = document.querySelectorAll('.brand'),
+        filterInput = form.querySelector('.brands-input'),
+        filterItemName = document.querySelectorAll('.brand__name');
+
+    form.addEventListener('submit', searching);
+
+    async function searching(e) {
+        e.preventDefault();
+
+        for (let i = 0; i < filterItem.length; i++) {
+
+            filterItem[i].classList.remove('hide');
+            let searchValue = filterInput.value.trim().toUpperCase(),
+                search = filterItemName[i].innerText.match(searchValue);
+            if (search == null) {
+                filterItem[i].classList.add('hide');
+            }
+        }
+
+        test();
+
+        function test() {
+            let row = document.querySelectorAll('.brands-list-group');
+            for (let i = 0; i < row.length; i++) {
+                row[i].parentElement.classList.remove('hide');
+                if (row[i].childElementCount > 1) {
+                    let rowList = row[i].lastElementChild;
+                    let rowListItem = rowList.querySelectorAll('.hide');
+                    if (rowList.childElementCount === rowListItem.length) {
+                        row[i].parentElement.classList.add('hide');
+                    }
+                }
+            }
+        }
+    }
+});
 
 
 // Map
