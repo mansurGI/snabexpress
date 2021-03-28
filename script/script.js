@@ -91,7 +91,7 @@ let swiper = new Swiper('.fullscreen-slider', {
     },
 });
 
-// Second slider
+// reviews slider
 let secondSwiper = new Swiper('.reviews-slider', {
     navigation: {
         nextEl: '.next-btn',
