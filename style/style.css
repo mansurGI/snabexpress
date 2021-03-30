@@ -1271,7 +1271,7 @@ section {
 }
 .review-item-top__text:before{
     content: '';
-    background: url("../image/main-page/reviews/icon.svg") no-repeat;
+    background: url("../image/icons/qutor-mark.svg") no-repeat;
     background-size: contain;
     width: 50px;
     height: 50px;
@@ -1306,7 +1306,7 @@ section {
 }
 .review-item-bottom:before{
     content: '';
-    background: url("../image/main-page/reviews/1.png") no-repeat;
+    background: url("../image/icons/triangel.png") no-repeat;
     width: 60px;
     height: 60px;
     position: absolute;
@@ -1826,6 +1826,8 @@ body {
     border-bottom: 1px solid #B2B4B6;
     cursor: pointer;
     list-style: none;
+
+    padding-bottom: 5px;
 }
 .page-faq details svg path {
     fill: #1F1F1F;
