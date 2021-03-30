@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>SNABEXPRESS - Шаблон</title>
+
+    <link rel="stylesheet" href="../style/normalize.css">
+    <link rel="stylesheet" href="../style/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+<style>
+    /*
+    Теперь help-block и label одинаковы для всех видов инпутов (Но в чекбоксах и радио свой label)
+    Теперь кнопки бывают двух видов: обычные и кнопки для форм
+     */
+</style>
+
+<div class="container">
+    <h1 class="text-center mt-2">UI компоненты</h1>
+
+    <div class="my-5">
+        <h3>Инпуты</h3>
+
+        <!-- Обычный инпут -->
+        <div class="row mt-4">
+            <div class="col">
+                <div class="text-1-light mb-4">Текстовое поле, обычный размер</div>
+
+                <div class="input-group">
+                    <label class="input_label" for="1">Ваш телефон <span class="text-red">*</span></label>
+                    <input class="input-text" type="text" placeholder="" id="1">
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="2">Ваш телефон <span class="text-red">*</span></label>
+                    <input class="input-text" type="text" placeholder="+7 (___) ___ __-__" id="2">
+                    <span class="input_help-block">Только РФ номера</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="3">Ваш телефон <span class="text-red">*</span></label>
+                    <input class="input-text" type="text" placeholder="+7 (___) ___ __-__" id="3" value="+7 (989) XSA 7W-89">
+                    <span class="input_help-block input_help-block_error">Ошибка маски! Только цифры!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="4">Ваш телефон <span class="text-red">*</span></label>
+                    <input class="input-text" type="text" placeholder="+7 (___) ___ __-__" id="4" value="+7 (999) 447 87-89">
+                    <span class="input_help-block input_help-block_success">Все хорошо!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="5">Ваш телефон <span class="text-red">*</span></label>
+                    <input class="input-text input-text_disabled" type="text" placeholder="+7 (___) ___ __-__" id="5" disabled>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-1-light mb-4">Текстовое поле, малый размер</div>
+
+                <div class="input-group">
+                    <label class="input_label" for="6">Ваш телефон <span class="text-red">*</span></label>
+                    <input class="input-text input-text_sm" type="text" placeholder="" id="6">
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="7">Ваш телефон <span class="text-red">*</span></label>
+                    <input class="input-text input-text_sm" type="text" placeholder="+7 (___) ___ __-__" id="7">
+                    <span class="input_help-block">Только РФ номера</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="8">Ваш телефон <span class="text-red">*</span></label>
+                    <input class="input-text input-text_sm" type="text" placeholder="+7 (___) ___ __-__" id="8" value="+7 (989) XSA 7W-89">
+                    <span class="input_help-block input_help-block_error">Ошибка маски! Только цифры!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="9">Ваш телефон <span class="text-red">*</span></label>
+                    <input class="input-text input-text_sm" type="text" placeholder="+7 (___) ___ __-__" id="9" value="+7 (999) 447 87-89">
+                    <span class="input_help-block input_help-block_success">Все хорошо!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="10">Ваш телефон <span class="text-red">*</span></label>
+                    <input class="input-text input-text_sm input-text_disabled" type="text" placeholder="+7 (___) ___ __-__" id="10" disabled>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Текстареа -->
+        <div class="row mt-4">
+            <div class="col">
+                <div class="text-1-light mb-4">Текстовый блок</div>
+
+                <div class="input-group">
+                    <label class="input_label" for="11">Интересующий Вас вопрос</label>
+                    <textarea class="input-textarea" name="text" id="11" cols="15" rows="5" placeholder="Хотел бы уточнить.." style="border: 1px solid red;"></textarea>
+                </div>
+                <div class="input-group mt-3">
+                    <label class="input_label" for="12">Интересующий Вас вопрос</label>
+                    <textarea class="input-textarea" name="text" id="12" cols="15" rows="5" placeholder="Хотел бы уточнить.." style="border: 1px solid red;"></textarea>
+                    <span class="input_help-block">Какая-то подсказка</span>
+                </div>
+                <div class="input-group mt-3">
+                    <label class="input_label" for="13">Интересующий Вас вопрос</label>
+                    <textarea class="input-textarea" name="text" id="13" cols="15" rows="5" placeholder="Хотел бы уточнить.."  style="border: 1px solid red;">Привет, мир!</textarea>
+                    <span class="input_help-block input_help-block_success">Все хорошо!</span>
+                </div>
+                <div class="input-group mt-3">
+                    <label class="input_label" for="14">Интересующий Вас вопрос</label>
+                    <textarea class="input-textarea" name="text" id="14" cols="15" rows="5" placeholder="Хотел бы уточнить.."  style="border: 1px solid red;">Привет“*?:();№(“!№”№,”,№,!”,№,!”№???$?#/4#@#!@*&#!@#*</textarea>
+                    <span class="input_help-block input_help-block_error">Ошибка! Только разрешенные символы!</span>
+                </div>
+                <div class="input-group mt-3">
+                    <label class="input_label" for="15">Интересующий Вас вопрос</label>
+                    <textarea class="input-textarea input-textarea_disabled" name="text" id="15" cols="15" rows="5" placeholder="Хотел бы уточнить.."  style="border: 1px solid red;" disabled></textarea>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-1-light mb-4">Поле выбора цвета</div>
+
+                <div class="input-group">
+                    <label class="input_label" for="36">Выбрать цвет</label>
+                    <input class="input-color" type="color" id="36">
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="37">Выбрать цвет</label>
+                    <input class="input-color" type="color" id="37">
+                    <span class="input_help-block">Только красный</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="38">Выбрать цвет</label>
+                    <input class="input-color" type="color" id="38" value="#486541">
+                    <span class="input_help-block input_help-block_error">Ошибка! Цвет слишком красный!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="39">Выбрать цвет</label>
+                    <input class="input-color" type="color" id="39" value="#781846">
+                    <span class="input_help-block input_help-block_success">Все хорошо!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="40">Выбрать цвет</label>
+                    <input class="input-color input-color_disabled" type="color" id="40" disabled>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Чекбоксы и радио -->
+        <div class="row mt-4">
+            <div class="col">
+                <div class="text-1-light mb-4">Чекбокс</div>
+
+                <div class="input-group">
+                    <div class="d-flex align-items-center">
+                        <input class="input-checkbox" type="checkbox" value="true" id="16">
+                        <label class="input-checkbox_label" for="16">Даю согласие на cookie</label>
+                    </div>
+                </div>
+
+                <div class="input-group mt-3">
+                    <div class="d-flex align-items-center">
+                        <input class="input-checkbox" type="checkbox" value="true" id="17">
+                        <label class="input-checkbox_label" for="17">Даю согласие на cookie</label>
+                    </div>
+                    <span class="input_help-block">Подсказка к блоку</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <div class="d-flex align-items-center">
+                        <input class="input-checkbox" type="checkbox" value="true" id="18">
+                        <label class="input-checkbox_label" for="18">Даю согласие на cookie</label>
+                    </div>
+                    <span class="input_help-block input_help-block_success">Все хорошо!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <div class="d-flex align-items-center">
+                        <input class="input-checkbox" type="checkbox" value="true" id="19">
+                        <label class="input-checkbox_label" for="19">Даю согласие на cookie</label>
+                    </div>
+                    <span class="input_help-block input_help-block_error">Нужно поставить галочку</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <div class="d-flex align-items-center">
+                        <input class="input-checkbox" type="checkbox" value="true" id="20">
+                        <label class="input-checkbox_label input-checkbox_label_disabled" for="20">Даю согласие на cookie</label>
+                    </div>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-1-light mb-4">Радио</div>
+
+                <div class="input-group">
+                    <div class="d-flex align-items-center">
+                        <input class="input-radio" type="radio" value="true" id="21">
+                        <label class="input-radio_label" for="21">Даю согласие на cookie</label>
+                    </div>
+                </div>
+
+                <div class="input-group mt-3">
+                    <div class="d-flex align-items-center">
+                        <input class="input-radio" type="radio" value="true" id="22">
+                        <label class="input-radio_label" for="22">Даю согласие на cookie</label>
+                    </div>
+                    <span class="input_help-block">Подсказка к блоку</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <div class="d-flex align-items-center">
+                        <input class="input-radio" type="radio" value="true" id="23">
+                        <label class="input-radio_label" for="23">Даю согласие на cookie</label>
+                    </div>
+                    <span class="input_help-block input_help-block_success">Все хорошо!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <div class="d-flex align-items-center">
+                        <input class="input-radio" type="radio" value="true" id="24">
+                        <label class="input-radio_label" for="24">Даю согласие на cookie</label>
+                    </div>
+                    <span class="input_help-block input_help-block_error">Нужно поставить галочку</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <div class="d-flex align-items-center">
+                        <input class="input-radio" type="radio" value="true" id="25">
+                        <label class="input-radio_label input-radio_label_disabled" for="25">Даю согласие на cookie</label>
+                    </div>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Загрузка файла -->
+        <div class="row mt-4">
+            <div class="col">
+                <div class="text-1-light mb-4">Загрузка файла, обычный размер</div>
+
+                <div class="input-group">
+                    <label class="input_label" for="26">Загрузить файл</label>
+                    <input class="input-file" type="file" id="26">
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="27">Загрузить файл</label>
+                    <input class="input-file" type="file" id="27">
+                    <span class="input_help-block">Только картинки</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="28">Загрузить файл</label>
+                    <input class="input-file" type="file" id="28">
+                    <span class="input_help-block input_help-block_error">Только .png, .jpg!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="29">Загрузить файл</label>
+                    <input class="input-file" type="file" id="29">
+                    <span class="input_help-block input_help-block_success">Все хорошо!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="30">Загрузить файл</label>
+                    <input class="input-file input-file_disabled" type="file" id="30" disabled>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-1-light mb-4">Загрузка файла, малый размер</div>
+
+                <div class="input-group">
+                    <label class="input_label" for="31">Загрузить файл</label>
+                    <input class="input-file input-file_sm" type="file" id="31">
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="32">Загрузить файл</label>
+                    <input class="input-file input-file_sm" type="file" id="32">
+                    <span class="input_help-block">Только картинки</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="33">Загрузить файл</label>
+                    <input class="input-file input-file_sm" type="file" id="33">
+                    <span class="input_help-block input_help-block_error">Только .png, .jpg!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="34">Загрузить файл</label>
+                    <input class="input-file input-file_sm" type="file" id="34">
+                    <span class="input_help-block input_help-block_success">Все хорошо!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="35">Загрузить файл</label>
+                    <input class="input-file input-file_sm input-file_disabled" type="file" id="35" disabled>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Селекты -->
+        <div class="row mt-4">
+            <div class="col">
+                <div class="text-1-light mb-4">Поле списка, обычный размер</div>
+
+                <div class="input-group">
+                    <select class="input-select" aria-label="label">
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select" aria-label="label">
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block">Подсказка к полю</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select" aria-label="label">
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block input_help-block_success">Успешно!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select" aria-label="label">
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block input_help-block_error">Ошибка! Ничего не выбрано!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select input-select_disabled" aria-label="label" disabled>
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="text-1-light mb-4">Поле списка, малый размер</div>
+
+                <div class="input-group">
+                    <select class="input-select input-select_sm" aria-label="label">
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select input-select_sm" aria-label="label">
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block">Подсказка к полю</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select input-select_sm" aria-label="label">
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block input_help-block_success">Успешно!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select input-select_sm" aria-label="label">
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block input_help-block_error">Ошибка! Ничего не выбрано!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select input-select_sm input-select_disabled" aria-label="label" disabled>
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <div class="text-1-light mb-4">Поле списка multiple, обычный размер</div>
+
+                <div class="input-group">
+                    <select class="input-select" aria-label="label" multiple>
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select" aria-label="label" multiple>
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block">Подсказка к полю</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select" aria-label="label" multiple>
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block input_help-block_success">Успешно!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select" aria-label="label" multiple>
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block input_help-block_error">Ошибка! Ничего не выбрано!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select input-select_disabled" aria-label="label" multiple disabled>
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="text-1-light mb-4">Поле списка multiple, малый размер</div>
+
+                <div class="input-group">
+                    <select class="input-select input-select_sm" aria-label="label" multiple>
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select input-select_sm" aria-label="label" multiple>
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block">Подсказка к полю</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select input-select_sm" aria-label="label" multiple>
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block input_help-block_success">Успешно!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select input-select_sm" aria-label="label" multiple>
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block input_help-block_error">Ошибка! Ничего не выбрано!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <select class="input-select input-select_sm input-select_disabled" aria-label="label" multiple disabled>
+                        <option selected>Откройте это меню выбора</option>
+                        <option value="1">Один</option>
+                        <option value="2">Два</option>
+                        <option value="3">Три</option>
+                    </select>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Диапазон -->
+        <div class="row mt-4">
+            <div class="col">
+                <div class="text-1-light mb-4">Диапазон, обычный размер</div>
+
+                <div class="input-group">
+                    <label class="input_label" for="41">Диапазон</label>
+                    <input class="input-range" type="range" id="41">
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="42">Диапазон</label>
+                    <input class="input-range" type="range" id="42">
+                    <span class="input_help-block">Подсказка к полю</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="43">Диапазон</label>
+                    <input class="input-range" type="range" id="43">
+                    <span class="input_help-block input_help-block_success">Все хорошо!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="44">Диапазон</label>
+                    <input class="input-range" type="range" id="44">
+                    <span class="input_help-block input_help-block_error">Диапазон не указан!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="45">Диапазон</label>
+                    <input class="input-range input-range_disabled" type="range" id="45" disabled>
+                    <span class="input_help-block input_help-block_disabled">Подсказка к полю</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-1-light mb-4">Диапазон, малый размер</div>
+
+                <div class="input-group">
+                    <label class="input_label" for="46">Диапазон</label>
+                    <input class="input-range input-range_sm" type="range" id="46">
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="47">Диапазон</label>
+                    <input class="input-range input-range_sm" type="range" id="47">
+                    <span class="input_help-block">Подсказка к полю</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="48">Диапазон</label>
+                    <input class="input-range input-range_sm" type="range" id="48">
+                    <span class="input_help-block input_help-block_success">Все хорошо!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="49">Диапазон</label>
+                    <input class="input-range input-range_sm" type="range" id="49">
+                    <span class="input_help-block input_help-block_error">Диапазон не указан!</span>
+                </div>
+
+                <div class="input-group mt-3">
+                    <label class="input_label" for="50">Диапазон</label>
+                    <input class="input-range input-range_sm input-range_disabled" type="range" id="50" disabled>
+                    <span class="input_help-block input_help-block_disabled">Подсказка к полю</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопки -->
+    <div class="my-5">
+        <h3>Кнопки</h3>
+
+        <div class="row">
+            <div class="col">
+                <div class="text-1-light mb-4">Кнопки, обычные</div>
+
+                <button class="button">ЗАКАЗАТЬ ЗВОНОК</button>
+                <button class="button-light">ЗАКАЗАТЬ ЗВОНОК</button>
+            </div>
+
+            <div class="col">
+                <div class="text-1-light mb-4">Кнопки, для форм</div>
+
+                <button class="button-input">Заказать звонок</button>
+                <button class="button-input-light">Заказать звонок</button>
+
+                <div class="my-3"></div>
+
+                <button class="button-input_sm">Заказать звонок</button>
+                <button class="button-input-light_sm">Заказать звонок</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="../script/script.js"></script>
+</body>
+</html>
