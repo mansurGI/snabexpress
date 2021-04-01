@@ -1985,26 +1985,25 @@ body {
     line-height: 31px;
     margin-bottom: 5px;
 }
-.page-brands .text-1-light {
+.brands-form .text-1-light {
     font-size: 16px;
     line-height: 20px;
     color: #B2B4B6;
     margin-bottom: 25px;
 }
-.page-brands .brands-form .input-group {
+.brands-form .input-group {
     margin-bottom: 15px;
 }
-.page-brands .brands-form .input-text_label {
+.brands-form .input-text_label {
     margin-bottom: 7px;
 }
-.page-brands .brands-form .input-text {
+.brands-form .input-text {
     padding: 6px 10px;
     margin: 0 10px 0 0 ;
     width: 50%;
     max-width: 50%;
 }
-
-.page-brands .brands-form .button-large {
+.brands-form .button-large {
     padding: 6px 10px;
     width: 50%;
     max-width: 50%;
@@ -2117,6 +2116,146 @@ body {
 }
 /* PAGE BRAND*/
 
+
+/* PAGE SINGLE NEWS*/
+.single-news {
+    padding: 60px 0 45px 0;
+    overflow: hidden;
+}
+.news-single-page .left-img {
+    float: left;
+    margin: 0 25px 15px 0;
+    width: 420px;
+    height: 260px;
+    position: relative;
+}
+
+.news-single-page .left-img img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.news-single-page .single-news__text .text-1 {
+    margin-bottom: 30px;
+    line-height: 160%;
+}
+.single-news__table h3 {
+    margin-bottom: 20px;
+}
+.single-news__table table {
+    border-collapse: collapse;
+    width: 800px;
+    margin: 2px auto 0 auto;
+}
+.table__container {
+    overflow: scroll;
+}
+
+.single-news__table td, .single-news__table th{
+    border: 1px solid #B2B4B6;
+}
+.single-news__table td {
+    padding: 20px;
+}
+.single-news__table th {
+    padding: 13px 20px;
+}
+.file {
+    margin-right: 40px;
+    margin-bottom: 15px;
+    max-width: 300px;
+}
+
+.single-news__files h3 {
+    margin: 30px 0;
+}
+.single-news__files .file-info {
+    margin-left: 15px;
+}
+.single-news__files .file-info__name {
+    flex: 1 1 auto;
+    max-width: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.single-news__gallery h3 {
+    margin: 30px 0 20px 0;
+}
+.image__wrapper {
+    margin-right: 5px;
+    width: 240px;
+    height: 180px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.image__wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+.image__wrapper:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    opacity: 0;
+    background: url("../image/icons/zoom.svg") center no-repeat, rgba(0,0,0,.3);
+}
+.image__wrapper:hover:after {
+    opacity: 1;
+}
+.image__wrapper:last-child {
+    margin-right: 0;
+
+}
+.single-news__links {
+    margin-top: 60px;
+}
+.news-page-link {
+    position: relative;
+}
+.news-page-link span {
+    position: relative;
+    width: 37px;
+    height: 37px;
+    border: 1.5px solid #801818;
+    border-radius: 3px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.news-page-link svg {
+    width: 10px;
+    height: 17px;
+}
+.single-news__links .icon__body {
+    margin-right: 14px;
+    width: 37px;
+    height: 37px;
+    position: relative;
+    border-radius: 3px;
+}
+.single-news__links .icon__body:last-child {
+    margin-right: 0;
+}
+
+.single-news__links .share__link {
+    margin-right: 6px;
+}
+.news-single-page .news-middle {
+    margin-bottom: 0;
+}
+
+.news-single-page .news {
+    padding: 0 0 60px;
+}
+/* PAGE SINGLE NEWS*/
 
 
 /* BREAKPOINTS */
@@ -2318,6 +2457,11 @@ body {
         padding-bottom: 10px;
     }
     /* PAGE FAQ */
+
+    .image__wrapper {
+        width: 200px;
+        height: 150px;
+    }
 }
 
 
@@ -2595,6 +2739,12 @@ body {
 
 
     /* SECTIONS */
+    .form-button__title {
+        margin-bottom: 15px;
+    }
+    .form-button__text {
+        margin-bottom: 15px;
+    }
     /* SECTIONS */
 
 
@@ -2622,6 +2772,16 @@ body {
         max-width: 86vw;
     }
     /* PAGE BRANDS */
+
+    .news-page-link {
+        margin-bottom: 10px;
+    }
+    .icon__body {
+        margin-bottom: 10px;
+    }
+    .single-news {
+        padding: 60px 0 30px 0;
+    }
 }
 
 
@@ -2871,7 +3031,7 @@ body {
         width: 130px;
         height: 80px;
     }
-    .page-brands .brands-form .button-large {
+    .brands-form .button-large {
         display: block;
         flex: 1 1 100%;
     }

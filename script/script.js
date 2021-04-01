@@ -25,6 +25,7 @@ function burger(burgerClass, mobileListClass) {
 
 burger('.burger__body', '.header__bottom');
 
+
 // Input filter
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('search-form');
