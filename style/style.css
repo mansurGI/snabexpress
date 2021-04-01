@@ -312,7 +312,7 @@ button {
 
 .button, .button-light {
     margin: 0;
-    padding: 12.5px 10.5px 10.5px 10.5px;
+    padding: 10px 10px 10px 10px;
     box-sizing: border-box;
     border-radius: 3px;
     background-color: transparent;
@@ -326,7 +326,7 @@ button {
 }
 
 .button {
-    border: 1.5px solid #801818;
+    border: 2px solid #801818;
     color: #801818;
 }
 
@@ -336,7 +336,7 @@ button {
 }
 
 .button-light {
-    border: 1.5px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     color: #FFFFFF;
 }
 
@@ -351,14 +351,14 @@ button {
     font-weight: 400;
     font-size: 14px;
     box-sizing: border-box;
-    padding: 6.5px 63.5px;
+    padding: 6px 64px;
     margin: 0;
 }
 
 .button-large {
     background: #801818;
     color: #FFFFFF;
-    border: 1.5px solid #801818;
+    border: 2px solid #801818;
 }
 
 .button-large:hover {
@@ -369,13 +369,13 @@ button {
 .button-large-light {
     background: #FFFFFF;
     color: #801818;
-    border: 1.5px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
 }
 
 .button-large-light:hover {
     background-color: #801818;
     color: #FFFFFF;
-    border: 1.5px solid #801818;
+    border: 2px solid #801818;
 }
 .form fieldset {
     margin-bottom: 28px;
