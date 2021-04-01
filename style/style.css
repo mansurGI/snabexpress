@@ -256,7 +256,7 @@ input:focus, button:focus {
 
 .input-checkbox:before {
     transform: translateY(-60%);
-    top: 0;
+    top: 1px;
     left: 0;
     position: absolute;
     width: 15px;
@@ -268,8 +268,8 @@ input:focus, button:focus {
 
 .input-checkbox:after {
     background: url("../image/icons/check.svg") no-repeat center;
-    background-size: 90%, contain;
-    transform: translateY(-80%);
+    background-size: 70%, contain;
+    transform: translateY(-50%);
     top: 0;
     left: 0;
     position: absolute;
@@ -289,6 +289,7 @@ input:focus, button:focus {
     font-weight: 400;
     font-size: 12px;
     color: #1F1F1F;
+    line-height: 15px;
 }
 
 .input-checkbox_help-block {
@@ -301,7 +302,7 @@ input:focus, button:focus {
     margin-top: 5px;
 }
 .textarea {
-    resize: vertical;
+    resize: none;
     min-height: 115px;
 }
 
@@ -375,6 +376,28 @@ button {
     background-color: #801818;
     color: #FFFFFF;
     border: 1.5px solid #801818;
+}
+.form fieldset {
+    margin-bottom: 28px;
+}
+.form legend {
+    margin-bottom: 20px;
+}
+.form-page .news {
+    padding: 0;
+}
+.form .input-group {
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    max-width: 50%;
+}
+.form .input-group .input-text {
+    width: 100%;
+    max-width: 100%;
+}
+.textarea-container .textarea{
+    width: 100%;
 }
 /* UI COMPONENTS */
 
@@ -1864,7 +1887,7 @@ body {
 }
 /* PAGE FAQ */
 
-/* PAGE BRANDS */
+/* PAGE BRANDS && PAGE PRODUCTS*/
 .page-brands .brands-scroll_item {
     font-family: 'Gotham Pro', Arial, Helvetica, sans-serif !important;
     font-weight: 300;
@@ -1881,17 +1904,17 @@ body {
 .page-brands .brands-scroll_item:first-child {
     margin: 0 4px 0 0;
 }
-.page-brands .brands-search {
+.page-brands .brands-search, .page-product .product-search {
     margin-top: 30px;
 }
-.page-brands .brands-search .input-text {
+.page-brands .brands-search .input-text, .page-product .product-search .input-text{
     max-width: 650px;
     width: 650px;
     border: 1px solid #801818;
     margin: 0 0 10px 0;
     padding: 10px;
 }
-.page-brands .brands-search button {
+.page-brands .brands-search button, .page-product .product-search button{
     background-color: transparent;
     position: absolute;
     right: 10px;
@@ -1927,7 +1950,7 @@ body {
 }
 .brand__img {
     background-color: #fff;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
     width: 165px;
     height: 100px;
     position: relative;
@@ -1988,6 +2011,113 @@ body {
     margin-left: 10px;
 }
 /* PAGE BRANDS */
+
+/* PAGE BRAND*/
+.brand-page__icon {
+    position: relative;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-page__icon img {
+    width: auto;
+    height: 50%;
+    object-fit: contain;
+    object-position: center;
+}
+.brand-page__button button {
+    padding: 12px 28px;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 11px;
+}
+.brand-page .text-1 {
+    line-height: 20px;
+}
+.brand-page__about {
+    padding: 90px 0;
+}
+.brand-page .text-2 {
+    line-height: 17px;
+}
+.brand-page__about p {
+    margin-bottom: 30px;
+}
+.brand-page__about p:last-child {
+    margin-bottom: 0;
+}
+.brand-page__about h3 {
+    margin-bottom: 30px;
+}
+.brand-page__catalog_top {
+    margin-bottom: 90px;
+}
+.brand-page-item__body {
+    background: #FFFFFF;
+    border: 1px solid #F7F7F8;
+    box-sizing: border-box;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    margin: 15px 10px 15px 10px;
+}
+.brand-page-item__img {
+    width: 100%;
+    position: relative;
+    height: 200px;
+}
+.brand-page-item__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.brand-page-item__info h4 {
+    margin-bottom: 25px;
+    margin-top: 70px;
+}
+.brand-page-item__info small {
+    text-align: end;
+}
+.brand-page-item__info small img {
+    width: 13px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    margin-right: 5px;
+}
+.brand-page-item__info .text-2 {
+    margin-top: 15px;
+}
+.brand-page-item__info mark {
+    background-color: transparent;
+    color: #B2B4B6;
+}
+.brand-page__catalog_bottom {
+    padding: 90px 0 30px 0;
+}
+.steps {
+    margin: 30px 0;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    padding: 30px 50px;
+}
+.circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1F1F1F;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+/* PAGE BRAND*/
+
+
 
 /* BREAKPOINTS */
 /* XL BREAKPOINT */
@@ -2091,6 +2221,9 @@ body {
 
 
     /* UI COMPONENTS */
+    .form .input-group {
+        max-width: 100%;
+    }
     /* UI COMPONENTS */
 
 
@@ -2207,6 +2340,15 @@ body {
 
 
     /* UI COMPONENTS */
+    .form fieldset {
+        transform: translateX(12px);
+    }
+    .form legend {
+        font-size: 14px;
+    }
+    .input-text_label {
+        font-size: 12px;
+    }
     /* UI COMPONENTS */
 
 
@@ -2475,7 +2617,7 @@ body {
     /* PAGE DELIVERY */
 
     /* PAGE BRANDS */
-    .page-brands .brands-search .input-text {
+    .page-brands .brands-search .input-text , .page-product .product-search .input-text{
         width: 86vw;
         max-width: 86vw;
     }
