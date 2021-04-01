@@ -944,7 +944,6 @@ button {
 section {
     padding: 60px 0;
 }
-
 .section-shim {
     height: 30px;
 }
@@ -2149,7 +2148,7 @@ body {
     margin: 2px auto 0 auto;
 }
 .table__container {
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .single-news__table td, .single-news__table th{
@@ -2257,7 +2256,72 @@ body {
 }
 /* PAGE SINGLE NEWS*/
 
+/* PAGE NEWS */
+.news-item__body {
+    display: flex;
+    flex-direction: column;
+}
+.news-item {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.news-item:nth-child(1), .news-item:nth-child(2) {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.news-item__img {
+    max-height: 240px;
+    position: relative;
+    overflow: hidden;
+}
+.news-item__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.news-item__info_mid {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.news-item__info {
+    overflow: hidden;
 
+}
+.news__title {
+    margin-bottom: 10px;
+}
+.news__more {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.news-nav li button{
+    background-color: transparent;
+    border: 1.5px solid #801818;
+    border-radius: 3px;
+    width: 37px;
+    height: 37px;
+    margin-right: 10px;
+}
+.news-nav li button.active {
+    border: 1.5px solid #B2B4B6;
+    color: #B2B4B6;
+    margin-right: 0;
+}
+.news-nav li button.next {
+    width: 43px;
+    height: 43px;
+    margin: 0 15px;
+}
+.news-nav li:last-child button {
+    margin-right: 0;
+}
+
+/* PAGE NEWS */
 /* BREAKPOINTS */
 /* XL BREAKPOINT */
 @media (max-width: 1400px) {
@@ -2706,6 +2770,10 @@ body {
         margin-bottom: 20px;
     }
     /* PAGE PRIVACY */
+
+    .table__container {
+        overflow-x: scroll;
+    }
 }
 
 
@@ -2781,6 +2849,10 @@ body {
     }
     .single-news {
         padding: 60px 0 30px 0;
+    }
+    .news-item:nth-child(1) {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
@@ -3036,4 +3108,8 @@ body {
         flex: 1 1 100%;
     }
     /* PAGE BRANDS */
+    .news-item:nth-child(2) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
