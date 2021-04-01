@@ -25,6 +25,12 @@ function burger(burgerClass, mobileListClass) {
 
 burger('.burger__body', '.header__bottom');
 
+// News item
+let newsItems = document.querySelectorAll('.news-item');
+for (let i = 0; i < 2; i ++) {
+    newsItems[i].classList.add('.col-lg-6');
+}
+
 // Input filter
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('search-form');
