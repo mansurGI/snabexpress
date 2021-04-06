@@ -1284,12 +1284,18 @@ section {
 .slider-btn:hover{
     background-color: #801818;
 }
+.review-item {
+    margin-bottom: 15px;
+}
 .review-item-top{
     background-color: #F7F7F8;
 }
 .review-item-top__text{
     position: relative;
     padding: 35px 20px 20px 110px;
+}
+.review-item-top__text p{
+    margin-bottom: 15px;
 }
 .review-item-top__text:before{
     content: '';
