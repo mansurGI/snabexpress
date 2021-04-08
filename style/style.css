@@ -667,6 +667,7 @@ button {
     align-items: center;
     text-align: center;
     font-family: 'Gotham Pro', Arial, Helvetica, sans-serif !important;
+    text-transform: uppercase;
 }
 
 .button {
