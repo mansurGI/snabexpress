@@ -103,7 +103,7 @@ a:hover, a:active, a:focus {
 .mt-05 {
     margin-top: 5px !important;
 }
-.mt-1 {
+.mt-10px {
     margin-top: 10px !important;
 }
 
@@ -111,7 +111,7 @@ a:hover, a:active, a:focus {
     margin-top: 15px !important;
 }
 
-.mt-3 {
+.mt-20px {
     margin-top: 20px !important;
 }
 
@@ -137,7 +137,7 @@ a:hover, a:active, a:focus {
 .mb-05 {
     margin-bottom: 5px !important;
 }
-.mb-1 {
+.mb-10px {
     margin-bottom: 10px !important;
 }
 
@@ -145,7 +145,7 @@ a:hover, a:active, a:focus {
     margin-bottom: 15px !important;
 }
 
-.mb-3 {
+.mb-20px {
     margin-bottom: 20px !important;
 }
 
@@ -177,7 +177,7 @@ a:hover, a:active, a:focus {
 .mr-2 {
     margin-right: 15px !important;
 }
-.mr-3 {
+.mr-20px {
     margin-right: 20px !important;
 }
 .mr-4 {
@@ -222,6 +222,17 @@ a:hover, a:active, a:focus {
 .ml-8 {
     margin-left: 60px !important;
 }
+
+.my-5px {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.my-10px {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
 .lh-120 {
     line-height: 120% !important;
 }
@@ -339,13 +350,12 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    align-items: start;
 }
 
 .input-group-horizontal {
     display: flex;
-    align-items: center;
-
-    margin-bottom: 5px;
+    align-items: baseline;
 }
 
 .input_label {
@@ -354,6 +364,8 @@ ul {
     font-weight: 400;
     font-size: 14px;
     color: #1F1F1F;
+
+    margin-bottom: 5px;
 }
 
 .input_help-block {
@@ -362,6 +374,8 @@ ul {
     font-weight: 300;
     font-size: 10px;
     color: #B2B4B6;
+
+    margin-top: 5px;
 }
 
 .input_help-block_error {
@@ -386,7 +400,6 @@ input:focus, button:focus {
     background: #FFFFFF;
 
     padding: 7px 10px;
-    margin: 5px 0;
     box-sizing: border-box;
 
     border: 1px solid #B2B4B6;
@@ -400,16 +413,19 @@ input:focus, button:focus {
 }
 
 .input-text {
-    max-width: 270px;
+    width: 270px;
+    height: 35px;
 }
 
 .input-text_sm {
-    max-width: 170px;
+    width: 170px;
+    height: 35px;
 }
 
 .input-textarea {
     resize: none;
-    min-height: 100px;
+    height: 100px;
+    width: 360px;
 }
 
 .input-text::placeholder,
@@ -453,7 +469,7 @@ input:focus, button:focus {
 .input-checkbox {
     position: relative;
 
-    width: 15px;
+    width: 10px;
     height: 0;
 
     padding: 0;
@@ -729,6 +745,49 @@ button {
 }
 /* BUTTONS FOR FORMS */
 /* BUTTONS */
+
+/* MODAL WINDOW */
+.modal {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background-color: rgba(178, 180, 182, 0.6);
+}
+
+.modal_window {
+    width: 600px;
+    min-height: 100px;
+    margin: 100px auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    background-color: #FFFFFF;
+}
+
+.modal_close {
+    align-self: end;
+
+    margin: 5px 5px 0 0;
+
+    cursor: pointer;
+}
+
+.modal_content {
+    padding: 40px 60px;
+
+    text-align: center;
+}
+/* MODAL WINDOW */
 
 .form fieldset {
     margin-bottom: 28px;

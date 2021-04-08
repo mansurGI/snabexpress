@@ -88,3 +88,13 @@ function initMap() {
         icon: 'image/icons/map-marker.png',
     });
 }
+
+/* MODAL WINDOWS */
+//Close modal by click on .modal_close
+function closeModal(element) {
+    element.parentElement.parentElement.style.setProperty('display', 'none');
+}
+
+function openModal(id) {
+    document.querySelector('#' + id).style.setProperty('display', 'inline')
+}

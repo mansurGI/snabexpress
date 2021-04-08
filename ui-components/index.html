@@ -639,9 +639,67 @@
     <div class="my-5">
         <h3>Модальные окна</h3>
 
-        <div class="my-2"></div>
+        <div class="mt-2 d-flex justify-content-around">
+            <button class="button" onclick="openModal('modal-example-1')">Вызвать окно 1</button>
+            <button class="button" onclick="openModal('modal-example-2')">Вызвать окно 2</button>
+            <button class="button" onclick="openModal('modal-example-3')">Вызвать окно 3</button>
+        </div>
+    </div>
+</div>
 
-        <button class="button">Вызвать окно</button>
+<!-- МОДАЛЬНЫЕ ОКНА -->
+<div class="modal" id="modal-example-1">
+    <div class="modal_window">
+        <img class="modal_close" src="../image/icons/close-black.svg" alt="Закрыть окно" onclick="closeModal(this)">
+        <div class="modal_content">
+            <h1>Подписаться на рассылку</h1>
+            <p class="text-1 text-gray mt-10px mb-20px">Подпишись на обновления и получи 5% скидку на первый заказ!</p>
+            <div class="d-flex flex-column align-items-center">
+                <div class="input-group">
+                    <label class="input_label">Ваш Email <span class="text-red">*</span></label>
+                    <input class="input-text" type="text" placeholder="mail@mail.com">
+                </div>
+                <button class="button-input mt-10px">Подписаться</button>
+            </div>
+            <div class="input-group-horizontal mt-20px">
+                <input class="input-checkbox" type="checkbox" value="true" id="modal-example-1-checkbox">
+                <label class="input-checkbox_label" for="modal-example-1-checkbox">Я даю согласие на обработку моих персональных данных</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal-example-2">
+    <div class="modal_window">
+        <img class="modal_close" src="../image/icons/close-black.svg" alt="Закрыть окно" onclick="closeModal(this)">
+        <div class="modal_content">
+            <h1>Появились вопросы?</h1>
+            <p class="text-1 text-gray mt-10px mb-20px">Оставьте заявку и наш менедежер ответит на ваши вопросы и подготовят индивидуальное коммерческое предложение.</p>
+            <div class="input-group">
+                <label class="input_label">Интересующий Вас вопрос</label>
+                <textarea class="input-textarea" name="text" cols="40" rows="5" placeholder="Хотел бы уточнить.."></textarea>
+            </div>
+            <div class="d-flex justify-content-between align-items-end mt-10px mb-10px">
+                <div class="input-group">
+                    <label class="input_label">Ваш Email <span class="text-red">*</span></label>
+                    <input class="input-text" type="text" placeholder="mail@mail.com">
+                </div>
+                <button class="button-input_sm">Подписаться</button>
+            </div>
+            <div class="input-group-horizontal">
+                <input class="input-checkbox" type="checkbox" value="true" id="modal-example-2-checkbox">
+                <label class="input-checkbox_label" for="modal-example-2-checkbox">Я даю согласие на обработку моих персональных данных</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modal-example-3">
+    <div class="modal_window">
+        <img class="modal_close" src="../image/icons/close-black.svg" alt="Закрыть окно" onclick="closeModal(this)">
+        <div class="modal_content">
+            <h3>Операция выполнена успешно!</h3>
+        </div>
     </div>
 </div>
 
