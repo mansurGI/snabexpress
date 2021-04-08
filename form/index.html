@@ -213,7 +213,7 @@
             </nav>
             <div class="menu-scroll__search d-flex justify-content-center align-items-center">
                 <input type="text" class="search__field" id="search__field">
-                <button class="button-large uppercase">Поиск</button>
+                <button class="button">Поиск</button>
             </div>
             <div class="menu-scroll__numbers d-none d-xl-flex justify-content-center align-items-center">
                 <div class="numbers__container d-flex flex-column justify-content-center">
@@ -288,7 +288,7 @@
             <div class="list__buttons d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
                 <div class="menu-scroll__search d-inline-flex justify-content-center align-items-center">
                     <input type="text" class="search__field" id="search__field1">
-                    <button class="button-large uppercase">Поиск</button>
+                    <button class="button">Поиск</button>
                 </div>
                 <div class="menu-scroll__button d-inline-flex justify-content-center align-items-center"><button class="button uppercase">Заказать звонок</button></div>
             </div>
@@ -300,97 +300,114 @@
 <main class="content form-page">
     <section class="page-top">
         <div class="container">
-            <div class="page-path d-flex flex-row flex-wrap mb-6 mr-2">
-                <a href="../" class="underline">Главная</a>
+            <div class="page-path">
+                <a href="../" class="underline">Главная</a><span class="page-path_separator">-</span>
+                <span class="page-path_separator">-</span>
                 <a href="">Форма заявки</a>
             </div>
             <p class="page-title">Оставить заявку</p>
         </div>
     </section>
 
-    <section class="form">
+    <section class="">
         <div class="container">
-            <form class="request-form row" id="request-form">
-                <fieldset class="request-form__product row col-12 col-lg-6">
-                    <legend class="h5">Продукт:</legend>
-                    <div class="input-group lh-120">
-                        <label for="product-1" class="input-text_label">Наименование продукта <span class="text-red">*</span></label>
-                        <input type="text" class="input-text" id="product-1">
+            <form id="form">
+                <div class="row">
+                    <div class="col mt-20px">
+                        <h3 class="mb-10px">Продукт:</h3>
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <div class="input-group mt-10px">
+                                <label for="product-1" class="input_label">Наименование продукта <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="product-1">
+                            </div>
+                            <div class="input-group mt-10px">
+                                <label for="product-2" class="input_label">Номер артикуля</label>
+                                <input type="text" class="input-text" id="product-2">
+                            </div>
+                            <div class="input-group mt-10px">
+                                <label for="product-3" class="input_label">Тип <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="product-3">
+                            </div>
+                            <div class="input-group mt-10px">
+                                <label for="product-4" class="input_label">Производитель <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="product-4">
+                            </div>
+                            <div class="input-group mt-10px">
+                                <label for="product-5" class="input_label">Технические характеристики</label>
+                                <input type="text" class="input-text" id="product-5">
+                            </div>
+                            <div class="input-group mt-10px">
+                                <label for="product-6" class="input_label">Количество <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="product-6">
+                            </div>
+                        </div>
                     </div>
-                    <div class="input-group lh-120">
-                        <label for="product-2" class="input-text_label">Номер артикуля</label>
-                        <input type="text" class="input-text" id="product-2">
-                    </div>
-                    <div class="input-group lh-120">
-                        <label for="product-3" class="input-text_label">Тип <span class="text-red">*</span></label>
-                        <input type="text" class="input-text" id="product-3">
-                    </div>
-                    <div class="input-group lh-120">
-                        <label for="product-4" class="input-text_label">Производитель <span class="text-red">*</span></label>
-                        <input type="text" class="input-text" id="product-4">
-                    </div>
-                    <div class="input-group lh-120">
-                        <label for="product-5" class="input-text_label">Технические характеристики</label>
-                        <input type="text" class="input-text" id="product-5">
-                    </div>
-                    <div class="input-group lh-120">
-                        <label for="product-6" class="input-text_label">Количество <span class="text-red">*</span></label>
-                        <input type="text" class="input-text" id="product-6">
-                    </div>
-                </fieldset>
-                <fieldset class="request-form__contact row col-12 col-lg-6">
-                    <legend class="h5">Контактная информация:</legend>
-                    <div class="input-group lh-120">
-                        <label for="contact-1" class="input-text_label">Название компании <span class="text-red">*</span></label>
-                        <input type="text" class="input-text" id="contact-1">
-                    </div>
-                    <div class="input-group lh-120">
-                        <label for="contact-2" class="input-text_label">Контактное лицо <span class="text-red">*</span></label>
-                        <input type="text" class="input-text" id="contact-2">
-                    </div>
-                    <div class="input-group lh-120">
-                        <label for="contact-3" class="input-text_label">Контактный телефон <span class="text-red">*</span></label>
-                        <input type="text" class="input-text" id="contact-3">
-                    </div>
-                    <div class="input-group lh-120">
-                        <label for="contact-4" class="input-text_label">ИНН <span class="text-red">*</span></label>
-                        <input type="text" class="input-text" id="contact-4">
-                    </div>
-                    <div class="input-group lh-120">
-                        <label for="contact-5" class="input-text_label">Email <span class="text-red">*</span></label>
-                        <input type="text" class="input-text" id="contact-5">
-                    </div>
-                </fieldset>
-                <fieldset class="request-form__delivery row col-12 col-lg-6">
-                    <legend class="h5">Доставка:</legend>
-                    <div class="input-group lh-120">
-                        <label for="delivery-1" class="input-text_label">Способ перевозки</label>
-                        <input type="text" class="input-text" id="delivery-1">
-                    </div>
-                    <div class="input-group lh-120">
-                        <label for="delivery-2" class="input-text_label">До какого города доставка <span class="text-red">*</span></label>
-                        <input type="text" class="input-text" id="delivery-2">
-                    </div>
-                    <div class="input-group lh-120">
-                        <label for="delivery-3" class="input-text_label">Страна</label>
-                        <input type="text" class="input-text" id="delivery-3">
-                    </div>
-                </fieldset>
-                <fieldset class="request-form__more row col-12 col-lg-6">
-                    <legend class="h5">Дополнительно:</legend>
-                    <label for="more-1" class="textarea_label lh-120">Комментарий к заказу</label>
-                    <div class="textarea-container lh-120">
-                        <textarea name="" id="more-1" class="textarea" placeholder="Хотел бы уточнить..."></textarea>
-                    </div>
-                </fieldset>
-                <div class="input-group lh-120">
-                    <div class="d-flex align-items-center">
-                        <input class="input-checkbox" type="checkbox" value="true" id="checkbox-success">
-                        <label class="input-checkbox_label" for="checkbox-success">Я даю согласие на <a href="../privacy/" class="underline">обработку моих персональных данных</a></label>
+                    <div class="col mt-20px">
+                        <h3 class="mb-10px">Контактная информация:</h3>
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <div class="input-group mt-10px">
+                                <label for="contact-1" class="input_label">Название компании <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="contact-1">
+                            </div>
+                            <div class="input-group mt-10px">
+                                <label for="contact-2" class="input_label">Контактное лицо <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="contact-2">
+                            </div>
+                            <div class="input-group mt-10px">
+                                <label for="contact-3" class="input_label">Контактный телефон <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="contact-3">
+                            </div>
+                            <div class="input-group mt-10px">
+                                <label for="contact-4" class="input_label">ИНН <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="contact-4">
+                            </div>
+                            <div class="input-group mt-10px">
+                                <label for="contact-5" class="input_label">Email <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="contact-5">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="button-container d-flex justify-content-center">
-                    <button class="button-large" type="submit">Оставить заявку</button>
+                <div class="row">
+                    <div class="col mt-20px">
+                        <h3 class="mb-10px">Доставка:</h3>
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <div class="input-group mt-10px">
+                                <label for="delivery-1" class="input_label">Способ перевозки</label>
+                                <input type="text" class="input-text" id="delivery-1">
+                            </div>
+                            <div class="input-group mt-10px">
+                                <label for="delivery-2" class="input_label">До какого города доставка <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="delivery-2">
+                            </div>
+                            <div class="input-group mt-10px">
+                                <label for="delivery-3" class="input_label">Страна</label>
+                                <input type="text" class="input-text" id="delivery-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mt-20px">
+                        <h3 class="mb-10px">Дополнительно:</h3>
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <div class="input-group mt-10px">
+                                <label class="input_label" for="12">Комментарий к заказу</label>
+                                <textarea class="input-textarea" name="text" id="12" cols="15" rows="5" placeholder="Хотел бы уточнить.."></textarea>
+                                <span class="input_help-block">Какая-то подсказка</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group mt-3">
+                    <div class="input-group-horizontal">
+                        <input class="input-checkbox" type="checkbox" value="true" id="17">
+                        <label class="input-checkbox_label" for="17">Я даю согласие на <a class="underline" href="#">обработку персональных данных</a></label>
+                    </div>
+                    <span class="input_help-block">Подсказка к блоку</span>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <button class="button-input" type="submit">Оставить заявку</button>
                 </div>
             </form>
         </div>
@@ -408,7 +425,7 @@
                                     src="../image/icons/arrow.svg" alt=""></div>
                         </div>
                         <div class="news-bottom__button d-flex d-sm-none">
-                            <button class="button-light uppercase">Подписаться</button>
+                            <button class="button-light">Подписаться</button>
                         </div>
                     </div>
                     <div class="news-bottom__column news-bottom__column_second col-12 col-sm-5 justify-content-center justify-content-lg-start">
@@ -421,7 +438,7 @@
                     </div>
                     <div class="news-bottom__column col-12 col-sm-3 d-none d-sm-flex justify-content-end align-items-center">
                         <div class="news-bottom__button">
-                            <button class="button-light uppercase">Подписаться</button>
+                            <button class="button-light">Подписаться</button>
                         </div>
                     </div>
                 </div>
