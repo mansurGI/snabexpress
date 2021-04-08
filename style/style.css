@@ -100,156 +100,22 @@ a {
 a:hover, a:active, a:focus {
     color: #801818;
 }
-.mt-05 {
-    margin-top: 5px !important;
-}
-.mt-10px {
-    margin-top: 10px !important;
-}
-
-.mt-2 {
-    margin-top: 15px !important;
-}
-
-.mt-20px {
-    margin-top: 20px !important;
-}
-
-.mt-4 {
-    margin-top: 25px !important;
-}
-
-.mt-5 {
-    margin-top: 30px !important;
-}
-
-.mt-6 {
-    margin-top: 40px !important;
-}
-
-.mt-7 {
-    margin-top: 50px !important;
-}
-
-.mt-8 {
-    margin-top: 60px !important;
-}
-.mb-05 {
-    margin-bottom: 5px !important;
-}
-.mb-10px {
-    margin-bottom: 10px !important;
-}
-
-.mb-2 {
-    margin-bottom: 15px !important;
-}
-
-.mb-20px {
-    margin-bottom: 20px !important;
-}
-
-.mb-4 {
-    margin-bottom: 25px !important;
-}
-
-.mb-5 {
-    margin-bottom: 30px !important;
-}
-
-.mb-6 {
-    margin-bottom: 40px !important;
-}
-
-.mb-7 {
-    margin-bottom: 50px !important;
-}
-
-.mb-8 {
-    margin-bottom: 60px !important;
-}
-.mr-05 {
-    margin-right: 5px !important;
-}
-.mr-1 {
-    margin-right: 10px !important;
-}
-.mr-2 {
-    margin-right: 15px !important;
-}
-.mr-20px {
-    margin-right: 20px !important;
-}
-.mr-4 {
-    margin-right: 25px !important;
-}
-.mr-5 {
-    margin-right: 30px !important;
-}
-.mr-6 {
-    margin-right: 40px !important;
-}
-.mr-7 {
-    margin-right: 50px !important;
-}
-.mr-8 {
-    margin-right: 60px !important;
-}
-.ml-05 {
-    margin-left: 5px !important;
-}
-.ml-1 {
-    margin-left: 10px !important;
-}
-.ml-2 {
-    margin-left: 15px !important;
-}
-.ml-3 {
-    margin-left: 20px !important;
-}
-.ml-4 {
-    margin-left: 25px !important;
-}
-.ml-5 {
-    margin-left: 30px !important;
-}
-.ml-6 {
-    margin-left: 40px !important;
-}
-.ml-7 {
-    margin-left: 50px !important;
-}
-.ml-8 {
-    margin-left: 60px !important;
-}
-
-.my-5px {
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
-}
-
-.my-10px {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
-}
 
 .lh-120 {
     line-height: 120% !important;
 }
+
 .lh-140 {
     line-height: 140% !important;
 }
+
 .lh-160 {
     line-height: 160% !important;
 }
+
 .lh-180 {
     line-height: 180% !important;
 }
-ul {
-    margin: 0;
-    padding: 0;
-}
-
 /* TYPOGRAPHIC */
 
 /* ADDITIONAL CLASSES */
@@ -273,6 +139,136 @@ ul {
     position: relative;
 }
 
+
+.mt-5px {
+    margin-top: 5px !important;
+}
+
+.mt-10px {
+    margin-top: 10px !important;
+}
+
+.mt-15px {
+    margin-top: 15px !important;
+}
+
+.mt-20px {
+    margin-top: 20px !important;
+}
+
+.mt-30px {
+    margin-top: 30px !important;
+}
+
+.mb-5px {
+    margin-bottom: 5px !important;
+}
+
+.mb-10px {
+    margin-bottom: 10px !important;
+}
+
+.mb-15px {
+    margin-bottom: 15px !important;
+}
+
+.mb-20px {
+    margin-bottom: 20px !important;
+}
+
+.mb-30px {
+    margin-bottom: 30px !important;
+}
+
+.mr-5px {
+    margin-right: 5px !important;
+}
+
+.mr-10px {
+    margin-right: 10px !important;
+}
+
+.mr-15px {
+    margin-right: 15px !important;
+}
+
+.mr-20px {
+    margin-right: 20px !important;
+}
+
+.mr-30px {
+    margin-right: 30px !important;
+}
+
+.ml-5px {
+    margin-left: 5px !important;
+}
+
+.ml-10px {
+    margin-left: 10px !important;
+}
+
+.ml-15px {
+    margin-left: 15px !important;
+}
+
+.ml-20px {
+    margin-left: 20px !important;
+}
+
+.ml-30px {
+    margin-left: 30px !important;
+}
+
+.my-5px {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.my-10px {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.my-15px {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.my-20px {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.my-30px {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+.mx-5px {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+.mx-10px {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.mx-15px {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
+.mx-20px {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+
+.mx-30px {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+}
 /* ADDITIONAL CLASSES */
 
 
@@ -340,7 +336,6 @@ ul {
     font-size: 16px;
     line-height: 20px;
 }
-
 /* COLOR */
 
 
@@ -1613,7 +1608,6 @@ section {
     color: #fff;
     width: 95%;
 }
-
 /* NEWS */
 
 /* BRAND CATALOG */
@@ -1660,7 +1654,6 @@ section {
     object-position: center;
     max-width: 60px;
 }
-
 /* BRAND CATALOG */
 
 /* REVIEWS */
@@ -1769,8 +1762,8 @@ section {
 .swiper-pagination_second .swiper-pagination-bullet-active {
     background-color: transparent;
 }
-
 /* REVIEWS */
+
 /* FORM BUTTON */
 .form-button {
     background-color: #801818;
@@ -1813,7 +1806,6 @@ section {
     color: #fff;
     width: 476px;
 }
-
 /* FORM BUTTON */
 /* SECTIONS */
 
@@ -2001,7 +1993,6 @@ footer {
     color: #944646;
     text-decoration: #944646 underline;
 }
-
 /* FOOTER */
 
 
@@ -2055,7 +2046,6 @@ body {
     color: #B2B4B6;
     text-decoration: underline;
 }
-
 /* PAGE ABOUT */
 
 
@@ -2084,7 +2074,6 @@ body {
     font-size: 288px;
     color: #1F1F1F;
 }
-
 /* PAGE 404 */
 
 
@@ -2304,7 +2293,6 @@ body {
     line-height: 29px;
     height: 29px;
 }
-
 /* PAGE BRANDS */
 
 /* PAGE BRAND*/
@@ -2330,6 +2318,7 @@ body {
     border-radius: 3px;
     font-size: 12px;
 }
+
 .brand-page__about {
     padding: 90px 0;
 }
@@ -2340,6 +2329,16 @@ body {
 
 .product-item {
     width: 300px;
+}
+
+.product-item__hidden-content {
+    display: none;
+}
+
+.product-item:hover .product-item__hidden-content {
+    display: flex;
+
+    z-index: 100;
 }
 
 .product-item__body {
@@ -2400,8 +2399,7 @@ body {
     width: 40px;
     height: 40px;
 }
-
-/* PAGE BRAND*/
+/* PAGE BRAND */
 
 
 /* PAGE SINGLE NEWS*/
@@ -3058,16 +3056,9 @@ body {
     .page-title {
         font-size: 28px;
     }
-
     /* TYPOGRAPHIC */
-    /* ADDITIONAL CLASSES */
-    /* ADDITIONAL CLASSES */
-    /* COLOR */
-    /* COLOR */
-    /* UI COMPONENTS */
-    /* UI COMPONENTS */
-    /* HEADER */
-    /* HEADER */
+
+
     /* SECTIONS */
     .form-button__title {
         margin-bottom: 15px;
@@ -3077,9 +3068,8 @@ body {
         margin-bottom: 15px;
     }
 
+
     /* SECTIONS */
-    /* FOOTER */
-    /* FOOTER */
     /* PAGE CONTACTS */
     #map {
         height: 300px;
@@ -3088,21 +3078,21 @@ body {
     .col__contacts_marg {
         margin-bottom: 20px;
     }
-
     /* PAGE CONTACTS */
+
     /* PAGE DELIVERY */
     .page-delivery .col-body_w {
         width: 500px;
     }
-
     /* PAGE DELIVERY */
+
     /* PAGE BRANDS */
     .brands-search .input-text, .product-search .input-text {
         width: 86vw;
         max-width: 86vw;
     }
-
     /* PAGE BRANDS */
+
     .news-page-link {
         margin-bottom: 10px;
     }
@@ -3157,14 +3147,9 @@ body {
     .text-2-light {
         font-size: 10px;
     }
-
     /* TYPOGRAPHIC */
-    /* ADDITIONAL CLASSES */
-    /* ADDITIONAL CLASSES */
-    /* COLOR */
-    /* COLOR */
-    /* UI COMPONENTS */
-    /* UI COMPONENTS */
+
+
     /* HEADER */
     .header-top__logo {
         width: 150px;
@@ -3197,8 +3182,9 @@ body {
     .menu-scroll__search button {
         margin-right: 0;
     }
-
     /* HEADER */
+
+
     .content {
         margin-top: 60px;
     }

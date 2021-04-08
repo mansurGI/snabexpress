@@ -61,3 +61,8 @@ a, a:visited {
 ul li {
     list-style: none;
 }
+
+ul {
+    margin: 0;
+    padding: 0;
+}
