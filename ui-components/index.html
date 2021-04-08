@@ -50,13 +50,13 @@
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="3">Ваш телефон <span class="text-red">*</span></label>
-                    <input class="input-text" type="text" placeholder="+7 (___) ___ __-__" id="3" value="+7 (989) XSA 7W-89">
+                    <input class="input-text input-text_error" type="text" placeholder="+7 (___) ___ __-__" id="3" value="+7 (989) XSA 7W-89">
                     <span class="input_help-block input_help-block_error">Ошибка маски! Только цифры!</span>
                 </div>
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="4">Ваш телефон <span class="text-red">*</span></label>
-                    <input class="input-text" type="text" placeholder="+7 (___) ___ __-__" id="4" value="+7 (999) 447 87-89">
+                    <input class="input-text input-text_success" type="text" placeholder="+7 (___) ___ __-__" id="4" value="+7 (999) 447 87-89">
                     <span class="input_help-block input_help-block_success">Все хорошо!</span>
                 </div>
 
@@ -82,13 +82,13 @@
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="8">Ваш телефон <span class="text-red">*</span></label>
-                    <input class="input-text input-text_sm" type="text" placeholder="+7 (___) ___ __-__" id="8" value="+7 (989) XSA 7W-89">
+                    <input class="input-text input-text_sm input-text_error" type="text" placeholder="+7 (___) ___ __-__" id="8" value="+7 (989) XSA 7W-89">
                     <span class="input_help-block input_help-block_error">Ошибка маски! Только цифры!</span>
                 </div>
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="9">Ваш телефон <span class="text-red">*</span></label>
-                    <input class="input-text input-text_sm" type="text" placeholder="+7 (___) ___ __-__" id="9" value="+7 (999) 447 87-89">
+                    <input class="input-text input-text_sm input-text_success" type="text" placeholder="+7 (___) ___ __-__" id="9" value="+7 (999) 447 87-89">
                     <span class="input_help-block input_help-block_success">Все хорошо!</span>
                 </div>
 
@@ -100,33 +100,33 @@
             </div>
         </div>
 
-        <!-- Текстареа -->
+        <!-- Текстареа и Выбор Цвета-->
         <div class="row mt-4">
             <div class="col">
                 <div class="text-1-light mb-4">Текстовый блок</div>
 
                 <div class="input-group">
                     <label class="input_label" for="11">Интересующий Вас вопрос</label>
-                    <textarea class="input-textarea" name="text" id="11" cols="15" rows="5" placeholder="Хотел бы уточнить.." style="border: 1px solid red;"></textarea>
+                    <textarea class="input-textarea" name="text" id="11" cols="15" rows="5" placeholder="Хотел бы уточнить.."></textarea>
                 </div>
                 <div class="input-group mt-3">
                     <label class="input_label" for="12">Интересующий Вас вопрос</label>
-                    <textarea class="input-textarea" name="text" id="12" cols="15" rows="5" placeholder="Хотел бы уточнить.." style="border: 1px solid red;"></textarea>
+                    <textarea class="input-textarea" name="text" id="12" cols="15" rows="5" placeholder="Хотел бы уточнить.."></textarea>
                     <span class="input_help-block">Какая-то подсказка</span>
                 </div>
                 <div class="input-group mt-3">
                     <label class="input_label" for="13">Интересующий Вас вопрос</label>
-                    <textarea class="input-textarea" name="text" id="13" cols="15" rows="5" placeholder="Хотел бы уточнить.."  style="border: 1px solid red;">Привет, мир!</textarea>
+                    <textarea class="input-textarea input-textarea_success" name="text" id="13" cols="15" rows="5" placeholder="Хотел бы уточнить..">Привет, мир!</textarea>
                     <span class="input_help-block input_help-block_success">Все хорошо!</span>
                 </div>
                 <div class="input-group mt-3">
                     <label class="input_label" for="14">Интересующий Вас вопрос</label>
-                    <textarea class="input-textarea" name="text" id="14" cols="15" rows="5" placeholder="Хотел бы уточнить.."  style="border: 1px solid red;">Привет“*?:();№(“!№”№,”,№,!”,№,!”№???$?#/4#@#!@*&#!@#*</textarea>
+                    <textarea class="input-textarea input-textarea_error" name="text" id="14" cols="15" rows="5" placeholder="Хотел бы уточнить..">Привет“*?:();№(“!№”№,”,№,!”,№,!”№???$?#/4#@#!@*&#!@#*</textarea>
                     <span class="input_help-block input_help-block_error">Ошибка! Только разрешенные символы!</span>
                 </div>
                 <div class="input-group mt-3">
                     <label class="input_label" for="15">Интересующий Вас вопрос</label>
-                    <textarea class="input-textarea input-textarea_disabled" name="text" id="15" cols="15" rows="5" placeholder="Хотел бы уточнить.."  style="border: 1px solid red;" disabled></textarea>
+                    <textarea class="input-textarea input-textarea_disabled" name="text" id="15" cols="15" rows="5" placeholder="Хотел бы уточнить.." disabled></textarea>
                     <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
                 </div>
             </div>
@@ -170,14 +170,14 @@
                 <div class="text-1-light mb-4">Чекбокс</div>
 
                 <div class="input-group">
-                    <div class="d-flex align-items-center">
+                    <div class="input-group-horizontal">
                         <input class="input-checkbox" type="checkbox" value="true" id="16">
                         <label class="input-checkbox_label" for="16">Даю согласие на cookie</label>
                     </div>
                 </div>
 
                 <div class="input-group mt-3">
-                    <div class="d-flex align-items-center">
+                    <div class="input-group-horizontal">
                         <input class="input-checkbox" type="checkbox" value="true" id="17">
                         <label class="input-checkbox_label" for="17">Даю согласие на cookie</label>
                     </div>
@@ -185,7 +185,7 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <div class="d-flex align-items-center">
+                    <div class="input-group-horizontal">
                         <input class="input-checkbox" type="checkbox" value="true" id="18">
                         <label class="input-checkbox_label" for="18">Даю согласие на cookie</label>
                     </div>
@@ -193,7 +193,7 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <div class="d-flex align-items-center">
+                    <div class="input-group-horizontal">
                         <input class="input-checkbox" type="checkbox" value="true" id="19">
                         <label class="input-checkbox_label" for="19">Даю согласие на cookie</label>
                     </div>
@@ -201,7 +201,7 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <div class="d-flex align-items-center">
+                    <div class="input-group-horizontal">
                         <input class="input-checkbox" type="checkbox" value="true" id="20">
                         <label class="input-checkbox_label input-checkbox_label_disabled" for="20">Даю согласие на cookie</label>
                     </div>
@@ -212,14 +212,14 @@
                 <div class="text-1-light mb-4">Радио</div>
 
                 <div class="input-group">
-                    <div class="d-flex align-items-center">
+                    <div class="input-group-horizontal">
                         <input class="input-radio" type="radio" value="true" id="21">
                         <label class="input-radio_label" for="21">Даю согласие на cookie</label>
                     </div>
                 </div>
 
                 <div class="input-group mt-3">
-                    <div class="d-flex align-items-center">
+                    <div class="input-group-horizontal">
                         <input class="input-radio" type="radio" value="true" id="22">
                         <label class="input-radio_label" for="22">Даю согласие на cookie</label>
                     </div>
@@ -227,7 +227,7 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <div class="d-flex align-items-center">
+                    <div class="input-group-horizontal">
                         <input class="input-radio" type="radio" value="true" id="23">
                         <label class="input-radio_label" for="23">Даю согласие на cookie</label>
                     </div>
@@ -235,7 +235,7 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <div class="d-flex align-items-center">
+                    <div class="input-group-horizontal">
                         <input class="input-radio" type="radio" value="true" id="24">
                         <label class="input-radio_label" for="24">Даю согласие на cookie</label>
                     </div>
@@ -243,8 +243,8 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <div class="d-flex align-items-center">
-                        <input class="input-radio" type="radio" value="true" id="25">
+                    <div class="input-group-horizontal">
+                        <input class="input-radio" type="radio" value="true" id="25" disabled>
                         <label class="input-radio_label input-radio_label_disabled" for="25">Даю согласие на cookie</label>
                     </div>
                     <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
@@ -270,13 +270,13 @@
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="28">Загрузить файл</label>
-                    <input class="input-file" type="file" id="28">
+                    <input class="input-file input-file_error" type="file" id="28">
                     <span class="input_help-block input_help-block_error">Только .png, .jpg!</span>
                 </div>
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="29">Загрузить файл</label>
-                    <input class="input-file" type="file" id="29">
+                    <input class="input-file input-file_success" type="file" id="29">
                     <span class="input_help-block input_help-block_success">Все хорошо!</span>
                 </div>
 
@@ -302,13 +302,13 @@
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="33">Загрузить файл</label>
-                    <input class="input-file input-file_sm" type="file" id="33">
+                    <input class="input-file input-file_sm input-file_error" type="file" id="33">
                     <span class="input_help-block input_help-block_error">Только .png, .jpg!</span>
                 </div>
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="34">Загрузить файл</label>
-                    <input class="input-file input-file_sm" type="file" id="34">
+                    <input class="input-file input-file_sm input-file_success" type="file" id="34">
                     <span class="input_help-block input_help-block_success">Все хорошо!</span>
                 </div>
 
@@ -327,7 +327,7 @@
 
                 <div class="input-group">
                     <select class="input-select" aria-label="label">
-                        <option selected>Откройте это меню выбора</option>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -336,7 +336,7 @@
 
                 <div class="input-group mt-3">
                     <select class="input-select" aria-label="label">
-                        <option selected>Откройте это меню выбора</option>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -345,8 +345,8 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <select class="input-select" aria-label="label">
-                        <option selected>Откройте это меню выбора</option>
+                    <select class="input-select input-select_success" aria-label="label">
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -355,8 +355,8 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <select class="input-select" aria-label="label">
-                        <option selected>Откройте это меню выбора</option>
+                    <select class="input-select input-select_error" aria-label="label">
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -366,7 +366,7 @@
 
                 <div class="input-group mt-3">
                     <select class="input-select input-select_disabled" aria-label="label" disabled>
-                        <option selected>Откройте это меню выбора</option>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -380,7 +380,7 @@
 
                 <div class="input-group">
                     <select class="input-select input-select_sm" aria-label="label">
-                        <option selected>Откройте это меню выбора</option>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -389,7 +389,7 @@
 
                 <div class="input-group mt-3">
                     <select class="input-select input-select_sm" aria-label="label">
-                        <option selected>Откройте это меню выбора</option>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -398,8 +398,8 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <select class="input-select input-select_sm" aria-label="label">
-                        <option selected>Откройте это меню выбора</option>
+                    <select class="input-select input-select_success input-select_sm" aria-label="label">
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -408,8 +408,8 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <select class="input-select input-select_sm" aria-label="label">
-                        <option selected>Откройте это меню выбора</option>
+                    <select class="input-select input-select_error input-select_sm" aria-label="label">
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -418,8 +418,8 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <select class="input-select input-select_sm input-select_disabled" aria-label="label" disabled>
-                        <option selected>Откройте это меню выбора</option>
+                    <select class="input-select input-select_disabled input-select_sm " aria-label="label" disabled>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -435,7 +435,7 @@
 
                 <div class="input-group">
                     <select class="input-select" aria-label="label" multiple>
-                        <option selected>Откройте это меню выбора</option>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -444,7 +444,7 @@
 
                 <div class="input-group mt-3">
                     <select class="input-select" aria-label="label" multiple>
-                        <option selected>Откройте это меню выбора</option>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -453,8 +453,8 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <select class="input-select" aria-label="label" multiple>
-                        <option selected>Откройте это меню выбора</option>
+                    <select class="input-select input-select_success" aria-label="label" multiple>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -463,8 +463,8 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <select class="input-select" aria-label="label" multiple>
-                        <option selected>Откройте это меню выбора</option>
+                    <select class="input-select input-select_error" aria-label="label" multiple>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -474,7 +474,7 @@
 
                 <div class="input-group mt-3">
                     <select class="input-select input-select_disabled" aria-label="label" multiple disabled>
-                        <option selected>Откройте это меню выбора</option>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -488,7 +488,7 @@
 
                 <div class="input-group">
                     <select class="input-select input-select_sm" aria-label="label" multiple>
-                        <option selected>Откройте это меню выбора</option>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -497,7 +497,7 @@
 
                 <div class="input-group mt-3">
                     <select class="input-select input-select_sm" aria-label="label" multiple>
-                        <option selected>Откройте это меню выбора</option>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -506,8 +506,8 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <select class="input-select input-select_sm" aria-label="label" multiple>
-                        <option selected>Откройте это меню выбора</option>
+                    <select class="input-select input-select_sm input-select_success" aria-label="label" multiple>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -516,8 +516,8 @@
                 </div>
 
                 <div class="input-group mt-3">
-                    <select class="input-select input-select_sm" aria-label="label" multiple>
-                        <option selected>Откройте это меню выбора</option>
+                    <select class="input-select input-select_sm input-select_error" aria-label="label" multiple>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -527,7 +527,7 @@
 
                 <div class="input-group mt-3">
                     <select class="input-select input-select_sm input-select_disabled" aria-label="label" multiple disabled>
-                        <option selected>Откройте это меню выбора</option>
+                        <option selected>Выберете...</option>
                         <option value="1">Один</option>
                         <option value="2">Два</option>
                         <option value="3">Три</option>
@@ -556,20 +556,20 @@
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="43">Диапазон</label>
-                    <input class="input-range" type="range" id="43">
+                    <input class="input-range input-range_success" type="range" id="43">
                     <span class="input_help-block input_help-block_success">Все хорошо!</span>
                 </div>
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="44">Диапазон</label>
-                    <input class="input-range" type="range" id="44">
+                    <input class="input-range input-range_error" type="range" id="44">
                     <span class="input_help-block input_help-block_error">Диапазон не указан!</span>
                 </div>
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="45">Диапазон</label>
                     <input class="input-range input-range_disabled" type="range" id="45" disabled>
-                    <span class="input_help-block input_help-block_disabled">Подсказка к полю</span>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
                 </div>
             </div>
             <div class="col">
@@ -588,20 +588,20 @@
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="48">Диапазон</label>
-                    <input class="input-range input-range_sm" type="range" id="48">
+                    <input class="input-range input-range_sm input-range_success" type="range" id="48">
                     <span class="input_help-block input_help-block_success">Все хорошо!</span>
                 </div>
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="49">Диапазон</label>
-                    <input class="input-range input-range_sm" type="range" id="49">
+                    <input class="input-range input-range_sm input-range_error" type="range" id="49">
                     <span class="input_help-block input_help-block_error">Диапазон не указан!</span>
                 </div>
 
                 <div class="input-group mt-3">
                     <label class="input_label" for="50">Диапазон</label>
                     <input class="input-range input-range_sm input-range_disabled" type="range" id="50" disabled>
-                    <span class="input_help-block input_help-block_disabled">Подсказка к полю</span>
+                    <span class="input_help-block input_help-block_disabled">Поле недоступно</span>
                 </div>
             </div>
         </div>
@@ -616,6 +616,7 @@
                 <div class="text-1-light mb-4">Кнопки, обычные</div>
 
                 <button class="button">ЗАКАЗАТЬ ЗВОНОК</button>
+                <div class="my-2"></div>
                 <button class="button-light">ЗАКАЗАТЬ ЗВОНОК</button>
             </div>
 
@@ -631,7 +632,6 @@
                 <button class="button-input-light_sm">Заказать звонок</button>
             </div>
         </div>
-
     </div>
 </div>
 

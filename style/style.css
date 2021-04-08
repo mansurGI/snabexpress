@@ -334,17 +334,21 @@ ul {
 
 
 /* UI COMPONENTS */
+/* BASE */
 .input-group {
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
-input:focus, button:focus {
-    outline: none;
+.input-group-horizontal {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 5px;
 }
 
-.input-text_label, .textarea_label {
+.input_label {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -352,37 +356,7 @@ input:focus, button:focus {
     color: #1F1F1F;
 }
 
-.input-text {
-    max-width: 270px;
-}
-
-.textarea, .input-text {
-    border: 1px solid #B2B4B6;
-    box-sizing: border-box;
-    background: #fff;
-    border-radius: unset;
-    padding: 7px 10px;
-    margin: 5px 0;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    color: #1F1F1F;
-}
-
-.input-text::placeholder, .textarea::placeholder {
-    color: #B2B4B6;
-}
-
-.input-text.input-text_success {
-    border: 1px solid #A1DC47;
-}
-
-.input-text.input-text_error {
-    border: 1px solid #F03E3E;
-}
-
-.input-text_help-block {
+.input_help-block {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -390,77 +364,292 @@ input:focus, button:focus {
     color: #B2B4B6;
 }
 
-.input-text_help-block_success {
-    color: #A1DC47;
-}
-
-.input-text_help-block_error {
+.input_help-block_error {
     color: #F03E3E;
 }
 
+.input_help-block_success {
+    color: #A1DC47;
+}
+
+.input_help-block_disabled {
+    color: #B2B4B6;
+}
+/* BASE */
+
+/* INPUT TEXT, TEXTAREA */
+input:focus, button:focus {
+    outline: none;
+}
+
+.input-textarea, .input-text {
+    background: #FFFFFF;
+
+    padding: 7px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+
+    border: 1px solid #B2B4B6;
+    border-radius: unset;
+
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #1F1F1F;
+}
+
+.input-text {
+    max-width: 270px;
+}
+
+.input-text_sm {
+    max-width: 170px;
+}
+
+.input-textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+.input-text::placeholder,
+.textarea::placeholder {
+    color: #B2B4B6;
+}
+
+.input-text_error,
+.input-textarea_error {
+    border: 1px solid #F03E3E;
+}
+
+.input-text_success,
+.input-textarea_success {
+    border: 1px solid #A1DC47;
+}
+
+.input-text_disabled,
+.input-textarea_disabled {
+    background-color: #F7F7F8;
+}
+/* INPUT TEXT, TEXTAREA */
+
+/* INPUT COLOR PICKER */
+.input-color {
+    border: 1px solid #B2B4B6;
+    border-radius: 3px;
+
+    width: 40px;
+    height: 26px;
+    padding: 4px;
+    margin: 5px 0;
+
+    cursor: pointer;
+
+    background-color: #FFFFFF;
+}
+/* INPUT COLOR PICKER */
+
+/* INPUT CHECKBOX */
 .input-checkbox {
     position: relative;
+
     width: 15px;
     height: 0;
+
     padding: 0;
-    margin: 0;
 }
 
 .input-checkbox:before {
+    content: '';
+
     transform: translateY(-60%);
-    top: 1px;
-    left: 0;
-    position: absolute;
     width: 15px;
     height: 15px;
-    border: 1px solid #1F1F1F;
     box-sizing: border-box;
-    content: '';
+
+    border: 1px solid #1F1F1F;
 }
 
 .input-checkbox:after {
+    content: '';
+
     background: url("../image/icons/check.svg") no-repeat center;
     background-size: 70%, contain;
     transform: translateY(-50%);
-    top: 0;
-    left: 0;
-    position: absolute;
+
     width: 15px;
     height: 15px;
     box-sizing: border-box;
-    content: '';
+
     opacity: 0;
 }
 
-.input-checkbox:checked.input-checkbox:after {
-    opacity: 1;
-}
-
 .input-checkbox_label {
-    margin-left: 10px;
+    margin-left: 5px;
+
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     color: #1F1F1F;
     line-height: 15px;
-}
 
-.input-checkbox_help-block {
+    cursor: pointer;
+}
+/* INPUT CHECKBOX */
+
+/* INPUT RADIO */
+.input-radio_label {
+    margin-left: 5px;
+
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
-    font-weight: 300;
-    font-size: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #1F1F1F;
+    line-height: 15px;
+
+    cursor: pointer;
+}
+/* INPUT RADIO */
+
+/* INPUT FILE */
+/* noinspection CssInvalidPseudoSelector */
+.input-file::file-selector-button,
+.input-file::-webkit-file-upload-button {
+    padding: 10px 12px;
+
+    color: #FFFFFF;
+    background-color: #801818;
+    pointer-events: none;
+
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    border-inline-end-width: 1px;
+    border-radius: 0;
+
+    cursor: pointer;
+}
+
+.input-file {
+    background-color: #FFFFFF;
+
+    width: 350px;
+    border: 1px solid #B2B4B6;
+
+    margin: 5px 0;
+
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #1F1F1F;
+
+    cursor: pointer;
+}
+
+.input-file_sm {
+    width: 250px;
+}
+
+.input-file_disabled {
+    background-color: #F7F7F8;
     color: #B2B4B6;
 
-    margin-top: 5px;
+    cursor: default;
+}
+/* INPUT FILE */
+
+/* INPUT SELECT */
+.input-select {
+    width: 270px;
+    margin-bottom: 5px;
+    padding: 10px 0 10px 10px;
+
+    border: 1px solid #B2B4B6;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #1F1F1F;
+
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 12px;
+
+    cursor: pointer;
+    appearance: none;
 }
 
-.textarea {
-    resize: none;
-    min-height: 115px;
+.input-select[multiple=""] {
+    background-image: none;
 }
 
+.input-select_error {
+    border: 1px solid #F03E3E;
+}
+
+.input-select_success {
+    border: 1px solid #A1DC47;
+}
+
+.input-select_disabled {
+    background-color: #F7F7F8;
+    color: #B2B4B6;
+}
+
+.input-select_sm {
+    width: 170px;
+}
+
+.input-select[disabled=""] {
+    cursor: default;
+}
+/* INPUT SELECT */
+
+/* INPUT RANGE */
+.input-range {
+    width: 320px;
+    margin: 5px 0;
+}
+
+.input-range::-moz-range-thumb {
+    border: 0;
+    border-radius: 50%;
+    background-color: #801818;
+    width: 12px;
+    height: 12px;
+
+    cursor: pointer;
+}
+
+.input-range::-moz-range-track {
+    height: 8px;
+    border-radius: 5px;
+
+    background-color: #F7F7F8;
+}
+
+.input-range[disabled=""] {
+    background-color: #FFFFFF;
+}
+
+.input-range[disabled=""]::-moz-range-thumb {
+    background-color: #B2B4B6;
+    cursor: default;
+}
+
+.input-range_sm {
+    width: 250px;
+}
+/* INPUT RANGE */
+
+/* BUTTONS */
 button {
     cursor: pointer;
 }
@@ -500,38 +689,45 @@ button {
     color: #801818;
 }
 
-.button-large, .button-large-light {
+/* BUTTONS FOR FORMS */
+.button-input, .button-input_sm, .button-input-light, .button-input-light_sm {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    box-sizing: border-box;
-    padding: 6px 64px;
+
+    width: 270px;
+    height: 35px;
     margin: 0;
+    box-sizing: border-box;
 }
 
-.button-large {
-    background: #801818;
+.button-input_sm, .button-input-light_sm {
+    width: 170px;
+}
+
+.button-input, .button-input_sm {
     color: #FFFFFF;
-    border: 2px solid #801818;
-}
-
-.button-large:hover {
-    background-color: #FFFFFF;
-    color: #801818;
-}
-
-.button-large-light {
-    background: #FFFFFF;
-    color: #801818;
-    border: 2px solid #FFFFFF;
-}
-
-.button-large-light:hover {
     background-color: #801818;
-    color: #FFFFFF;
+}
+
+.button-input:hover, .button-input_sm:hover {
+    color: #801818;
+    background-color: #FFFFFF;
     border: 2px solid #801818;
 }
+
+.button-input-light, .button-input-light_sm {
+    color: #801818;
+    background-color: #FFFFFF;
+}
+
+.button-input-light:hover, .button-input-light_sm:hover {
+    color: #FFFFFF;
+    background-color: #801818;
+}
+/* BUTTONS FOR FORMS */
+/* BUTTONS */
 
 .form fieldset {
     margin-bottom: 28px;
@@ -560,7 +756,6 @@ button {
 .textarea-container .textarea {
     width: 100%;
 }
-
 /* UI COMPONENTS */
 
 
