@@ -1536,7 +1536,7 @@ section {
 
 .news-bottom {
     background-color: #801818;
-    padding: 28px 0;
+    padding: 60px 0;
 }
 
 .news-bottom__title {
@@ -1636,7 +1636,7 @@ section {
 .slider-btn {
     width: 37px;
     border-radius: 3px;
-    border: 1.5px solid #801818;
+    border: 2px solid #801818;
 }
 
 .slider-btn svg {
@@ -1809,7 +1809,7 @@ footer {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    border: 1.5px solid #944646;
+    border: 2px solid #944646;
     box-sizing: border-box;
     border-radius: 3px;
 }
@@ -2233,40 +2233,13 @@ body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 14px;
-    color: #1F1F1F;
+    color: #B2B4B6;
     display: block;
     text-align: center;
 }
 
 .brand.hide, .brands-list.hide {
     display: none;
-}
-
-.brands-form {
-    overflow: hidden;
-}
-
-.brands-form legend {
-    font-size: 32px;
-}
-
-.brands-form .text-1-light {
-    font-size: 16px;
-    color: #B2B4B6;
-}
-
-.brands-form .input-text {
-    padding: 6px 10px;
-    width: 50%;
-    max-width: 50%;
-}
-
-.brands-form .button {
-    padding: 0 10px;
-    width: 50%;
-    max-width: 50%;
-    line-height: 29px;
-    height: 29px;
 }
 /* PAGE BRANDS */
 
@@ -2471,7 +2444,7 @@ body {
     position: relative;
     width: 37px;
     height: 37px;
-    border: 1.5px solid #801818;
+    border: 2px solid #801818;
     border-radius: 3px;
     display: inline-flex;
     justify-content: center;
@@ -2538,14 +2511,14 @@ body {
 
 .news-nav li button {
     background-color: transparent;
-    border: 1.5px solid #801818;
+    border: 2px solid #801818;
     border-radius: 3px;
     width: 37px;
     height: 37px;
 }
 
 .news-nav li button.active {
-    border: 1.5px solid #B2B4B6;
+    border: 2px solid #B2B4B6;
     color: #B2B4B6;
     margin-right: 0;
 }

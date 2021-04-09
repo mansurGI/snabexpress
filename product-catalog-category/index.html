@@ -26,9 +26,7 @@
                 <div class="top-line__logo d-inline-flex align-items-center relative">
                     <a href="" class="relative"> <img src="../image/logo.png" alt="" class="relative"></a>
                 </div>
-                <small class="top-line__text text-2 d-inline-flex align-items-center">
-                    Поставка оборудования, запасных частей и комплектующих
-                </small>
+                <small class="top-line__text text-2 text-gray d-inline-flex align-items-center">Поставка оборудования, запасных частей и комплектующих</small>
                 <div class="top-line__numbers d-inline-flex justify-content-end align-items-center">
                     <div class="numbers__container d-flex flex-column justify-content-center">
                         <a href="tel:+79263178857" class="top-line__number">+7 926 317 88 57</a>
@@ -658,30 +656,30 @@
         </div>
     </section>
 
-    <section class="brands-form">
-            <form class="row justify-content-center" id="question-form">
-                <fieldset class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-4">
-                    <legend class="h2 text-center">Не нашли необходимую продукцию?</legend>
-                    <div class="text-1-light text-center">Оставьте заявку на запрос продукции и наш менеджер свяжется с вами</div>
+    <section class="brands-form bg-white-light">
+        <form class="row justify-content-center" id="question-form">
+            <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+                <h2 class="text-center lh-120">Не нашли необходимую продукцию?</h2>
+                <div class="text-1-light text-center mt-5px mb-20px lh-140">Оставьте заявку на запрос продукции и наш менеджер свяжется с вами</div>
+                <div class="input-group">
+                    <label class="input_label" for="12">Интересующий Вас вопрос</label>
+                    <textarea class="input-textarea" name="text" id="12" cols="15" rows="5" placeholder="Хотел бы уточнить.." style="width: 100%;"></textarea>
+                </div>
+                <div class="d-flex flex-wrap justify-content-between align-items-end my-15px">
                     <div class="input-group">
-                        <label class="input_label" for="textarea">Интересующий Вас вопрос</label>
-                        <textarea class="textarea" placeholder="Хотел бы уточнить..." id="textarea"></textarea>
+                        <label class="input_label" for="7">Ваш телефон <span class="text-red">*</span></label>
+                        <input class="input-text input-text_sm" type="text" placeholder="+7 (___) ___ __-__" id="7">
                     </div>
-                    <div class="input-group">
-                        <label class="input-text_label req tel" for="input_1">Ваш телефон <span class="text-red">*</span></label>
-                        <div class="d-flex justify-content-between relative">
-                            <input class="input-text" type="text" placeholder="+7 (___) ___ __-__" id="input_1">
-                            <button type="submit" class="button">Оставить заявку</button>
-                        </div>
+                    <div><button class="button-input">ЗАКАЗАТЬ ЗВОНОК</button></div>
+                </div>
+                <div class="input-group">
+                    <div class="input-group-horizontal">
+                        <input class="input-checkbox" type="checkbox" value="true" id="16">
+                        <label class="input-checkbox_label" for="16">Я даю согласие на обработку моих персональных данных</label>
                     </div>
-                    <div class="input-group">
-                        <div class="d-flex align-items-center">
-                            <input class="input-checkbox" type="checkbox" value="true" id="checkbox-success">
-                            <label class="input-checkbox_label" for="checkbox-success">Даю согласие на <a href="../privacy/" class="underline">обработку моих персональных данных</a></label>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
+                </div>
+            </div>
+        </form>
     </section>
 
     <section class="form-button">
