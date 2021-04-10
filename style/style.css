@@ -463,49 +463,40 @@ input:focus, button:focus {
 /* INPUT CHECKBOX */
 .input-checkbox {
     position: relative;
-
-    width: 10px;
-    height: 0;
-
-    padding: 0;
+    display: none;
 }
-
-.input-checkbox:before {
+.input-checkbox_label:before, .input-checkbox_label:after {
+    position: absolute;
     content: '';
-
-    transform: translateY(-60%);
     width: 15px;
     height: 15px;
+    left: 0;
     box-sizing: border-box;
-
+    transform: translateY(-5%);
+}
+.input-checkbox_label:before {
     border: 1px solid #1F1F1F;
 }
 
-.input-checkbox:after {
-    content: '';
-
+.input-checkbox_label:after {
     background: url("../image/icons/check.svg") no-repeat center;
     background-size: 70%, contain;
-    transform: translateY(-50%);
-
-    width: 15px;
-    height: 15px;
-    box-sizing: border-box;
-
     opacity: 0;
+}
+.input-checkbox:checked+.input-checkbox_label:after {
+    opacity: 1;
 }
 
 .input-checkbox_label {
-    margin-left: 5px;
-
+    position: relative;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     color: #1F1F1F;
     line-height: 15px;
-
     cursor: pointer;
+    padding-left: 30px;
 }
 /* INPUT CHECKBOX */
 
