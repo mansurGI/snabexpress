@@ -9,13 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
     let letters = document.querySelectorAll('.brands-search_item'),
         noSearch = document.querySelector('.brands-no-search_item'),
         brandsList = document.querySelectorAll('.brands-list-group');
-    console.log(letters.length)
-    console.log(brandsList.length)
     for (let i = 0; i < letters.length; i++) {
         letters[i].onclick = function () {
             brandsList[i].parentNode.classList.remove('hide')
             let searchVal = letters[i].textContent.toUpperCase();
-            console.log(searchVal)
             for (let j = 0; j < brandsList.length; j++) {
                 if (brandsList[j].children[0].textContent.toUpperCase() !== searchVal) {
                     brandsList[j].parentNode.classList.add('hide');
