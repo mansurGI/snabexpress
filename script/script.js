@@ -1,3 +1,36 @@
+// holmes
+holmes({
+    input: '#holmes',
+    find: '.brands-list div'
+});
+
+// Letter filter TEST
+document.addEventListener('DOMContentLoaded', function () {
+    let letters = document.querySelectorAll('.brands-search_item'),
+        noSearch = document.querySelector('.brands-no-search_item'),
+        brandsList = document.querySelectorAll('.brands-list-group');
+    console.log(letters.length)
+    console.log(brandsList.length)
+    for (let i = 0; i < letters.length; i++) {
+        letters[i].onclick = function () {
+            brandsList[i].parentNode.classList.remove('hide')
+            let searchVal = letters[i].textContent.toUpperCase();
+            console.log(searchVal)
+            for (let j = 0; j < brandsList.length; j++) {
+                if (brandsList[j].children[0].textContent.toUpperCase() !== searchVal) {
+                    brandsList[j].parentNode.classList.add('hide');
+                }
+            }
+        }
+    }
+    noSearch.onclick = function () {
+        for (let i = 0; i < letters.length; i++) {
+            brandsList[i].parentNode.classList.remove('hide')
+        }
+    }
+});
+
+
 // Fixed Header
 let prevNav = document.querySelector('.header__pc');
 window.addEventListener('scroll', function () {
@@ -48,20 +81,6 @@ burger('.burger__body', '.header__bottom');
 //         }
 //
 //         test();
-//
-//         function test() {
-//             let row = document.querySelectorAll('.brands-list-group');
-//             for (let i = 0; i < row.length; i++) {
-//                 row[i].parentElement.classList.remove('hide');
-//                 if (row[i].childElementCount > 1) {
-//                     let rowList = row[i].lastElementChild;
-//                     let rowListItem = rowList.querySelectorAll('.hide');
-//                     if (rowList.childElementCount === rowListItem.length) {
-//                         row[i].parentElement.classList.add('hide');
-//                     }
-//                 }
-//             }
-//         }
 //     }
 // });
 

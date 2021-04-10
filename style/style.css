@@ -2155,7 +2155,10 @@ body {
 /* PAGE FAQ */
 
 /* PAGE BRANDS && PAGE PRODUCTS*/
-.page-brands .brands-scroll_item {
+.hidden {
+    display: none;
+}
+.page-brands .brands-search_item, .page-brands .brands-no-search_item {
     font-family: 'Gotham Pro', Arial, Helvetica, sans-serif !important;
     font-weight: 300;
     font-size: 26px;
@@ -2520,6 +2523,10 @@ body {
 }
 
 /* PAGE NEWS */
+
+.brands-form {
+    overflow: hidden;
+}
 /* BREAKPOINTS */
 /* XL BREAKPOINT */
 @media (max-width: 1400px) {
