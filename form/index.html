@@ -317,30 +317,31 @@
                             <div class="input-group mt-10px">
                                 <label for="product-1" class="input_label">Наименование продукта <span class="text-red">*</span></label>
                                 <input type="text" class="input-text" id="product-1">
-                                <span class="input_help-block">Подсказка к блоку</span>
+                                <span class="input_help-block"></span>
                             </div>
                             <div class="input-group mt-10px">
-                                <label for="product-2" class="input_label">Номер артикуля</label>
-                                <input type="text" class="input-text" id="product-2">
+                                <label for="articleNumber" class="input_label">Номер артикуля</label>
+                                <input type="text" class="input-text" id="articleNumber">
+                                <span class="input_help-block">Только цифры</span>
                             </div>
                             <div class="input-group mt-10px">
                                 <label for="product-3" class="input_label">Тип <span class="text-red">*</span></label>
                                 <input type="text" class="input-text" id="product-3">
-                                <span class="input_help-block">Подсказка к блоку</span>
+                                <span class="input_help-block"></span>
                             </div>
                             <div class="input-group mt-10px">
                                 <label for="product-4" class="input_label">Производитель <span class="text-red">*</span></label>
                                 <input type="text" class="input-text" id="product-4">
-                                <span class="input_help-block">Подсказка к блоку</span>
+                                <span class="input_help-block"></span>
                             </div>
                             <div class="input-group mt-10px">
                                 <label for="product-5" class="input_label">Технические характеристики</label>
                                 <input type="text" class="input-text" id="product-5">
                             </div>
                             <div class="input-group mt-10px">
-                                <label for="product-6" class="input_label">Количество <span class="text-red">*</span></label>
-                                <input type="text" class="input-text" id="product-6">
-                                <span class="input_help-block">Подсказка к блоку</span>
+                                <label for="productAmount" class="input_label">Количество <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="productAmount">
+                                <span class="input_help-block">Только цифры</span>
                             </div>
                         </div>
                     </div>
@@ -350,27 +351,27 @@
                             <div class="input-group mt-10px">
                                 <label for="contact-1" class="input_label">Название компании <span class="text-red">*</span></label>
                                 <input type="text" class="input-text" id="contact-1">
-                                <span class="input_help-block">Подсказка к блоку</span>
+                                <span class="input_help-block"></span>
                             </div>
                             <div class="input-group mt-10px">
                                 <label for="contact-2" class="input_label">Контактное лицо <span class="text-red">*</span></label>
                                 <input type="text" class="input-text" id="contact-2">
-                                <span class="input_help-block">Подсказка к блоку</span>
+                                <span class="input_help-block"></span>
                             </div>
                             <div class="input-group mt-10px">
-                                <label for="contact-3" class="input_label">Контактный телефон <span class="text-red">*</span></label>
-                                <input type="text" class="input-text" id="contact-3">
-                                <span class="input_help-block">Подсказка к блоку</span>
+                                <label for="contactPhone" class="input_label">Контактный телефон <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="contactPhone">
+                                <span class="input_help-block"></span>
                             </div>
                             <div class="input-group mt-10px">
-                                <label for="contact-4" class="input_label">ИНН <span class="text-red">*</span></label>
-                                <input type="text" class="input-text" id="contact-4">
-                                <span class="input_help-block">Подсказка к блоку</span>
+                                <label for="contactINN" class="input_label">ИНН <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="contactINN" maxlength="10">
+                                <span class="input_help-block"></span>
                             </div>
                             <div class="input-group mt-10px">
-                                <label for="contact-5" class="input_label">Email <span class="text-red">*</span></label>
-                                <input type="text" class="input-text" id="contact-5">
-                                <span class="input_help-block">Подсказка к блоку</span>
+                                <label for="contactEmail" class="input_label">Email <span class="text-red">*</span></label>
+                                <input type="text" class="input-text" id="contactEmail">
+                                <span class="input_help-block"></span>
                             </div>
                         </div>
                     </div>
@@ -382,15 +383,17 @@
                             <div class="input-group mt-10px">
                                 <label for="delivery-1" class="input_label">Способ перевозки</label>
                                 <input type="text" class="input-text" id="delivery-1">
+                                <span class="input_help-block"></span>
                             </div>
                             <div class="input-group mt-10px">
                                 <label for="delivery-2" class="input_label">До какого города доставка <span class="text-red">*</span></label>
                                 <input type="text" class="input-text" id="delivery-2">
-                                <span class="input_help-block">Подсказка к блоку</span>
+                                <span class="input_help-block"></span>
                             </div>
                             <div class="input-group mt-10px">
                                 <label for="delivery-3" class="input_label">Страна</label>
                                 <input type="text" class="input-text" id="delivery-3">
+                                <span class="input_help-block"></span>
                             </div>
                         </div>
                     </div>
@@ -400,7 +403,7 @@
                             <div class="input-group mt-10px">
                                 <label class="input_label" for="12">Комментарий к заказу</label>
                                 <textarea class="input-textarea" name="text" id="12" cols="15" rows="5" placeholder="Хотел бы уточнить.."></textarea>
-                                <span class="input_help-block">Какая-то подсказка</span>
+                                <span class="input_help-block"></span>
                             </div>
                         </div>
                     </div>
@@ -575,7 +578,30 @@
     </div>
 </footer>
 
-
+<script src="../script/inputmask.min.js"></script>
 <script src="../script/script.js"></script>
+<script type="text/javascript">
+    //Маски на инпуты
+    Inputmask({
+        regex: "\\d*"
+    }).mask(document.querySelector('#articleNumber'));
+
+    Inputmask({
+        regex: "\\d*"
+    }).mask(document.querySelector('#productAmount'));
+
+    Inputmask({
+        regex: "\\d*"
+    }).mask(document.querySelector('#contactINN'));
+
+    Inputmask({
+        mask: "+7 (999) 999 99-99",
+        placeholder: "+7 (___) ___ __-__",
+    }).mask(document.querySelector('#contactPhone'));
+
+    Inputmask({
+        alias: "email"
+    }).mask(document.querySelector('#contactEmail'));
+</script>
 </body>
 </html>
