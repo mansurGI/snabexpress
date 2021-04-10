@@ -309,7 +309,7 @@
     <section class="page-text">
         <div class="container">
            <div class="brands-scroll d-flex justify-content-center flex-wrap">
-               <button class="brands-no-search_item mr-5px">Все</button>
+               <button class="brands-no-search_item mr-5px active">Все</button>
                <button class="uppercase brands-search_item mr-5px">a</button>
                <button class="uppercase brands-search_item mx-5px">b</button>
                <button class="uppercase brands-search_item mx-5px">c</button>
@@ -344,8 +344,9 @@
                     <button type="submit" class="brands-input-button"><img src="../image/icons/search-red.svg" alt=""></button>
                 </div>
             </div>
+            <div class="mt-30px"></div>
             <div class="brands-list">
-                <div class="brands-list-group mt-30px">
+                <div class="brands-list-group">
                     <div class="brands-list-group__name uppercase d-flex">a</div>
                     <div class="brands-list-group__items row flex-wrap mt-20px">
                         <div class="col-6 col-sm-4 col-lg-3 col-xl-2 brand">
@@ -1474,6 +1475,14 @@
             brandsList = document.querySelectorAll('.brands-list-group');
         for (let i = 0; i < letters.length; i++) {
             letters[i].onclick = function () {
+                noSearch.classList.add('hide');
+                noSearch.classList.remove('active');
+                for (let j = 0; j < brandsList.length; j++) {
+                    letters[j].classList.remove('hide');
+                    letters[j].classList.remove('active');
+                    letters[j].classList.add('hide');
+                }
+                letters[i].classList.add('active');
                 brandsList[i].parentNode.classList.remove('hide')
                 let searchVal = letters[i].textContent.toUpperCase();
                 for (let j = 0; j < brandsList.length; j++) {
@@ -1485,11 +1494,14 @@
         }
         noSearch.onclick = function () {
             for (let i = 0; i < letters.length; i++) {
+                noSearch.classList.remove('hide');
+                noSearch.classList.add('active');
+                letters[i].classList.remove('hide');
+                letters[i].classList.remove('active');
                 brandsList[i].parentNode.classList.remove('hide')
             }
         }
     });
-
 </script>
 </body>
 </html>
