@@ -11,6 +11,6 @@ function initMap() {
     let marker = new google.maps.Marker({
         position: pos,
         map: map,
-        icon: 'image/icons/map-marker.png',
+        icon: '../image/icons/map-marker.png',
     });
 }

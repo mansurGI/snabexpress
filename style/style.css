@@ -1014,6 +1014,7 @@ button {
 
 .sub-menu__list li {
     border: 0;
+    position: relative;
 }
 .sub-menu__list li:hover{
     z-index: 3;
@@ -2110,10 +2111,6 @@ body {
 /* PAGE DELIVERY */
 
 /* PAGE FAQ */
-.page-faq details summary::-webkit-details-marker {
-    display: none
-}
-
 .page-faq details {
     position: relative;
     padding-bottom: 20px;
