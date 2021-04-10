@@ -984,9 +984,9 @@ button {
     display: none !important;
     position: absolute;
     left: 0;
-    top: 60px;
+    top: 100%;
     width: 100%;
-    background-color: transparent !important;
+    background-color: #fff !important;
     min-width: 270px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     z-index: 12;
@@ -1021,14 +1021,16 @@ button {
     line-height: 13px;
 }
 
-.sub-menu__list {
-    background-color: #fff !important;
-}
-
 .sub-menu__list li {
     border: 0;
 }
+.sub-menu__list li:hover{
+    z-index: 3;
+}
 
+.sub-menu__list li:hover:before{
+    display: none;
+}
 .sub-menu__list li:before {
     background-color: #B2B4B6;
     position: absolute;
@@ -1037,7 +1039,7 @@ button {
     width: 93%;
     left: 50%;
     top: 0;
-    transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-100%) translateX(-50%);
 }
 
 .sub-menu__list li:first-child:before {
