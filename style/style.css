@@ -658,6 +658,7 @@ button {
 }
 
 .button, .button-light {
+    justify-content: center;
     margin: 0;
     padding: 10px 10px 10px 10px;
     box-sizing: border-box;
@@ -1330,12 +1331,12 @@ section {
     padding: 0;
 }
 
-.swiper-container {
+.swiper-container.fullscreen-slider {
     width: 100%;
     height: 600px;
 }
 
-.swiper-slide {
+.fullscreen-slider .swiper-slide {
     position: relative;
 }
 
@@ -1348,7 +1349,7 @@ section {
     object-position: center;
 }
 
-.swiper-slide, .slide__bg, .slide__bg img {
+.fullscreen-slider .swiper-slide, .fullscreen-slider .slide__bg, .fullscreen-slider .slide__bg img {
     width: 100%;
     height: 100%;
 }
@@ -2535,6 +2536,66 @@ body {
 .brands-form {
     overflow: hidden;
 }
+
+/* BRAND PAGE */
+.product-image__container {
+    width: 100%;
+    height: 300px;
+}
+.product-image__container img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+.product-slider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.product-slider .swiper-slide{
+    width: 80px;
+    height: 80px;
+}
+.product-slider.swiper-container {
+    width: 410px;
+}
+.cont {
+    overflow: hidden;
+    width: 410px;
+}
+.slider-button__prev img{
+    transform: rotate(180deg);
+}
+.slider-button__next img, .slider-button__prev img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    object-fit: contain;
+    object-position: center;
+}
+.product-info mark{
+    background-color: transparent;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B2B4B6;
+}
+.product-information {
+    order: 2;
+}
+.product-image {
+    order: 1;
+}
+.product-icon {
+    order: 3;
+}
+.product-about {
+    background-color: #F7F7F8;
+}
+/* BRAND PAGE */
 /* BREAKPOINTS */
 /* XL BREAKPOINT */
 @media (max-width: 1400px) {
@@ -2658,7 +2719,7 @@ body {
 
     /* NEWS */
     /* SLIDER */
-    .swiper-container {
+    .swiper-container.fullscreen-slider {
         height: 500px;
     }
 
@@ -2869,7 +2930,7 @@ body {
         margin-top: 80px;
     }
 
-    .swiper-container {
+    .swiper-container.fullscreen-slider {
         height: 300px;
     }
 
@@ -2995,6 +3056,20 @@ body {
     .single-news__gallery_row {
         flex-wrap: nowrap;
         overflow-y: scroll;
+    }
+    .product-information {
+        order: 1;
+    }
+    .product-image {
+        order: 3;
+    }
+    .product-icon {
+        order: 2;
+
+    }
+    .product-icon img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -3203,7 +3278,7 @@ body {
 
     /* CATALOG */
     /* SLIDER */
-    .swiper-container {
+    .swiper-container.fullscreen-slider {
         height: 200px;
     }
 
@@ -3353,5 +3428,12 @@ body {
 
     .steps {
         padding: 20px 20px 5px 20px;
+    }
+    .product-slider.swiper-container {
+        width: 90%;
+    }
+    .cont {
+        overflow: hidden;
+        width: 90%;
     }
 }

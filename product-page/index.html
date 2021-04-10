@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../style/normalize.css">
     <link rel="stylesheet" href="../style/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../style/fonts.css">
+    <link rel="stylesheet" href="../style/swiper.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
@@ -26,7 +27,8 @@
                 <div class="top-line__logo d-inline-flex align-items-center relative">
                     <a href="" class="relative"> <img src="../image/logo.png" alt="" class="relative"></a>
                 </div>
-                <small class="top-line__text text-2 text-gray d-inline-flex align-items-center">Поставка оборудования, запасных частей и комплектующих</small>
+                <small class="top-line__text text-2 text-gray d-inline-flex align-items-center">Поставка оборудования,
+                    запасных частей и комплектующих</small>
                 <div class="top-line__numbers d-inline-flex justify-content-end align-items-center">
                     <div class="numbers__container d-flex flex-column justify-content-center">
                         <a href="tel:+79263178857" class="top-line__number">+7 926 317 88 57</a>
@@ -157,14 +159,17 @@
     </div>
     <div class="menu-scroll">
         <div class="container d-flex justify-content-between">
-            <div class="menu-scroll__logo relative"><a href="" class="relative"><img src="../image/logo.png" alt=""></a></div>
+            <div class="menu-scroll__logo relative"><a href="" class="relative"><img src="../image/logo.png" alt=""></a>
+            </div>
             <nav class="menu-scroll__nav">
                 <ul class="menu-scroll__list uppercase menu__list">
                     <li>
                         <span class="nav-light pointer">
                             Меню
-                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.94204 6.23789L0.681027 1.98656C0.386516 1.69272 0.386516 1.21757 0.681027 0.926852L1.38911 0.220381C1.68362 -0.0734605 2.15985 -0.0734605 2.45123 0.220381L5.47153 3.23382L8.49184 0.220381C8.78635 -0.0734605 9.26258 -0.0734605 9.55396 0.220381L10.262 0.926852C10.5566 1.22069 10.5566 1.69584 10.262 1.98656L6.00103 6.23789C5.71278 6.53173 5.23655 6.53173 4.94204 6.23789Z" fill="white"/>
+                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.94204 6.23789L0.681027 1.98656C0.386516 1.69272 0.386516 1.21757 0.681027 0.926852L1.38911 0.220381C1.68362 -0.0734605 2.15985 -0.0734605 2.45123 0.220381L5.47153 3.23382L8.49184 0.220381C8.78635 -0.0734605 9.26258 -0.0734605 9.55396 0.220381L10.262 0.926852C10.5566 1.22069 10.5566 1.69584 10.262 1.98656L6.00103 6.23789C5.71278 6.53173 5.23655 6.53173 4.94204 6.23789Z"
+                                      fill="white"/>
                             </svg>
                         </span>
                         <ul class="sub-menu__list">
@@ -219,7 +224,9 @@
                     <a href="tel:+4978163014120" class="menu-scroll__number">+49 781 630 141 20</a>
                 </div>
             </div>
-            <div class="menu-scroll__button d-flex justify-content-center align-items-center"><button class="button uppercase">Заказать звонок</button></div>
+            <div class="menu-scroll__button d-flex justify-content-center align-items-center">
+                <button class="button uppercase">Заказать звонок</button>
+            </div>
         </div>
     </div>
 </header>
@@ -248,10 +255,12 @@
         <nav class="relative">
             <ul class="mob__list relative">
                 <li>
-                    <span class="mob__link d-flex nav mob__link_more" onclick="document.querySelectorAll('.mob__link_more')[0].classList.toggle('active'); document.querySelectorAll('.mob__link_more')[1].classList.remove('active')">
+                    <span class="mob__link d-flex nav mob__link_more"
+                          onclick="document.querySelectorAll('.mob__link_more')[0].classList.toggle('active'); document.querySelectorAll('.mob__link_more')[1].classList.remove('active')">
                         Каталог продукции
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.94204 6.23789L0.681027 1.98656C0.386516 1.69272 0.386516 1.21757 0.681027 0.926852L1.38911 0.220381C1.68362 -0.0734605 2.15985 -0.0734605 2.45123 0.220381L5.47153 3.23382L8.49184 0.220381C8.78635 -0.0734605 9.26258 -0.0734605 9.55396 0.220381L10.262 0.926852C10.5566 1.22069 10.5566 1.69584 10.262 1.98656L6.00103 6.23789C5.71278 6.53173 5.23655 6.53173 4.94204 6.23789Z" fill="white"/>
+                                <path d="M4.94204 6.23789L0.681027 1.98656C0.386516 1.69272 0.386516 1.21757 0.681027 0.926852L1.38911 0.220381C1.68362 -0.0734605 2.15985 -0.0734605 2.45123 0.220381L5.47153 3.23382L8.49184 0.220381C8.78635 -0.0734605 9.26258 -0.0734605 9.55396 0.220381L10.262 0.926852C10.5566 1.22069 10.5566 1.69584 10.262 1.98656L6.00103 6.23789C5.71278 6.53173 5.23655 6.53173 4.94204 6.23789Z"
+                                      fill="white"/>
                         </svg>
                     </span>
                     <ul class="mob__sub-list">
@@ -263,10 +272,12 @@
                     </ul>
                 </li>
                 <li>
-                    <span class="mob__link d-flex nav mob__link_more" onclick="document.querySelectorAll('.mob__link_more')[1].classList.toggle('active'); document.querySelectorAll('.mob__link_more')[0].classList.remove('active')">
+                    <span class="mob__link d-flex nav mob__link_more"
+                          onclick="document.querySelectorAll('.mob__link_more')[1].classList.toggle('active'); document.querySelectorAll('.mob__link_more')[0].classList.remove('active')">
                         Каталог производителей
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.94204 6.23789L0.681027 1.98656C0.386516 1.69272 0.386516 1.21757 0.681027 0.926852L1.38911 0.220381C1.68362 -0.0734605 2.15985 -0.0734605 2.45123 0.220381L5.47153 3.23382L8.49184 0.220381C8.78635 -0.0734605 9.26258 -0.0734605 9.55396 0.220381L10.262 0.926852C10.5566 1.22069 10.5566 1.69584 10.262 1.98656L6.00103 6.23789C5.71278 6.53173 5.23655 6.53173 4.94204 6.23789Z" fill="white"/>
+                                <path d="M4.94204 6.23789L0.681027 1.98656C0.386516 1.69272 0.386516 1.21757 0.681027 0.926852L1.38911 0.220381C1.68362 -0.0734605 2.15985 -0.0734605 2.45123 0.220381L5.47153 3.23382L8.49184 0.220381C8.78635 -0.0734605 9.26258 -0.0734605 9.55396 0.220381L10.262 0.926852C10.5566 1.22069 10.5566 1.69584 10.262 1.98656L6.00103 6.23789C5.71278 6.53173 5.23655 6.53173 4.94204 6.23789Z"
+                                      fill="white"/>
                         </svg>
                     </span>
                     <ul class="mob__sub-list">
@@ -288,59 +299,140 @@
                     <input type="text" class="search__field" id="search__field1">
                     <button class="button">Поиск</button>
                 </div>
-                <div class="menu-scroll__button d-inline-flex justify-content-center align-items-center"><button class="button uppercase">Заказать звонок</button></div>
+                <div class="menu-scroll__button d-inline-flex justify-content-center align-items-center">
+                    <button class="button uppercase">Заказать звонок</button>
+                </div>
             </div>
         </nav>
     </div>
 </header>
 
 
-<main class="content page-brand">
+<main class="content page-product">
     <section class="page-top">
         <div class="container">
             <div class="page-path d-flex flex-row flex-wrap mb-6 mr-2">
                 <a href="../" class="underline">Главная</a><span class="page-path_separator">-</span>
-                <a href="">Форма заявки</a>
+                <a href="">Каталог продукции</a>
+                <a href="">Гидравлика</a>
             </div>
-            <p class="page-title">Оставить заявку</p>
+            <p class="page-title">Cincon CHB150-110S DC-DC Converters</p>
         </div>
     </section>
-    <section class="brand-page">
+
+    <section class="product-page">
         <div class="container">
-            <div class="brand-page__top row">
-                <div class="col-12 col-sm-6 col-lg-3 col-xxl-2">
-                    <div class="brand-page__icon">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-xl-5 product-image">
+                    <div class="product-image__container d-flex justify-content-center align-items-center relative">
                         <picture>
-                            <source srcset="../image/brands/sick.webp">
-                            <img src="../image/brands/sick.png" alt="">
+                            <source srcset="../image/brand-page/5.webp">
+                            <img src="../image/brand-page/5.png" alt="">
                         </picture>
                     </div>
+                    <div class="d-flex justify-content-between align-items-center relative">
+                        <div class="slider-button__prev">
+                            <img src="../image/icons/arrow-2-grey.svg" alt="">
+                        </div>
+                        <div class="cont">
+                            <div class="swiper-container relative product-slider d-flex">
+                                <div class="swiper-wrapper relative">
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="../image/brand-page/5.webp">
+                                            <img src="../image/brand-page/5.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="../image/brand-page/5.webp">
+                                            <img src="../image/brand-page/5.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="../image/brand-page/5.webp">
+                                            <img src="../image/brand-page/5.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="../image/brand-page/5.webp">
+                                            <img src="../image/brand-page/5.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="../image/brand-page/5.webp">
+                                            <img src="../image/brand-page/5.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="../image/brand-page/5.webp">
+                                            <img src="../image/brand-page/5.png" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <source srcset="../image/brand-page/5.webp">
+                                            <img src="../image/brand-page/5.png" alt="">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-button__next">
+                            <img src="../image/icons/arrow-2-grey.svg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <small class="brand-page__small text-1 col-6 col-xxl-8 d-none d-lg-flex lh-140">
-                    Продукция: Промышленные датчики, световые завесы, многолучевые барьеры, однолучевые барьеры, лазерные сканеры, контроллеры, реле, ультразвуковые счетчики газа и тд.
-                </small>
-                <div class="brand-page__button col-12 col-sm-6 col-lg-3 col-xxl-2 d-inline-flex justify-content-end align-items-center align-items-lg-start">
-                    <button class="button">ОСТАВИТЬ ЗАЯВКУ</button>
+                <div class="col-9 col-sm-10 col-lg-4 col-xl-5 product-information">
+                    <h3>Cincon CHB150-110S DC-DC Converters</h3>
+                    <p class="text-1 mt-20px">Кран ручной козловой передвижной серии SB (Передвижной портальный кран SB)
+                        - классический козловой кран с ручным приводом передвижения...</p>
+                    <div class="d-flex flex-column mt-20px product-info">
+                        <p class="text-2 mb-5px">Артикуль:
+                            <mark>84189521563</mark>
+                        </p>
+                        <p class="text-2 mb-5px">Производитель:
+                            <mark>SICK</mark>
+                        </p>
+                    </div>
+                    <div class="row align-items-center mt-20px">
+                        <div class="product-item__button col-6 col-lg-3 col-xxl-2">
+                            <button class="button">ОФОРМИТЬ</button>
+                        </div>
+                        <small class="text-success col-6 col-lg-3 col-xxl-2  d-flex justify-content-end justify-content-lg-start"><img
+                                src="../image/icons/check-success.svg" alt="">Доступно</small>
+                    </div>
                 </div>
-                <small class="brand-page__small text-1 col-12 d-flex d-lg-none lh-140">
-                    Продукция: Промышленные датчики, световые завесы, многолучевые барьеры, однолучевые барьеры, лазерные сканеры, контроллеры, реле, ультразвуковые счетчики газа и тд.
-                </small>
+                <div class="col-3 col-sm-2 col-xl-2 product-icon">
+                    <picture>
+                        <source srcset="../image/brands/sick.webp">
+                        <img src="../image/brands/sick.png" alt="">
+                    </picture>
+                </div>
             </div>
-            <div class="brand-page__about">
-                <h3 class="mb-5">Описание</h3>
-                <p class="text-2 mb-5 lh-140">
-                    Компания SICK AG - это одна из мировых производителей датчиков для промышленной автоматизации. Компания является высококвалифицированным специалистом в области аналитико-измерительного мониторинга индустриальных систем.
-                </p>
-                <p class="text-2 mb-5 lh-140">
-                    Продукция компании используется во всех сферах где предусматривается применение регулировки технологических процессов, то есть датчики. Основана компания была в Мюнхене (Германия). На данный момент осуществление деятельности компании происходит через представительства по всему миру (свыше 40 стран). Производства SICK AG есть в Германии, Италии, Японии, США, Польше и Венгрии. Штат из 5000 сотрудников компании занимаются исследованиями, вносят свой вклад в разработку продукции, а также в производство товаров для промышленной автоматизации. Торговый оборот - свыше 707 миллионов евро.
-                </p>
-                <p class="text-2 lh-140">
-                    Компании принадлежит первенство в области промышленных датчиков в Европе, а по всему миру второе место.
-                </p>
-            </div>
+        </div>
+    </section>
+    <section class="product-about">
+        <div class="container">
+            <h3>Описание</h3>
+            <p class="text-1 mt-30px">Кран ручной козловой передвижной серии SB (Передвижной портальный кран SB) -
+                классический козловой кран с ручным приводом передвижения передвижной серии SB (Передвижной
+                портальный кран SB) - классический козловой кран с ручным приводом. <br>
+                Кередвижения передвижной серии SB (Передвижной портальный кран SB) - классический козловой кран с
+                ручным приводом передвижения...передвижной серии SB (Передвижной портальный кран SB) - классический
+                козловой кран с ручным приводом передвижения...
+            </p>
+        </div>
+    </section>
+    <section class="product-list">
+        <div class="container">
             <div class="brand-page__catalog">
                 <div class="row align-items-center brand-page__catalog_top">
-                    <h3 class="col-12 col-sm-6">Каталог производителя</h3>
+                    <h3 class="col-12 col-sm-6">Другие товары этого производителя</h3>
                     <div class="brand-page__button col-12 col-sm-6 d-inline-flex justify-content-end align-items-start">
                         <button class="button mt-2">СКАЧАТЬ КАТАЛОГ</button>
                     </div>
@@ -514,210 +606,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-item mb-5">
-                        <div class="product-item__body">
-                            <div class="product-item__img">
-                                <picture>
-                                    <source srcset="../image/brand-page/1.webp">
-                                    <img src="../image/brand-page/1.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="product-item__info">
-                                <h4 class="mt-7 mb-4">Низковольтный электродвигатель IEC</h4>
-                                <div class="row justify-content-between align-items-center">
-                                    <div class="product-item__button col-6"><button class="button">ОФОРМИТЬ</button></div>
-                                    <small class="text-success col-6"><img src="../image/icons/check-success.svg" alt="">Доступно</small>
-                                </div>
-                                <div class="product-item__hidden-content flex-column mt-15px">
-                                    <p class="text-2 mb-5px">Артикуль: <mark>84189521563</mark></p>
-                                    <p class="text-2 mb-5px">Производитель: <mark>SICK</mark></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item mb-5">
-                        <div class="product-item__body">
-                            <div class="product-item__img">
-                                <picture>
-                                    <source srcset="../image/brand-page/2.webp">
-                                    <img src="../image/brand-page/2.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="product-item__info">
-                                <h4 class="mt-7 mb-4">пневматический датчик FESTO</h4>
-                                <div class="row justify-content-between align-items-center">
-                                    <div class="product-item__button col-6"><button class="button">ОФОРМИТЬ</button></div>
-                                    <small class="text-error col-6">Недоступно</small>
-                                </div>
-                                <div class="product-item__hidden-content flex-column mt-15px">
-                                    <p class="text-2 mb-5px">Артикуль: <mark>84189521563</mark></p>
-                                    <p class="text-2 mb-5px">Производитель: <mark>SICK</mark></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item mb-5">
-                        <div class="product-item__body">
-                            <div class="product-item__img">
-                                <picture>
-                                    <source srcset="../image/brand-page/3.webp">
-                                    <img src="../image/brand-page/3.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="product-item__info">
-                                <h4 class="mt-7 mb-4">Вакуумный датчик и датчик давления FESTO</h4>
-                                <div class="row justify-content-between align-items-center">
-                                    <div class="product-item__button col-6"><button class="button">ОФОРМИТЬ</button></div>
-                                    <small class="text-success col-6"><img src="../image/icons/check-success.svg" alt="">Доступно</small>
-                                </div>
-                                <div class="product-item__hidden-content flex-column mt-15px">
-                                    <p class="text-2 mb-5px">Артикуль: <mark>84189521563</mark></p>
-                                    <p class="text-2 mb-5px">Производитель: <mark>SICK</mark></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item mb-5">
-                        <div class="product-item__body">
-                            <div class="product-item__img">
-                                <picture>
-                                    <source srcset="../image/brand-page/4.webp">
-                                    <img src="../image/brand-page/4.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="product-item__info">
-                                <h4 class="mt-7 mb-4">Барабанный тормоз</h4>
-                                <div class="row justify-content-between align-items-center">
-                                    <div class="product-item__button col-6"><button class="button">ОФОРМИТЬ</button></div>
-                                    <small class="text-success col-6"><img src="../image/icons/check-success.svg" alt="">Доступно</small>
-                                </div>
-                                <div class="product-item__hidden-content flex-column mt-15px">
-                                    <p class="text-2 mb-5px">Артикуль: <mark>84189521563</mark></p>
-                                    <p class="text-2 mb-5px">Производитель: <mark>SICK</mark></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item mb-5">
-                        <div class="product-item__body">
-                            <div class="product-item__img">
-                                <picture>
-                                    <source srcset="../image/brand-page/5.webp">
-                                    <img src="../image/brand-page/5.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="product-item__info">
-                                <h4 class="mt-7 mb-4">Cincon CHB150-110S DC-DC Converters</h4>
-                                <div class="row justify-content-between align-items-center">
-                                    <div class="product-item__button col-6"><button class="button">ОФОРМИТЬ</button></div>
-                                    <small class="text-error col-6">Недоступно</small>
-                                </div>
-                                <div class="product-item__hidden-content flex-column mt-15px">
-                                    <p class="text-2 mb-5px">Артикуль: <mark>84189521563</mark></p>
-                                    <p class="text-2 mb-5px">Производитель: <mark>SICK</mark></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item mb-5">
-                        <div class="product-item__body">
-                            <div class="product-item__img">
-                                <picture>
-                                    <source srcset="../image/brand-page/2.webp">
-                                    <img src="../image/brand-page/2.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="product-item__info">
-                                <h4 class="mt-7 mb-4">пневматический датчик FESTO</h4>
-                                <div class="row justify-content-between align-items-center">
-                                    <div class="product-item__button col-6"><button class="button">ОФОРМИТЬ</button></div>
-                                    <small class="text-error col-6">Недоступно</small>
-                                </div>
-                                <div class="product-item__hidden-content flex-column mt-15px">
-                                    <p class="text-2 mb-5px">Артикуль: <mark>84189521563</mark></p>
-                                    <p class="text-2 mb-5px">Производитель: <mark>SICK</mark></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item mb-5">
-                        <div class="product-item__body">
-                            <div class="product-item__img">
-                                <picture>
-                                    <source srcset="../image/brand-page/5.webp">
-                                    <img src="../image/brand-page/5.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="product-item__info">
-                                <h4 class="mt-7 mb-4">Cincon CHB150-110S DC-DC Converters</h4>
-                                <div class="row justify-content-between align-items-center">
-                                    <div class="product-item__button col-6"><button class="button">ОФОРМИТЬ</button></div>
-                                    <small class="text-success col-6"><img src="../image/icons/check-success.svg" alt="">Доступно</small>
-                                </div>
-                                <div class="product-item__hidden-content flex-column mt-15px">
-                                    <p class="text-2 mb-5px">Артикуль: <mark>84189521563</mark></p>
-                                    <p class="text-2 mb-5px">Производитель: <mark>SICK</mark></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-item mb-5">
-                        <div class="product-item__body">
-                            <div class="product-item__img">
-                                <picture>
-                                    <source srcset="../image/brand-page/6.webp">
-                                    <img src="../image/brand-page/6.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="product-item__info">
-                                <h4 class="mt-7 mb-4">ABS Tauchpumpe Robusta</h4>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="product-item__button col-6"><button class="button">ОФОРМИТЬ</button></div>
-                                    <small class="text-error col-6">Недоступно</small>
-                                </div>
-                                <div class="product-item__hidden-content flex-column mt-15px">
-                                    <p class="text-2 mb-5px">Артикуль: <mark>84189521563</mark></p>
-                                    <p class="text-2 mb-5px">Производитель: <mark>SICK</mark></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="row">
                     <div class="brand-page__button justify-content-center d-flex">
                         <button class="button">ЗАГРУЗИТЬ ЕЩЕ</button>
                     </div>
                 </div>
-                <div class="brand-page__catalog_bottom row justify-content-center">
-                    <div class="col-12 h3 text-center">Условия работы</div>
-                    <div class="col-10 steps row justify-content-between mb-5 mt-5">
-                        <div class="col-12 col-md-6 col-xxl-3 text-2">
-                            <span class="h4 circle mr-1">1</span>
-                            Оставьте заявку
-                        </div>
-                        <div class="col-12 col-md-6 col-xxl-3 text-2">
-                            <span class="h4 circle mr-1">2</span>
-                            Обсуждаем условия
-                        </div>
-                        <div class="col-12 col-md-6 col-xxl-3 text-2">
-                            <span class="h4 circle mr-1">3</span>
-                            Подписываем договор
-                        </div>
-                        <div class="col-12 col-md-6 col-xxl-3 text-2">
-                            <span class="h4 circle mr-1">4</span>
-                            Поставляем заказ
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="brand-page__button justify-content-center d-flex">
-                            <button class="button">ОСТАВИТЬ ЗАЯВКУ</button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-
     <section class="form-button">
         <div class="container">
             <div class="form-button__row row align-items-center">
@@ -731,9 +628,11 @@
                 </div>
                 <div class="form-button__column col-12 col-md-5 col-lg-6 d-flex justify-content-center align-items-center">
                     <div class="form-button__text lh-140">
-                        <p class="text-1 d-none d-lg-flex">Наш менедежер ответит на ваши вопросы и подготовят индивидуальное
+                        <p class="text-1 d-none d-lg-flex">Наш менедежер ответит на ваши вопросы и подготовят
+                            индивидуальное
                             коммерческое предложение.</p>
-                        <p class="text-2 d-flex d-lg-none">Наш менедежер ответит на ваши вопросы и подготовят индивидуальное
+                        <p class="text-2 d-flex d-lg-none">Наш менедежер ответит на ваши вопросы и подготовят
+                            индивидуальное
                             коммерческое предложение.</p>
                     </div>
                 </div>
@@ -867,7 +766,27 @@
     </div>
 </footer>
 
-
+<script src="../script/swiper.js"></script>
+<script>
+let productSwiper = new Swiper('.product-slider', {
+    navigation: {
+        nextEl: '.slider-button__next',
+        prevEl: '.slider-button__prev',
+    },
+    slidesPerView: '4',
+    spaceBetween: 10,
+    breakpoints: {
+        200: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        576: {
+            slidesPerView: 4,
+            spaceBetween: 10
+        },
+    }
+});
+</script>
 <script src="../script/script.js"></script>
 </body>
 </html>
