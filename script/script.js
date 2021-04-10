@@ -98,3 +98,10 @@ function closeModal(element) {
 function openModal(id) {
     document.querySelector('#' + id).style.setProperty('display', 'inline')
 }
+
+// Input mask
+let element = document.getElementById('contact-3');
+let maskOptions = {
+    mask: '+{7} (000) 000-00-00'
+};
+let mask = IMask(element, maskOptions);
