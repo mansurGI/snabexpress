@@ -2015,6 +2015,13 @@ body {
     color: #B2B4B6;
     text-decoration: underline;
 }
+
+.counter_title {
+    font-family: 'Gotham Pro', Arial, Helvetica, sans-serif !important;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+}
 /* PAGE ABOUT */
 
 
@@ -3140,6 +3147,13 @@ body {
     }
 
     /* SECTIONS */
+
+    /* ABOUT */
+    .counter_title {
+        font-size: 48px;
+    }
+    /* ABOUT */
+
     /* REVIEWS */
     .slider {
         margin-top: 60px;
