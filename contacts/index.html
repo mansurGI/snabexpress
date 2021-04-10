@@ -527,5 +527,23 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA66jPv0CXJfEg1N9ubhO5KJLgD4wMwwyc&callback=initMap&libraries=&v=weekly"
         async></script>
 <script src="../script/script.js"></script>
+<script type="text/javascript">
+    // Map
+    let map;
+
+    function initMap() {
+        "use strict";
+        let pos = new google.maps.LatLng(52.51663, 13.38978);
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: pos,
+            zoom: 16,
+        });
+        let marker = new google.maps.Marker({
+            position: pos,
+            map: map,
+            icon: 'image/icons/map-marker.png',
+        });
+    }
+</script>
 </body>
 </html>

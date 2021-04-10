@@ -1,33 +1,3 @@
-// holmes
-holmes({
-    input: '#holmes',
-    find: '.brands-list div'
-});
-
-// Letter filter TEST
-document.addEventListener('DOMContentLoaded', function () {
-    let letters = document.querySelectorAll('.brands-search_item'),
-        noSearch = document.querySelector('.brands-no-search_item'),
-        brandsList = document.querySelectorAll('.brands-list-group');
-    for (let i = 0; i < letters.length; i++) {
-        letters[i].onclick = function () {
-            brandsList[i].parentNode.classList.remove('hide')
-            let searchVal = letters[i].textContent.toUpperCase();
-            for (let j = 0; j < brandsList.length; j++) {
-                if (brandsList[j].children[0].textContent.toUpperCase() !== searchVal) {
-                    brandsList[j].parentNode.classList.add('hide');
-                }
-            }
-        }
-    }
-    noSearch.onclick = function () {
-        for (let i = 0; i < letters.length; i++) {
-            brandsList[i].parentNode.classList.remove('hide')
-        }
-    }
-});
-
-
 // Fixed Header
 let prevNav = document.querySelector('.header__pc');
 window.addEventListener('scroll', function () {
@@ -82,22 +52,7 @@ burger('.burger__body', '.header__bottom');
 // });
 
 
-// Map
-let map;
 
-function initMap() {
-    "use strict";
-    let pos = new google.maps.LatLng(52.51663, 13.38978);
-    map = new google.maps.Map(document.getElementById("map"), {
-        center: pos,
-        zoom: 16,
-    });
-    let marker = new google.maps.Marker({
-        position: pos,
-        map: map,
-        icon: 'image/icons/map-marker.png',
-    });
-}
 
 /* MODAL WINDOWS */
 //Close modal by click on .modal_close
