@@ -1459,15 +1459,7 @@
         </div>
     </div>
 </footer>
-<script src="../script/holmes.js"></script>
-<script src="../script/script.js"></script>
 <script type="text/javascript">
-    // holmes
-    holmes({
-        input: '#holmes',
-        find: '.brands-list div'
-    });
-
     // Letter filter TEST
     document.addEventListener('DOMContentLoaded', function () {
         let letters = document.querySelectorAll('.brands-search_item'),
@@ -1501,6 +1493,15 @@
                 brandsList[i].parentNode.classList.remove('hide')
             }
         }
+    });
+</script>
+<script src="../script/holmes.js"></script>
+<script src="../script/script.js"></script>
+<script type="text/javascript">
+    // holmes
+    holmes({
+        input: '#holmes',
+        find: '.brands-list div'
     });
 </script>
 </body>

@@ -849,16 +849,18 @@ button {
 .menu-scroll__logo {
     width: 180px;
     height: auto;
+    display: flex;
+    align-items: center;
 }
 
 .menu-scroll__logo a {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .menu-scroll__logo img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-position: left center;
     object-fit: contain;
 }
@@ -921,13 +923,12 @@ button {
     font-size: 12px;
     color: #1F1F1F;
 }
-
 .menu {
     position: absolute;
     z-index: 11;
     bottom: 0;
     left: 50%;
-    transform: translateY(50%) translateX(-50%);
+    transform: translateX(-50%) translateY(50%);
     width: 100%;
 }
 
@@ -1649,7 +1650,9 @@ section {
 .slider-btn:hover {
     background-color: #801818;
 }
-
+.review-item {
+    padding: 10px;
+}
 .review-item-top {
     background-color: #F7F7F8;
 }
@@ -1731,10 +1734,22 @@ section {
     background-color: transparent;
 }
 /* REVIEWS */
+/* Form Page */
+.form-page {
+    overflow: hidden;
 
+}
+.form-row {
+    margin: 0 -10px;
+}
+.form-col {
+    padding: 0 10px;
+}
+/* Form Page */
 /* FORM BUTTON */
 .form-button {
     background-color: #801818;
+    overflow: hidden;
 }
 
 .form-button__title {
@@ -1773,6 +1788,7 @@ section {
 .form-button__text p {
     color: #fff;
     width: 476px;
+
 }
 /* FORM BUTTON */
 /* SECTIONS */
@@ -1782,6 +1798,7 @@ section {
 footer {
     background-color: #2E2E2F;
     padding: 60px 0;
+    overflow: hidden;
 }
 
 .body-footer__copy a {
@@ -1971,6 +1988,8 @@ body {
     width: 100%;
     height: 100%;
     min-height: 100vh;
+    background-color: #fff;
+    -ms-overflow-x: hidden;
 }
 
 .content {
@@ -2030,6 +2049,8 @@ body {
 /* PAGE 404 */
 .page-404 .page-text .text-1 {
     color: #B2B4B6;
+    overflow: hidden;
+    -ms-overflow-x: hidden;
 }
 
 .page-404 .page-text h1 {
@@ -2080,7 +2101,6 @@ body {
 }
 
 .map {
-    height: 100%;
     position: relative;
     padding: 0;
 }
@@ -2120,6 +2140,43 @@ body {
 /* PAGE DELIVERY */
 
 /* PAGE FAQ */
+.accordion {
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    position: relative;
+    border-bottom: 1px solid #B2B4B6;
+    cursor: pointer;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+
+}
+.accordion.active {
+    border-color: transparent;
+    margin-bottom: 0;
+}
+.accordion:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 0;
+    background: url("../image/icons/arrow-2 black.svg");
+    width: 15px;
+    height: 10px;
+}
+.accordion.active:before {
+    transform: rotate(180deg);
+}
+
+.panel {
+    padding: 20px 0;
+    border-bottom: 1px solid #B2B4B6;
+    margin-bottom: 20px;
+}
+.panel {
+    display: none;
+    overflow: hidden;
+}
 .page-faq details {
     position: relative;
     padding-bottom: 20px;
@@ -2480,6 +2537,9 @@ body {
 /* PAGE SINGLE NEWS*/
 
 /* PAGE NEWS */
+.page-news .row {
+    margin: 0 -10px;
+}
 .news-item__body {
     display: flex;
     flex-direction: column;
@@ -2487,6 +2547,7 @@ body {
 
 .news-item {
     overflow: hidden;
+    padding: 10px;
 }
 
 .news-item:nth-child(1), .news-item:nth-child(2) {
@@ -2883,7 +2944,6 @@ body {
     .form-button__text p {
         width: auto;
     }
-
     /* FORM BUTTON */
     /* CATALOG */
     .catalog {
@@ -3079,6 +3139,9 @@ body {
     .product-icon img {
         width: 100%;
         height: auto;
+    }
+    .form-col .input-group {
+        margin-right: 20px;
     }
 }
 
@@ -3444,5 +3507,14 @@ body {
     .cont {
         overflow: hidden;
         width: 90%;
+    }
+    .form-col .input-textarea {
+        max-width: 270px;
+    }
+    .page-news .row {
+        margin: 0;
+    }
+    .form-row {
+        margin: 0;
     }
 }
