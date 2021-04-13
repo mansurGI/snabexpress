@@ -472,6 +472,7 @@ input:focus, button:focus {
     width: 15px;
     height: 15px;
     left: 0;
+    top: 0;
     box-sizing: border-box;
     transform: translateY(-5%);
 }
