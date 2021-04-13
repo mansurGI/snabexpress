@@ -2001,8 +2001,6 @@ body {
 }
 
 .page-path {
-    display: flex;
-
     margin-bottom: 60px;
 }
 
@@ -2922,8 +2920,11 @@ body {
     .menu-scroll__search button {
         margin-right: 20px;
     }
-
     /* HEADER */
+
+    .page-path {
+        margin-bottom: 40px;
+    }
     /* FORM BUTTON */
     .form-button__column {
         margin-bottom: 0 !important;
@@ -3150,6 +3151,10 @@ body {
 
 
     /* SECTIONS */
+    .page-path {
+        margin-bottom: 20px;
+    }
+
     /* PAGE CONTACTS */
     #map {
         height: 300px;
