@@ -131,6 +131,10 @@ a:hover, a:active, a:focus {
     text-align: center;
 }
 
+.text-wrap {
+    white-space: pre-wrap;
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -1654,6 +1658,11 @@ section {
 .review-item {
     padding: 10px;
 }
+
+.review-item:last-child {
+    width: 100%;
+}
+
 .review-item-top {
     background-color: #F7F7F8;
 }
