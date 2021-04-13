@@ -2334,84 +2334,63 @@ body {
     object-position: center;
 }
 
-.brand-page__button button {
-    padding: 12px 28px;
-    border-radius: 3px;
-    font-size: 12px;
-}
 
-.brand-page__about {
-    padding: 90px 0;
-}
-
-.brand-page__catalog_top {
-    margin-bottom: 70px;
-}
-
-.product-item {
+.product-card {
     width: 300px;
-}
+    min-height: 400px;
 
-.product-item__hidden-content {
-    display: none;
-}
-
-.product-item:hover .product-item__hidden-content {
-    display: flex;
-
-    z-index: 100;
-}
-
-.product-item__body {
-    background: #FFFFFF;
-    border: 1px solid #F7F7F8;
-    box-sizing: border-box;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
     padding: 20px;
-    width: 300px;
+    margin-bottom: 30px;
+
+    border: 1px solid #F7F7F8;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: default;
 }
 
-.product-item__img {
-    width: 100%;
+.product-card_image {
+    max-width: 250px;
+    min-height: 200px;
+    margin-bottom: 50px;
+}
+
+.product-card_info {
+
+}
+
+.product-card_hidden-info {
+    align-self: start;
+
+    display: none;
+
+    margin-top: 20px;
+}
+
+.product-card:hover {
     position: relative;
-    height: 200px;
+    z-index: 10;
 }
 
-.product-item__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
+.product-card:hover .product-card_hidden-info {
+    display: block;
 }
 
-.product-item__info small {
-    text-align: end;
-}
+.work-steps {
+    width: 1100px;
+    padding: 30px 50px;
 
-.product-item__info small img {
-    width: 13px;
-    height: auto;
-    object-fit: contain;
-    object-position: center;
-}
-
-.product-item__info mark {
-    background-color: transparent;
-    color: #B2B4B6;
-}
-
-.brand-page__catalog_bottom {
-    padding: 90px 0 30px 0;
-}
-
-.steps {
     background: #FFFFFF;
+
     box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.15);
-    border-radius: 0;
-    padding: 30px 50px 30px 50px;
+    border-radius: 3px;
 }
 
-.circle {
+.work-steps_circle {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -2419,6 +2398,10 @@ body {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+
+.brand-page__catalog_bottom {
+    padding: 90px 0 30px 0;
 }
 /* PAGE BRAND */
 
@@ -3454,10 +3437,6 @@ body {
         max-width: 100%;
     }
 
-    .product-item__body {
-        margin: 0 0 20px 0;
-        width: 100%;
-    }
 
     .news-single-page .left-img {
         width: 100%;
