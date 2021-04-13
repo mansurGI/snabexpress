@@ -507,9 +507,43 @@ input:focus, button:focus {
 /* INPUT CHECKBOX */
 
 /* INPUT RADIO */
-.input-radio_label {
-    margin-left: 5px;
+.input-radio {
+    position: relative;
+    display: none;
+}
+.input-radio_label:before, .input-radio_label:after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transform: translateY(-5%);
+}
+.input-radio_label:before {
+    border: 1px solid #1F1F1F;
+}
 
+.input-radio_label:after {
+    background-color: #1F1F1F;
+    transition: .1s linear all;
+    transform: scale(0);
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+}
+.input-radio:checked+.input-radio_label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+.input-radio_label {
+    position: relative;
+    padding-left: 30px;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -770,9 +804,9 @@ button {
 .modal_close {
     align-self: end;
 
-    margin: 5px 5px 0 0;
 
     cursor: pointer;
+    padding: 5px;
 }
 
 .modal_content {
@@ -2338,6 +2372,8 @@ body {
 .product-card {
     width: 300px;
     min-height: 400px;
+    position: relative;
+    overflow: hidden;
 
     padding: 20px;
     margin-bottom: 30px;
@@ -2359,25 +2395,33 @@ body {
     margin-bottom: 50px;
 }
 
-.product-card_info {
-
-}
-
 .product-card_hidden-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    background-color: rgba(255,255,255,.8);
+    z-index: 1;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #e6e7e8;
+    max-height: 0;
+
     align-self: start;
 
-    display: none;
-
     margin-top: 20px;
+    transition: .3s linear all;
+}
+
+.product-card_hidden-info p {
+    font-weight: 500;
+}
+.product-card:hover .product-card_hidden-info {
+    max-height: 1000px;
 }
 
 .product-card:hover {
-    position: relative;
-    z-index: 10;
-}
-
-.product-card:hover .product-card_hidden-info {
-    display: block;
+    overflow: visible;
 }
 
 .work-steps {
@@ -3195,6 +3239,9 @@ body {
         width: 200px;
         height: 120px;
     }
+    .modal_window {
+        width: 75%;
+    }
 }
 
 
@@ -3470,5 +3517,8 @@ body {
     }
     .form-row {
         margin: 0;
+    }
+    .modal_window {
+        width: 95%;
     }
 }
