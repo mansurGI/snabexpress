@@ -1459,50 +1459,6 @@
         </div>
     </div>
 </footer>
-<script type="text/javascript">
-    // Letter filter TEST
-    document.addEventListener('DOMContentLoaded', function () {
-        let letters = document.querySelectorAll('.brands-search_item'),
-            noSearch = document.querySelector('.brands-no-search_item'),
-            brandsList = document.querySelectorAll('.brands-list-group');
-        for (let i = 0; i < letters.length; i++) {
-            letters[i].onclick = function () {
-                noSearch.classList.add('hide');
-                noSearch.classList.remove('active');
-                for (let j = 0; j < brandsList.length; j++) {
-                    letters[j].classList.remove('hide');
-                    letters[j].classList.remove('active');
-                    letters[j].classList.add('hide');
-                }
-                letters[i].classList.add('active');
-                brandsList[i].parentNode.classList.remove('hide')
-                let searchVal = letters[i].textContent.toUpperCase();
-                for (let j = 0; j < brandsList.length; j++) {
-                    if (brandsList[j].children[0].textContent.toUpperCase() !== searchVal) {
-                        brandsList[j].parentNode.classList.add('hide');
-                    }
-                }
-            }
-        }
-        noSearch.onclick = function () {
-            for (let i = 0; i < letters.length; i++) {
-                noSearch.classList.remove('hide');
-                noSearch.classList.add('active');
-                letters[i].classList.remove('hide');
-                letters[i].classList.remove('active');
-                brandsList[i].parentNode.classList.remove('hide')
-            }
-        }
-    });
-</script>
-<script src="../script/holmes.js"></script>
 <script src="../script/script.js"></script>
-<script type="text/javascript">
-    // holmes
-    holmes({
-        input: '#holmes',
-        find: '.brands-list div'
-    });
-</script>
 </body>
 </html>
