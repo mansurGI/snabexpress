@@ -535,7 +535,7 @@ input:focus, button:focus {
     color: #1F1F1F;
     line-height: 15px;
     cursor: pointer;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 /* INPUT CHECKBOX */
 
@@ -614,6 +614,7 @@ input:focus, button:focus {
     border-radius: 0;
 
     cursor: pointer;
+    -webkit-appearence: none;
 }
 
 .input-file {
@@ -631,6 +632,7 @@ input:focus, button:focus {
     color: #1F1F1F;
 
     cursor: pointer;
+    -webkit-appearence: none;
 }
 
 .input-file_sm {
@@ -794,7 +796,6 @@ button {
 
     width: 270px;
     height: 35px;
-    margin: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -847,9 +848,7 @@ button {
     margin: 100px auto;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3513,6 +3512,9 @@ body {
     }
     /* TYPOGRAPHIC */
 
+    .modal_content {
+        padding: 20px 30px;
+    }
 
     /* SECTIONS */
     .form-button__title {
@@ -3522,9 +3524,6 @@ body {
     .form-button__text {
         margin-bottom: 15px;
     }
-
-
-    /* SECTIONS */
     .page-path {
         margin-bottom: 20px;
     }
