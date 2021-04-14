@@ -600,7 +600,8 @@ input:focus, button:focus {
 /* INPUT FILE */
 /* noinspection CssInvalidPseudoSelector */
 .input-file::file-selector-button,
-.input-file::-webkit-file-upload-button {
+.input-file::-webkit-file-upload-button,
+.input-file::-ms-browse {
     padding: 10px 12px;
 
     color: #FFFFFF;
