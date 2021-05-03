@@ -607,21 +607,21 @@
             <div class="col">
                 <div class="text-1-light mb-4">Кнопки, обычные</div>
 
-                <button class="button">ЗАКАЗАТЬ ЗВОНОК</button>
+                <button class="btn">ЗАКАЗАТЬ ЗВОНОК</button>
                 <div class="my-2"></div>
-                <button class="button-light">ЗАКАЗАТЬ ЗВОНОК</button>
+                <button class="btn-light">ЗАКАЗАТЬ ЗВОНОК</button>
             </div>
 
             <div class="col">
                 <div class="text-1-light mb-4">Кнопки, для форм</div>
 
-                <button class="button-input">Заказать звонок</button>
-                <button class="button-input-light">Заказать звонок</button>
+                <button class="btn-input">Заказать звонок</button>
+                <button class="btn-input-light">Заказать звонок</button>
 
                 <div class="my-3"></div>
 
-                <button class="button-input_sm">Заказать звонок</button>
-                <button class="button-input-light_sm">Заказать звонок</button>
+                <button class="btn-input_sm">Заказать звонок</button>
+                <button class="btn-input-light_sm">Заказать звонок</button>
             </div>
         </div>
     </div>
@@ -632,65 +632,85 @@
         <h3>Модальные окна</h3>
 
         <div class="mt-2 d-flex justify-content-around">
-            <button class="button" onclick="openModal('modal-example-1')">Вызвать окно 1</button>
-            <button class="button" onclick="openModal('modal-example-2')">Вызвать окно 2</button>
-            <button class="button" onclick="openModal('modal-example-3')">Вызвать окно 3</button>
+            <button class="btn" onclick="openModal('modal-example-1')">Вызвать окно 1</button>
+            <button class="btn" onclick="openModal('modal-example-2')">Вызвать окно 2</button>
+            <button class="btn" onclick="openModal('modal-example-3')">Вызвать окно 3</button>
         </div>
     </div>
 </div>
 
 <!-- МОДАЛЬНЫЕ ОКНА -->
-<div class="modal" id="modal-example-1">
-    <div class="modal_window">
-        <img class="modal_close" src="../image/icons/close-black.svg" alt="Закрыть окно" onclick="closeModal(this)">
-        <div class="modal_content">
-            <h1>Подписаться на рассылку</h1>
-            <p class="text-1 text-gray mt-10px mb-20px">Подпишись на обновления и получи 5% скидку на первый заказ!</p>
-            <div class="d-flex flex-column align-items-center">
+<div class="modal" tabindex="-1" id="modal-example-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Подписаться на рассылку</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-2 text-center text-gray mt-10px mb-20px">Подпишись на обновления и получи 5% скидку на первый заказ!</p>
                 <div class="input-group">
                     <label class="input_label">Ваш Email <span class="text-red">*</span></label>
-                    <input class="input-text" type="text" placeholder="mail@mail.com">
+                    <input class="input-text w-100" type="text" placeholder="mail@mail.com">
                 </div>
-                <button class="button-input mt-10px">Подписаться</button>
+                <div class="input-group-horizontal mt-20px">
+                    <input class="input-checkbox" type="checkbox" value="true" id="modal-example-1-checkbox">
+                    <label class="input-checkbox_label" for="modal-example-1-checkbox">Я даю согласие на <a href="">обработку моих персональных данных</a></label>
+                </div>
             </div>
-            <div class="input-group-horizontal mt-20px">
-                <input class="input-checkbox" type="checkbox" value="true" id="modal-example-1-checkbox">
-                <label class="input-checkbox_label" for="modal-example-1-checkbox">Я даю согласие на обработку моих персональных данных</label>
+            <div class="modal-footer">
+                <button type="button" class="btn mr-10px">Подписаться</button>
+                <button type="button" class="btn" data-bs-dismiss="modal">Закрыть</button>
             </div>
         </div>
     </div>
 </div>
 
-<div class="modal" id="modal-example-2">
-    <div class="modal_window">
-        <img class="modal_close" src="../image/icons/close-black.svg" alt="Закрыть окно" onclick="closeModal(this)">
-        <div class="modal_content">
-            <h1>Появились вопросы?</h1>
-            <p class="text-1 text-gray mt-10px mb-20px">Оставьте заявку и наш менедежер ответит на ваши вопросы и подготовят индивидуальное коммерческое предложение.</p>
-            <div class="input-group">
-                <label class="input_label">Интересующий Вас вопрос</label>
-                <textarea class="input-textarea" style="width: 100%;" name="text" cols="40" rows="5" placeholder="Хотел бы уточнить.."></textarea>
+<div class="modal" tabindex="-1" id="modal-example-2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Появились вопросы?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center align-items-md-end my-10px">
+            <div class="modal-body">
+                <p class="text-2 text-center text-gray mt-10px mb-20px">Оставьте заявку и наш менедежер ответит на ваши вопросы и подготовят индивидуальное коммерческое предложение.</p>
                 <div class="input-group">
-                    <label class="input_label">Ваш Email <span class="text-red">*</span></label>
-                    <input class="input-text" type="text" placeholder="mail@mail.com">
+                    <label class="input_label">Интересующий Вас вопрос</label>
+                    <textarea class="input-textarea w-100" name="text" cols="40" rows="5" placeholder="Хотел бы уточнить.."></textarea>
                 </div>
-                <button class="button-input_sm mt-10px mt-md-0">Подписаться</button>
+                <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center align-items-md-end my-10px">
+                    <div class="input-group">
+                        <label class="input_label">Ваш Email <span class="text-red">*</span></label>
+                        <input class="input-text w-100" type="text" placeholder="mail@mail.com">
+                    </div>
+                </div>
+                <div class="input-group-horizontal mt-20px">
+                    <input class="input-checkbox" type="checkbox" value="true" id="modal-example-2-checkbox">
+                    <label class="input-checkbox_label" for="modal-example-2-checkbox">Я даю согласие на <a href="">обработку моих персональных данных</a></label>
+                </div>
             </div>
-            <div class="input-group-horizontal mt-20px">
-                <input class="input-checkbox" type="checkbox" value="true" id="modal-example-2-checkbox">
-                <label class="input-checkbox_label" for="modal-example-2-checkbox">Я даю согласие на обработку моих персональных данных</label>
+            <div class="modal-footer">
+                <button type="button" class="btn mr-10px">Заказать письмо</button>
+                <button type="button" class="btn" data-bs-dismiss="modal">Закрыть</button>
             </div>
         </div>
     </div>
 </div>
 
-<div class="modal" id="modal-example-3">
-    <div class="modal_window">
-        <img class="modal_close" src="../image/icons/close-black.svg" alt="Закрыть окно" onclick="closeModal(this)">
-        <div class="modal_content">
-            <h3>Операция выполнена успешно!</h3>
+<div class="modal" tabindex="-1" id="modal-example-3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Успех!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h3>Операция выполнена успешно!</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" data-bs-dismiss="modal">Закрыть</button>
+            </div>
         </div>
     </div>
 </div>

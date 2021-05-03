@@ -24,49 +24,12 @@ function burger(burgerClass, mobileListClass) {
 }
 
 burger('.burger__body', '.header__bottom');
-//
-// // Input filter
-// document.addEventListener('DOMContentLoaded', function () {
-//     const form = document.getElementById('search-form');
-//     let filterItem = document.querySelectorAll('.brand'),
-//         filterInput = form.querySelector('.brands-input'),
-//         filterItemName = document.querySelectorAll('.brand__name');
-//
-//     form.addEventListener('submit', searching);
-//
-//     async function searching(e) {
-//         e.preventDefault();
-//
-//         for (let i = 0; i < filterItem.length; i++) {
-//
-//             filterItem[i].classList.remove('hide');
-//             let searchValue = filterInput.value.trim().toUpperCase(),
-//                 search = filterItemName[i].innerText.match(searchValue);
-//             if (search == null) {
-//                 filterItem[i].classList.add('hide');
-//             }
-//         }
-//
-//         test();
-//     }
-// });
-
 
 
 
 /* MODAL WINDOWS */
 //Close modal by click on .modal_close
-function closeModal(element) {
-    element.parentElement.parentElement.style.setProperty('display', 'none');
-}
-
 function openModal(id) {
-    document.querySelector('#' + id).style.setProperty('display', 'inline')
+    let modal = new bootstrap.Modal(document.querySelector('#' + id));
+    modal.show();
 }
-//
-// // Input mask
-// let element = document.getElementById('contact-3');
-// let maskOptions = {
-//     mask: '+{7} (000) 000-00-00'
-// };
-// let mask = IMask(element, maskOptions);
